@@ -30,8 +30,13 @@ function draw() {
     clear();
     sound();
 
+    if (start.start === false) {
+    start.display();
+    } else {
+    handler.display();
+    }
 
-    /*case talkingHandler.end:
+    /*case handler.end:
         textSize(100);
         textAlign(CENTER);
         fill(220, 220, 220);
@@ -50,9 +55,3 @@ function draw() {
           break;*/
 }
 window.draw = draw;
-
-if (start.start === false) {
-    start.display()
-} else {
-    handler.display();
-  }

@@ -71,12 +71,12 @@ export default class Decision {
     mouseClicked() {
       if (this.hitTest1(mouseX, mouseY)) {
         if (this.handler1 != null) {
-          this.handler1.activeTalk = this.next1;
+          this.handler1.active = this.next1;
         }
       }
       if (this.hitTest2(mouseX, mouseY)) {
         if (this.handler2 != null) {
-          this.handler2.activeTalk = this.next2;
+          this.handler2.active = this.next2;
         }
       }
     }

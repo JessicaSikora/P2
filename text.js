@@ -8,12 +8,7 @@ export default class Text extends Button {
     this.next = this;
     this.handler = null;
   }
-  // preload() {
-  //   myFont = loadFont(`Hack-Regular.ttf`);
-  // }
-  // setup() {
-  //   textFont(myFont);
-  // }
+
   display() {
     fill(30, 30, 30, 180);
     stroke(180, 0, 125);
@@ -22,7 +17,6 @@ export default class Text extends Button {
     strokeWeight(1);
     textSize(16);
     textAlign(LEFT);
-    // fill(180, 0, 125);
     fill(220, 220, 220);
     text(this.person, this.x + 15, this.y + 25);
     noStroke();
@@ -35,15 +29,12 @@ export default class Text extends Button {
       this.height - 15
     );
     textSize(14);
-    if (this.effect === false) {
-      fill(100, 100, 100);
-    }
     textAlign(RIGHT);
     text("weiter", this.x, this.y + 80, this.width - 5, this.height + 15);
   }
   clicked() {
     if (this.handler != null) {
-      this.handler.activeTalk = this.next;
+      this.handler.active = this.next;
     }
   }
   changeNext(next, handler) {

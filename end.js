@@ -6,6 +6,8 @@ export default class End extends Button {
     this.end = false;
   }
   display() {
+    fill(30, 30, 30);
+    rect(10, 10, 1300, 600);
     fill(30, 30, 30, 180);
     stroke(180, 0, 125);
     strokeWeight(3);
