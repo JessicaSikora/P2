@@ -11,7 +11,7 @@ export default class Monologue extends Button {
   display() {
     fill(10, 50, 70, 220);
     stroke(235, 88, 115);
-    strokeWeight(5);
+    strokeWeight(3);
     rect(this.x, this.y, this.width, this.height, 15);
     strokeWeight(1);
     textSize(16);

@@ -105,6 +105,35 @@ export default class Handler {
         "Frank",
         "Ach ja, der Tag, an dem wir uns kennengelernt haben, der war super. Es war nur so schrecklich warm..."
       );
+      this.player5 = new Text(
+        160, 580, 700, 100,
+        "Ich",
+        "Oh ja, es war unerträglich!"
+      );
+      this.player6 = new Text(
+        160, 580, 700, 100,
+        "Ich",
+        "Besonders bei so einem Wetter die ganzen Boxen zu transportieren und alles auszupacken."
+      );
+      this.player7 = new Text(
+        160, 580, 700, 100,
+        "Ich",
+        "Das nächste Mal werde ich ganz sicher nicht vergessen, mir vorher den Wetterbericht anzusehen."
+      );
+      this.player8 = new Text(
+        160, 580, 700, 100,
+        "Ich",
+        "Zwei Jahre ist das jetzt her, oder?"
+      );
+      this.frank4 = new Text(
+        160, 580, 700, 100,
+        "Frank",
+        "So um den Dreh, ja."
+      );
+      this.monologue12 = new Monologue(
+        160, 580, 700, 100,
+        "Er verschränkt seine Arme vor der Brust und grinst weiterhin in sich hinein, während er verloren ins Nichts starrt."
+      );
     
 
     this.active = this.start;
@@ -132,6 +161,12 @@ export default class Handler {
     this.monologue9.changeNext(this.monologue10, this);
     this.monologue10.changeNext(this.monologue11, this);
     this.monologue11.changeNext(this.frank2, this);
+    this.frank2.changeNext(this.player5, this);
+    this.player5.changeNext(this.player6, this);
+    this.player6.changeNext(this.player7, this);
+    this.player7.changeNext(this.player8, this);
+    this.player8.changeNext(this.frank4, this);
+    this.frank4.changeNext(this.monologue12, this);
   }
 
   display() {

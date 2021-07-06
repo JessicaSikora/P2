@@ -14,7 +14,7 @@ export default class Decision {
   
     display() {
       fill(10, 50, 70, 220);
-      stroke(239, 123, 156);
+      stroke(235, 88, 115);
       strokeWeight(3);
       rect(this.x, this.y, this.width, this.height, 15);
       rect(this.x + 360, this.y, this.width, this.height, 15);

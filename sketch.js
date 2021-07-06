@@ -98,12 +98,12 @@ function draw() {
           break;  
           case handler.monologue7:
           image(Livingroom, 15, 15, 1000, 700);
-          image(smileAnnegret, 200, 240, 280, 800);
+          image(smileAnnegret, 210, 240, 270, 800);
           image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.annegret2:
           image(Livingroom, 15, 15, 1000, 700);
-          image(happyAnnegret, 200, 240, 280, 800);
+          image(smileAnnegret, 210, 240, 270, 800);
           image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.player2:
@@ -113,7 +113,7 @@ function draw() {
           break; 
           case handler.annegret3:
           image(Livingroom, 15, 15, 1000, 700);
-          image(smileAnnegret, 200, 240, 280, 800);
+          image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.decision1:
@@ -160,6 +160,30 @@ function draw() {
           image(happyFrank, 500, 170, 300, 800);
           break; 
           case handler.frank2:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.player5:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.player6:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.player7:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.player8:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.frank4:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.monologue12:
           image(Livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
           break; 
