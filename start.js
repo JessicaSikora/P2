@@ -8,7 +8,7 @@ export default class Start extends Button {
 
   display() {
     fill(30, 30, 30);
-    rect(10, 10, 1300, 600);
+    rect(10, 10, 1000, 700);
     fill(30, 30, 30, 180);
     stroke(180, 0, 125);
     strokeWeight(3);
@@ -19,8 +19,8 @@ export default class Start extends Button {
     textSize(20);
     text(
       "Spiel starten",
-      this.x + 50,
-      this.y + 5,
+      this.x + 45,
+      this.y + 20,
       this.width - 20,
       this.height - 20
     );

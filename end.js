@@ -19,7 +19,7 @@ export default class End extends Button {
     text(
       "Spiel neu starten",
       this.x + 15,
-      this.y + 5,
+      this.y + 20,
       this.width - 20,
       this.height - 20
     );
