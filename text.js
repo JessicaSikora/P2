@@ -18,13 +18,13 @@ export default class Text extends Button {
     textSize(18);
     textAlign(LEFT);
     fill(210, 235, 244);
-    text(this.person, this.x + 15, this.y + 25);
+    text(this.person, this.x + 15, this.y + 27);
     noStroke();
     textSize(18);
     text(
       this.text,
       this.x + 15,
-      this.y + 35,
+      this.y + 37,
       this.width - 18,
       this.height - 15
     );
