@@ -19,16 +19,16 @@ function mouseClicked() {
     } else {
       handler.mouseClicked();
     }
-    if (handler.active === handler.end) {
+    /*if (handler.active === handler.end) {
       end.mouseClicked();
-    }
+    }*/
 
 }
 window.mouseClicked = mouseClicked;
 
 function draw() {
     clear();
-    sound();
+    //sound();
 
     if (start.start === false) {
     start.display();

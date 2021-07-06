@@ -1,24 +1,55 @@
 import Text from "./text.js";
 import Decision from "./decision.js";
-import Selfspeech from "./selfspeech.js";
 
 export default class Handler {
   constructor() {
-    this.start = new Talking();
-    this.empty1 = new Talking();
-    this.empty2 = new Talking();
-    this.empty3 = new Talking();
-    this.empty4 = new Talking();
-    this.empty5 = new Talking();
-    this.empty6 = new Talking();
-    this.empty7 = new Talking();
-    this.empty8 = new Talking();
-    this.empty9 = new Talking();
-    this.empty10 = new Talking();
-    this.empty11 = new Talking();
-    this.empty12 = new Talking();
-    //this.hologramAnimation1-n=new Talking();
-    this.end = new Talking();
+    this.start = new Text();
+    this.end = new Text();
+
+    this.monologue1 = new Text(
+      305, 630, 700, 100,
+      " ",
+      "Es ist ein angenehmer Abend, welcher weder zu kalt noch zu warm ist."
+    );
+    this.monologue2 = new Text(
+      305, 630, 700, 100,
+      " ",
+      "Vor mir sitzen meine langjährigen Freunde Frank und Annegret, ein verheiratetes, liebevolles Paar, die genau gegenüber vor mir leben."
+    );
+    this.monologue3 = new Text(
+      305, 630, 700, 100,
+      " ",
+      "Netterweise haben die zwei mich auf einen Weinabend mit Häppchen eingeladen, wobei ich mich dabei doch ziemlich alt fühle."
+    );
+    this.monologue4 = new Text(
+      305, 630, 700, 100,
+      " ",
+      "Früher hat man sich zum Feiern getroffen und auf eine gute Zeit, jetzt hat man diese immer noch, nur redet man über die stressige Zeit und alles um einen herum."
+    );
+    this.monologue5 = new Text(
+      305, 630, 700, 100,
+      " ",
+      " Was früher eine halbe Flasche Vodka war, ist jetzt ein Glas - oder eine Flasche - Wein, je nachdem, wie der Abend läuft."
+    );
+    this.annegret1 = new Text(
+      305, 630, 700, 100,
+      "Annegret",
+      "Magst du noch etwas Wein haben?"
+    );
+    
+
+    this.active = this.start;
+    this.monologue1.changeNext(this.monologue2, this);
+    this.monologue2.changeNext(this.monologue3, this);
+    this.monologue3.changeNext(this.monologue4, this);
+    this.monologue4.changeNext(this.monologue5, this);
+    this.monologue5.changeNext(this.annegret1, this);
   }
 
+  display() {
+    this.active.display();
+  }
+  mouseClicked() {
+    this.active.mouseClicked();
+  }
 }
