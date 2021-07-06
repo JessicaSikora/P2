@@ -1,4 +1,5 @@
 import Text from "./text.js";
+import Monologue from "./monologue.js";
 import Decision from "./decision.js";
 
 export default class Handler {
@@ -6,27 +7,27 @@ export default class Handler {
     this.start = new Text();
     this.end = new Text();
 
-    this.monologue1 = new Text(
+    this.monologue1 = new Monologue(
       160, 580, 700, 100,
       " ",
       "Es ist ein angenehmer Abend, welcher weder zu kalt noch zu warm ist."
     );
-    this.monologue2 = new Text(
+    this.monologue2 = new Monologue(
       160, 580, 700, 100,
       " ",
       "Vor mir sitzen meine langjährigen Freunde Frank und Annegret, ein verheiratetes, liebevolles Paar, die genau gegenüber vor mir leben."
     );
-    this.monologue3 = new Text(
+    this.monologue3 = new Monologue(
       160, 580, 700, 100,
       " ",
       "Netterweise haben die zwei mich auf einen Weinabend mit Häppchen eingeladen, wobei ich mich dabei doch ziemlich alt fühle."
     );
-    this.monologue4 = new Text(
+    this.monologue4 = new Monologue(
       160, 580, 700, 100,
       " ",
       "Früher hat man sich zum Feiern getroffen und auf eine gute Zeit, jetzt hat man diese immer noch, nur redet man über die stressige Zeit und alles um einen herum."
     );
-    this.monologue5 = new Text(
+    this.monologue5 = new Monologue(
       160, 580, 700, 100,
       " ",
       "Was früher eine halbe Flasche Vodka war, ist jetzt ein Glas - oder eine Flasche - Wein, je nachdem, wie der Abend läuft."
