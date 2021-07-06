@@ -17,7 +17,7 @@ export default class Handler {
     );
     this.monologue3 = new Monologue(
       160, 580, 700, 100,
-      "Netterweise haben die zwei mich auf einen Weinabend mit Häppchen eingeladen, wobei ich mich dabei doch ziemlich alt fühle."
+      "Netterweise haben die zwei mich auf einen gemütlichen Abend daheim eingeladen, wobei ich mich dabei doch ziemlich alt fühle."
     );
     this.monologue4 = new Monologue(
       160, 580, 700, 100,
@@ -30,7 +30,7 @@ export default class Handler {
     this.annegret1 = new Text(
       160, 580, 700, 100,
       "Annegret",
-      "Magst du noch etwas Wein haben?"
+      "Magst du noch ein Stück Sahnetorte haben?"
     );
     this.monologue6 = new Monologue(
       160, 580, 700, 100,
@@ -43,7 +43,7 @@ export default class Handler {
     this.player1 = new Text(
       160, 580, 700, 100,
       "Ich",
-      "Ja, gerne! Nach so einem langen Tag kann ich das gut gebrauchen."
+      "Ja, gerne! Du weißt, ich könnte für Torte sterben."
     );
     this.monologue7 = new Monologue(
       160, 580, 700, 100,
@@ -54,9 +54,62 @@ export default class Handler {
       "Annegret",
       "Erinnerst du dich noch, als wir uns zum ersten Mal kennengelernt haben? Da hast du so ziemlich dasselbe gesagt."
     );
+    this.player2 = new Text(
+      160, 580, 700, 100,
+      "Ich",
+      "Stimmt, ich war schon damals absolut verliebt in deine Backkünste."
+    );
+    this.annegret3 = new Text(
+      160, 580, 700, 100,
+      "Annegret",
+      "Pass auf, sonst platzt du noch."
+    );
+    this.player3 = new Text(
+      160, 580, 700, 100,
+      "Ich",
+      "So weh es mir tut es abzulehnen, ich glaub ich bekomme nichts mehr in mich rein."
+    );
+      this.annegret4 = new Text(
+        160, 580, 700, 100,
+        "Annegret",
+        "Geht mir ähnlich. Ich erinnere mich dennoch daran, wie du fast eine halbe Torte verdrückt hast, als du hergezogen bist."
+      );
+      this.monologue8 = new Monologue(
+        160, 580, 700, 100,
+        "Ich verziehe bei dem Gedanken das Gesicht."
+      );
+      this.player4 = new Text(
+        160, 580, 700, 100,
+        "Ich",
+        "Du stellst mich aber auch gerne als einen Vielfraß dar!"
+      );
+      this.frank1 = new Text(
+        160, 580, 700, 100,
+        "Frank",
+        "Da hat sie aber nicht ganz unrecht."
+      );
+      this.monologue9 = new Monologue(
+        160, 580, 700, 100,
+        "Empört schmeiße ich ihm ein Kissen entgegen."
+      );
+      this.monologue10 = new Monologue(
+        160, 580, 700, 100,
+        "Kichernd läuft Annegret in die Küche. Frank schmunzelt und lehnt sich zurück."
+      );
+      this.monologue11 = new Monologue(
+        160, 580, 700, 100,
+        "Er setzt einen verträumten Blick auf. Ich bin darauf gefasst, dass jetzt etwas Tiefgründiges kommt."
+      );
+      this.frank2 = new Text(
+        160, 580, 700, 100,
+        "Frank",
+        "Ach ja, der Tag, an dem wir uns kennengelernt haben, der war super. Es war nur so schrecklich warm..."
+      );
     
 
     this.active = this.start;
+
+    //Szene 1
     this.monologue1.changeNext(this.monologue2, this);
     this.monologue2.changeNext(this.monologue3, this);
     this.monologue3.changeNext(this.monologue4, this);
@@ -67,6 +120,18 @@ export default class Handler {
     this.decision1.changeNext1(this.player1, this);
     this.player1.changeNext(this.monologue7, this);
     this.monologue7.changeNext(this.annegret2, this);
+    this.annegret2.changeNext(this.player2, this);
+    this.player2.changeNext(this.annegret3, this);
+    this.decision1.changeNext2(this.player3, this);
+    this.player3.changeNext(this.annegret4, this);
+    this.annegret4.changeNext(this.monologue8, this);
+    this.monologue8.changeNext(this.player4, this);
+    this.player4.changeNext(this.frank1, this);
+    this.frank1.changeNext(this.monologue9, this);
+    this.annegret3.changeNext(this.monologue10, this);
+    this.monologue9.changeNext(this.monologue10, this);
+    this.monologue10.changeNext(this.monologue11, this);
+    this.monologue11.changeNext(this.frank2, this);
   }
 
   display() {

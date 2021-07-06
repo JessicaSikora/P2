@@ -103,9 +103,66 @@ function draw() {
           break;
           case handler.annegret2:
           image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 280, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.player2:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.annegret3:
+          image(Livingroom, 15, 15, 1000, 700);
           image(smileAnnegret, 200, 240, 280, 800);
           image(happyFrank, 500, 170, 300, 800);
           break;
+          case handler.decision1:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.player3:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.annegret4:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.monologue8:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.player4:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.frank1:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.monologue9:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.monologue10:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.monologue11:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
+          case handler.frank2:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          break; 
 
     }
     /*case handler.end:
