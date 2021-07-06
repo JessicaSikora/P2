@@ -1,7 +1,16 @@
 import {
   Livingroom,
-  happyFrank,
-  happyAnnegret
+    happyFrank,
+    hurtFrank,
+    confusedFrank,
+    pissedFrank,
+    flusteredFrank,
+    happyAnnegret,
+    smileAnnegret,
+    superangryAnnegret,
+    pissedAnnegret,
+    cryingAnnegret,
+    hands
 } from "./p5setup.js";
 
 import Button from "./button.js";
@@ -9,7 +18,7 @@ import Start from "./start.js";
 import End from "./end.js";
 import Handler from "./handler.js";
 
-let start = new Start(400, 450, 200, 65);
+let start = new Start(400, 550, 200, 65);
 let end = new End(400, 450, 200, 65);
 let decision1 = new Button(305, 630, 340, 100);
 let decision2 = new Button(665, 630, 340, 100);
@@ -45,22 +54,59 @@ function draw() {
         break;
 
         case handler.monologue1:
+          image(Livingroom, 15, 15, 1000, 700); 
+          break;
+          case handler.monologue2:
           image(Livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
           break;
-          case handler.monologue2:
-          image(Livingroom, 15, 15, 1000, 700);
-          break;
           case handler.monologue3:
           image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.monologue4:
           image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.monologue5:
           image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
           break;
+          case handler.annegret1:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.monologue6:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.decision1:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.player1:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;  
+          case handler.monologue7:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(smileAnnegret, 200, 240, 280, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+          case handler.annegret2:
+          image(Livingroom, 15, 15, 1000, 700);
+          image(smileAnnegret, 200, 240, 280, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          break;
+
     }
     /*case handler.end:
         textSize(100);
@@ -82,6 +128,7 @@ function draw() {
           
     if (start.start === false) {
       start.display();
+      image(hands, 270, 50, 500, 500);
       } else {
       handler.display();
       }

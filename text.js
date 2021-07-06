@@ -10,22 +10,22 @@ export default class Text extends Button {
   }
 
   display() {
-    fill(30, 30, 30, 180);
-    stroke(180, 0, 125);
+    fill(10, 50, 70, 220);
+    stroke(239, 123, 156);
     strokeWeight(3);
     rect(this.x, this.y, this.width, this.height, 15);
     strokeWeight(1);
-    textSize(16);
+    textSize(18);
     textAlign(LEFT);
-    fill(220, 220, 220);
+    fill(210, 235, 244);
     text(this.person, this.x + 15, this.y + 25);
     noStroke();
-    textSize(16);
+    textSize(18);
     text(
       this.text,
       this.x + 15,
       this.y + 35,
-      this.width - 15,
+      this.width - 18,
       this.height - 15
     );
     textSize(14);
