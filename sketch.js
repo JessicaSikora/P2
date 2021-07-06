@@ -1,5 +1,7 @@
 import {
-  Livingroom
+  Livingroom,
+  happyFrank,
+  happyAnnegret
 } from "./p5setup.js";
 
 import Button from "./button.js";
@@ -44,6 +46,8 @@ function draw() {
 
         case handler.monologue1:
           image(Livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
           break;
           case handler.monologue2:
           image(Livingroom, 15, 15, 1000, 700);

@@ -4,9 +4,13 @@ let height = windowHeight;
 
 //backgrounds
 let Livingroom;
+let happyFrank;
+let happyAnnegret;
 
 function preload() {
   Livingroom = loadImage("backgrounds/Untitled_Artwork.png");
+  happyFrank = loadImage("characters/Happy-Frank.png");
+  happyAnnegret = loadImage("characters/Annegret-smiling.png");
 }
 window.preload = preload;
 
@@ -22,5 +26,7 @@ function setup() {
   window.addEventListener("resize", windowResized);
 
   export {
-    Livingroom
+    Livingroom,
+    happyFrank,
+    happyAnnegret
   };
