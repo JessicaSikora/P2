@@ -16,6 +16,7 @@ import {
   superangryAnnegret,
   pissedAnnegret,
   cryingAnnegret,
+  sternAnnegret,
   Michael,
   hands
 } from "./p5setup.js";
