@@ -5,8 +5,16 @@ let height = windowHeight;
 //start
 let hands;
 
+//textbox
+let textBoxBlue;
+let textBoxBabyblue;
+let textBoxLightpink;
+let textBoxPink;
+let textBoxPeach;
+
 //backgrounds
-let Livingroom;
+let livingroom;
+let house;
 
 //Frank
 let happyFrank;
@@ -15,7 +23,7 @@ let confusedFrank;
 let pissedFrank;
 let flusteredFrank;
 
-
+//Annegret
 let happyAnnegret;
 let smileAnnegret;
 let angryAnnegret;
@@ -23,9 +31,17 @@ let superangryAnnegret;
 let pissedAnnegret;
 let cryingAnnegret;
 
+let Michael;
+
 
 function preload() {
-  Livingroom = loadImage("backgrounds/Untitled_Artwork.png");
+  textBoxBlue = loadImage("backgrounds/textbox-blue.png");
+  textBoxBabyblue = loadImage("backgrounds/textbox-babyblue.png");
+  textBoxLightpink = loadImage("backgrounds/textbox-lightpink.png");
+  textBoxPink = loadImage("backgrounds/textbox-pink.png");
+  textBoxPeach = loadImage("backgrounds/textbox-peach.png");
+  livingroom = loadImage("backgrounds/livingroom.png");
+  house = loadImage("backgrounds/house.png");
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
@@ -37,7 +53,8 @@ function preload() {
   superangryAnnegret = loadImage("characters/Annegret-red_face.png");
   pissedAnnegret = loadImage("characters/Annegret-pissed-taller.png");
   cryingAnnegret = loadImage("characters/Annegret-crying.png");
-  hands = loadImage("backgrounds/Holding-hands-light-transparent-min.png");
+  Michael = loadImage("characters/Michael.png");
+  hands = loadImage("backgrounds/Holding-hands.png");
 }
 window.preload = preload;
 
@@ -53,7 +70,13 @@ function setup() {
   window.addEventListener("resize", windowResized);
 
   export {
-    Livingroom,
+    textBoxBlue,
+    textBoxBabyblue,
+    textBoxLightpink,
+    textBoxPink,
+    textBoxPeach,
+    livingroom,
+    house,
     happyFrank,
     hurtFrank,
     confusedFrank,
@@ -64,5 +87,6 @@ function setup() {
     superangryAnnegret,
     pissedAnnegret,
     cryingAnnegret,
+    Michael,
     hands
   };

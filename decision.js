@@ -1,5 +1,3 @@
-// import Button from "./button.js";
-
 export default class Decision {
     constructor(x, y, width, height, text1, text2) {
       this.x = x;
@@ -13,12 +11,6 @@ export default class Decision {
     }
   
     display() {
-      fill(10, 50, 70, 220);
-      stroke(235, 88, 115);
-      strokeWeight(3);
-      rect(this.x, this.y, this.width, this.height, 15);
-      rect(this.x + 360, this.y, this.width, this.height, 15);
-      strokeWeight(1);
       textSize(18);
       textAlign(LEFT);
       fill(210, 235, 244);
@@ -40,8 +32,8 @@ export default class Decision {
       );
       textSize(14);
       textAlign(RIGHT);
-      text("weiter", this.x, this.y + 80, this.width - 5, this.height + 15);
-      text("weiter", this.x + 360, this.y + 80, this.width - 5, this.height + 15);
+      text("weiter", this.x, this.y + 95, this.width - 5, this.height + 15);
+      text("weiter", this.x + 360, this.y + 95, this.width - 5, this.height + 15);
     }
     hitTest1(x, y) {
       if (

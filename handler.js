@@ -7,166 +7,202 @@ export default class Handler {
     this.start = new Text();
     this.end = new Text();
 
-    this.monologue1 = new Monologue(
-      160, 580, 700, 100,
+    //Szene 1
+    this.monologueA1 = new Monologue(
+      160, 560, 700, 120,
       "Es ist ein angenehmer Abend, welcher weder zu kalt noch zu warm ist."
     );
-    this.monologue2 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA2 = new Monologue(
+      160, 560, 700, 120,
       "Vor mir sitzen meine langjährigen Freunde Frank und Annegret, ein verheiratetes, liebevolles Paar, die genau gegenüber vor mir leben."
     );
-    this.monologue3 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA3 = new Monologue(
+      160, 560, 700, 120,
       "Netterweise haben die zwei mich auf einen gemütlichen Abend daheim eingeladen, wobei ich mich dabei doch ziemlich alt fühle."
     );
-    this.monologue4 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA4 = new Monologue(
+      160, 560, 700, 120,
       "Früher hat man sich zum Feiern getroffen und auf eine gute Zeit, jetzt hat man diese immer noch, nur redet man über die stressige Zeit und alles um einen herum."
     );
-    this.monologue5 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA5 = new Monologue(
+      160, 560, 700, 120,
       "Was früher eine halbe Flasche Vodka war, ist jetzt ein Glas - oder eine Flasche - Wein, je nachdem, wie der Abend läuft."
     );
-    this.annegret1 = new Text(
-      160, 580, 700, 100,
+    this.annegretA1 = new Text(
+      160, 560, 700, 120,
       "Annegret",
       "Magst du noch ein Stück Sahnetorte haben?"
     );
-    this.monologue6 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA6 = new Monologue(
+      160, 560, 700, 120,
       "Ich hebe meinen Kopf und schaue einer erwartungsvoll blickenden Annegret ins Gesicht.."
     );
-    this.decision1 = new Decision(
-      160, 580, 340, 100,
+    this.decisionA1 = new Decision(
+      160, 560, 340, 100,
       "Ja, gerne!" , "Nein, danke."
     );
-    this.player1 = new Text(
-      160, 580, 700, 100,
+    this.playerA1 = new Text(
+      160, 560, 700, 120,
       "Ich",
       "Ja, gerne! Du weißt, ich könnte für Torte sterben."
     );
-    this.monologue7 = new Monologue(
-      160, 580, 700, 100,
+    this.monologueA7 = new Monologue(
+      160, 560, 700, 120,
       "Annegret grinst und nickt mir zu, hinter ihr lacht Frank leise auf."
     );
-    this.annegret2 = new Text(
-      160, 580, 700, 100,
+    this.annegretA2 = new Text(
+      160, 560, 700, 120,
       "Annegret",
       "Erinnerst du dich noch, als wir uns zum ersten Mal kennengelernt haben? Da hast du so ziemlich dasselbe gesagt."
     );
-    this.player2 = new Text(
-      160, 580, 700, 100,
+    this.playerA2 = new Text(
+      160, 560, 700, 120,
       "Ich",
       "Stimmt, ich war schon damals absolut verliebt in deine Backkünste."
     );
-    this.annegret3 = new Text(
-      160, 580, 700, 100,
+    this.annegretA3 = new Text(
+      160, 560, 700, 120,
       "Annegret",
       "Pass auf, sonst platzt du noch."
     );
-    this.player3 = new Text(
-      160, 580, 700, 100,
+    this.playerA3 = new Text(
+      160, 560, 700, 120,
       "Ich",
       "So weh es mir tut es abzulehnen, ich glaub ich bekomme nichts mehr in mich rein."
     );
-      this.annegret4 = new Text(
-        160, 580, 700, 100,
+      this.annegretA4 = new Text(
+        160, 560, 700, 120,
         "Annegret",
         "Geht mir ähnlich. Ich erinnere mich dennoch daran, wie du fast eine halbe Torte verdrückt hast, als du hergezogen bist."
       );
-      this.monologue8 = new Monologue(
-        160, 580, 700, 100,
+      this.monologueA8 = new Monologue(
+        160, 560, 700, 120,
         "Ich verziehe bei dem Gedanken das Gesicht."
       );
-      this.player4 = new Text(
-        160, 580, 700, 100,
+      this.playerA4 = new Text(
+        160, 560, 700, 120,
         "Ich",
         "Du stellst mich aber auch gerne als einen Vielfraß dar!"
       );
-      this.frank1 = new Text(
-        160, 580, 700, 100,
+      this.frankA1 = new Text(
+        160, 560, 700, 120,
         "Frank",
         "Da hat sie aber nicht ganz unrecht."
       );
-      this.monologue9 = new Monologue(
-        160, 580, 700, 100,
+      this.monologueA9 = new Monologue(
+        160, 560, 700, 120,
         "Empört schmeiße ich ihm ein Kissen entgegen."
       );
-      this.monologue10 = new Monologue(
-        160, 580, 700, 100,
+      this.monologueA10 = new Monologue(
+        160, 560, 700, 120,
         "Kichernd läuft Annegret in die Küche. Frank schmunzelt und lehnt sich zurück."
       );
-      this.monologue11 = new Monologue(
-        160, 580, 700, 100,
+      this.monologueA11 = new Monologue(
+        160, 560, 700, 120,
         "Er setzt einen verträumten Blick auf. Ich bin darauf gefasst, dass jetzt etwas Tiefgründiges kommt."
       );
-      this.frank2 = new Text(
-        160, 580, 700, 100,
+      this.frankA2 = new Text(
+        160, 560, 700, 120,
         "Frank",
         "Ach ja, der Tag, an dem wir uns kennengelernt haben, der war super. Es war nur so schrecklich warm..."
       );
-      this.player5 = new Text(
-        160, 580, 700, 100,
+      this.playerA5 = new Text(
+        160, 560, 700, 120,
         "Ich",
         "Oh ja, es war unerträglich!"
       );
-      this.player6 = new Text(
-        160, 580, 700, 100,
+      this.playerA6 = new Text(
+        160, 560, 700, 120,
         "Ich",
         "Besonders bei so einem Wetter die ganzen Boxen zu transportieren und alles auszupacken."
       );
-      this.player7 = new Text(
-        160, 580, 700, 100,
+      this.playerA7 = new Text(
+        160, 560, 700, 120,
         "Ich",
         "Das nächste Mal werde ich ganz sicher nicht vergessen, mir vorher den Wetterbericht anzusehen."
       );
-      this.player8 = new Text(
-        160, 580, 700, 100,
+      this.playerA8 = new Text(
+        160, 560, 700, 120,
         "Ich",
         "Zwei Jahre ist das jetzt her, oder?"
       );
-      this.frank4 = new Text(
-        160, 580, 700, 100,
+      this.frankA3 = new Text(
+        160, 560, 700, 120,
         "Frank",
         "So um den Dreh, ja."
       );
-      this.monologue12 = new Monologue(
-        160, 580, 700, 100,
+      this.monologueA12 = new Monologue(
+        160, 560, 700, 120,
         "Er verschränkt seine Arme vor der Brust und grinst weiterhin in sich hinein, während er verloren ins Nichts starrt."
       );
+
+      //Rückblick
+      this.monologueB1 = new Monologue(
+        160, 560, 700, 120,
+        "Die Sonne stach mir in die Augen als ich aus meiner mobilen Sauna namens Auto ausstieg."
+      );
+      this.monologueB2 = new Monologue(
+        160, 560, 700, 120,
+        "Der Umzugswagen war schon einige Zeit vor mir angekommen und als ich in das Auto schaute, war schon um die Hälfte der Ladung in meinem Haus."
+      );
+      this.playerB1 = new Text(
+        160, 560, 700, 120,
+        "Ich",
+        "Hi, Martin! Danke nochmal für deine Hilfe. Ohne dich hätte ich das niemals geschafft."
+      );
+      this.martinB1 = new Text(
+        160, 560, 700, 120,
+        "Martin",
+        "Guten Morgen! Kein Problem, bei sowas helfe ich immer gerne."
+      );
+      this.martinB2 = new Text(
+        160, 560, 700, 120,
+        "Martin",
+        " Wir halten uns an deine Liste. Du kannst ja mal nachschauen, ob alles im richtigen Raum steht."
+      );
+
+
     
 
     this.active = this.start;
 
     //Szene 1
-    this.monologue1.changeNext(this.monologue2, this);
-    this.monologue2.changeNext(this.monologue3, this);
-    this.monologue3.changeNext(this.monologue4, this);
-    this.monologue4.changeNext(this.monologue5, this);
-    this.monologue5.changeNext(this.annegret1, this);
-    this.annegret1.changeNext(this.monologue6, this);
-    this.monologue6.changeNext(this.decision1, this);
-    this.decision1.changeNext1(this.player1, this);
-    this.player1.changeNext(this.monologue7, this);
-    this.monologue7.changeNext(this.annegret2, this);
-    this.annegret2.changeNext(this.player2, this);
-    this.player2.changeNext(this.annegret3, this);
-    this.decision1.changeNext2(this.player3, this);
-    this.player3.changeNext(this.annegret4, this);
-    this.annegret4.changeNext(this.monologue8, this);
-    this.monologue8.changeNext(this.player4, this);
-    this.player4.changeNext(this.frank1, this);
-    this.frank1.changeNext(this.monologue9, this);
-    this.annegret3.changeNext(this.monologue10, this);
-    this.monologue9.changeNext(this.monologue10, this);
-    this.monologue10.changeNext(this.monologue11, this);
-    this.monologue11.changeNext(this.frank2, this);
-    this.frank2.changeNext(this.player5, this);
-    this.player5.changeNext(this.player6, this);
-    this.player6.changeNext(this.player7, this);
-    this.player7.changeNext(this.player8, this);
-    this.player8.changeNext(this.frank4, this);
-    this.frank4.changeNext(this.monologue12, this);
+    this.monologueA1.changeNext(this.monologueA2, this);
+    this.monologueA2.changeNext(this.monologueA3, this);
+    this.monologueA3.changeNext(this.monologueA4, this);
+    this.monologueA4.changeNext(this.monologueA5, this);
+    this.monologueA5.changeNext(this.annegretA1, this);
+    this.annegretA1.changeNext(this.monologueA6, this);
+    this.monologueA6.changeNext(this.decisionA1, this);
+    this.decisionA1.changeNext1(this.playerA1, this);
+    this.playerA1.changeNext(this.monologueA7, this);
+    this.monologueA7.changeNext(this.annegretA2, this);
+    this.annegretA2.changeNext(this.playerA2, this);
+    this.playerA2.changeNext(this.annegretA3, this);
+    this.decisionA1.changeNext2(this.playerA3, this);
+    this.playerA3.changeNext(this.annegretA4, this);
+    this.annegretA4.changeNext(this.monologueA8, this);
+    this.monologueA8.changeNext(this.playerA4, this);
+    this.playerA4.changeNext(this.frankA1, this);
+    this.frankA1.changeNext(this.monologueA9, this);
+    this.annegretA3.changeNext(this.monologueA10, this);
+    this.monologueA9.changeNext(this.monologueA10, this);
+    this.monologueA10.changeNext(this.monologueA11, this);
+    this.monologueA11.changeNext(this.frankA2, this);
+    this.frankA2.changeNext(this.playerA5, this);
+    this.playerA5.changeNext(this.playerA6, this);
+    this.playerA6.changeNext(this.playerA7, this);
+    this.playerA7.changeNext(this.playerA8, this);
+    this.playerA8.changeNext(this.frankA3, this);
+    this.frankA3.changeNext(this.monologueA12, this);
+
+    //Rückblick
+    this.monologueA12.changeNext(this.monologueB1, this);
+    this.monologueB1.changeNext(this.monologueB2, this);
+    this.monologueB2.changeNext(this.playerB1, this);
+    this.playerB1.changeNext(this.martinB1, this);
+    this.martinB1.changeNext(this.martinB2, this);
+
   }
 
   display() {

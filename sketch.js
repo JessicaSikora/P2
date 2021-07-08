@@ -1,16 +1,23 @@
 import {
-  Livingroom,
-    happyFrank,
-    hurtFrank,
-    confusedFrank,
-    pissedFrank,
-    flusteredFrank,
-    happyAnnegret,
-    smileAnnegret,
-    superangryAnnegret,
-    pissedAnnegret,
-    cryingAnnegret,
-    hands
+  textBoxBlue,
+  textBoxBabyblue,
+  textBoxLightpink,
+  textBoxPink,
+  textBoxPeach,
+  livingroom,
+  house,
+  happyFrank,
+  hurtFrank,
+  confusedFrank,
+  pissedFrank,
+  flusteredFrank,
+  happyAnnegret,
+  smileAnnegret,
+  superangryAnnegret,
+  pissedAnnegret,
+  cryingAnnegret,
+  Michael,
+  hands
 } from "./p5setup.js";
 
 import Button from "./button.js";
@@ -49,144 +56,196 @@ function draw() {
     switch (handler.active) {
       case handler.start:
         if (start.start === true) {
-          handler.active = handler.monologue1;
+          handler.active = handler.monologueA1;
         }
         break;
 
-        case handler.monologue1:
-          image(Livingroom, 15, 15, 1000, 700); 
+        //Szene 1
+        case handler.monologueA1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.monologue2:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA2:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.monologue3:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA3:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.monologue4:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA4:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.monologue5:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA5:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.annegret1:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.annegretA1:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
           break;
-          case handler.monologue6:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA6:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.decision1:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.decisionA1:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 120, 380, 390, 400);
+          image(textBoxPink, 480, 380, 390, 400);
           break;
-          case handler.player1:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA1:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;  
-          case handler.monologue7:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA7:
+          image(livingroom, 15, 15, 1000, 700);
           image(smileAnnegret, 210, 240, 270, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.annegret2:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.annegretA2:
+          image(livingroom, 15, 15, 1000, 700);
           image(smileAnnegret, 210, 240, 270, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
           break;
-          case handler.player2:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA2:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break; 
-          case handler.annegret3:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.annegretA3:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
           break;
-          case handler.decision1:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA3:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;  
-          case handler.player3:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.annegretA4:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
           break;  
-          case handler.annegret4:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA8:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;  
-          case handler.monologue8:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA4:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;  
-          case handler.player4:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.frankA1:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
           break;  
-          case handler.frank1:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA9:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break;  
-          case handler.monologue9:
-          image(Livingroom, 15, 15, 1000, 700);
-          image(happyAnnegret, 200, 240, 300, 800);
+          case handler.monologueA10:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
-          break;  
-          case handler.monologue10:
-          image(Livingroom, 15, 15, 1000, 700);
-          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break; 
-          case handler.monologue11:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA11:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break; 
-          case handler.frank2:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.frankA2:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
           break; 
-          case handler.player5:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA5:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break; 
-          case handler.player6:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA6:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break; 
-          case handler.player7:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA7:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break; 
-          case handler.player8:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.playerA8:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;
-          case handler.frank4:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.frankA3:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
           break;  
-          case handler.monologue12:
-          image(Livingroom, 15, 15, 1000, 700);
+          case handler.monologueA12:
+          image(livingroom, 15, 15, 1000, 700);
           image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
           break; 
+
+          //Rückblick
+          case handler.monologueB1:
+          image(house, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB2:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerB1:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.martinB1:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.martinB2:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+
 
     }
     /*case handler.end:
