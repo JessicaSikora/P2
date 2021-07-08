@@ -158,7 +158,7 @@ export default class Handler {
       this.martinB2 = new Text(
         160, 560, 700, 120,
         "Martin",
-        " Wir halten uns an deine Liste. Du kannst ja mal nachschauen, ob alles im richtigen Raum steht."
+        "Wir halten uns an deine Liste. Du kannst ja mal nachschauen, ob alles im richtigen Raum steht."
       );
 
 
