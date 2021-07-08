@@ -17,7 +17,7 @@ export default class Monologue extends Button {
     text(
       this.text,
       this.x + 15,
-      this.y + 25,
+      this.y + 30,
       this.width - 18,
       this.height - 15
     );

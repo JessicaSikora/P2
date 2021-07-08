@@ -15,6 +15,8 @@ let textBoxPeach;
 //backgrounds
 let livingroom;
 let house;
+let houseDay;
+let houseNight;
 
 //Frank
 let happyFrank;
@@ -22,6 +24,7 @@ let hurtFrank;
 let confusedFrank;
 let pissedFrank;
 let flusteredFrank;
+let tiredFrank;
 
 //Annegret
 let happyAnnegret;
@@ -33,6 +36,7 @@ let cryingAnnegret;
 let sternAnnegret;
 
 let Michael;
+let doorBell;
 
 
 function preload() {
@@ -44,12 +48,15 @@ function preload() {
 
   livingroom = loadImage("backgrounds/livingroom.png");
   house = loadImage("backgrounds/house.png");
+  houseDay = loadImage("backgrounds/houseDay.png");
+  houseNight = loadImage("backgrounds/houseNight.png");
 
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
   pissedFrank = loadImage("characters/Frank-genervt.png");
   flusteredFrank = loadImage("characters/Frank-verlegen.png");
+  tiredFrank = loadImage("characters/Frank-Eye-bags-min.png");
 
   happyAnnegret = loadImage("characters/Annegret-smiling.png");
   smileAnnegret = loadImage("characters/Annegret-bright-smile.png");
@@ -61,6 +68,7 @@ function preload() {
 
   Michael = loadImage("characters/Michael.png");
   hands = loadImage("backgrounds/Holding-hands.png");
+  doorBell = loadImage("backgrounds/doorbell.png");
 }
 window.preload = preload;
 
@@ -83,11 +91,14 @@ function setup() {
     textBoxPeach,
     livingroom,
     house,
+    houseDay,
+    houseNight,
     happyFrank,
     hurtFrank,
     confusedFrank,
     pissedFrank,
     flusteredFrank,
+    tiredFrank,
     happyAnnegret,
     smileAnnegret,
     superangryAnnegret,
@@ -95,5 +106,6 @@ function setup() {
     cryingAnnegret,
     sternAnnegret,
     Michael,
-    hands
+    hands,
+    doorBell
   };

@@ -19,14 +19,14 @@ export default class Decision {
       text(
         this.text1,
         this.x + 15,
-        this.y + 25,
+        this.y + 30,
         this.width - 15,
         this.height - 15
       );
       text(
         this.text2,
         this.x + 375,
-        this.y + 25,
+        this.y + 30,
         this.width - 15,
         this.height - 15
       );

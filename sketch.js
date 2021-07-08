@@ -6,11 +6,14 @@ import {
   textBoxPeach,
   livingroom,
   house,
+  houseDay,
+  houseNight,
   happyFrank,
   hurtFrank,
   confusedFrank,
   pissedFrank,
   flusteredFrank,
+  tiredFrank,
   happyAnnegret,
   smileAnnegret,
   superangryAnnegret,
@@ -18,19 +21,20 @@ import {
   cryingAnnegret,
   sternAnnegret,
   Michael,
-  hands
+  hands,
+  doorBell
 } from "./p5setup.js";
 
 import Button from "./button.js";
 import Start from "./start.js";
 import End from "./end.js";
 import Handler from "./handler.js";
+import Doorbell from "./doorbell.js";
 
 let start = new Start(400, 550, 200, 65);
 let end = new End(400, 450, 200, 65);
-let decision1 = new Button(305, 630, 340, 100);
-let decision2 = new Button(665, 630, 340, 100);
-let handler = new Handler();
+let doorbell = new Doorbell();
+let handler = new Handler(doorbell);
 
 function reload() {
     window.location.reload();
@@ -42,12 +46,23 @@ function mouseClicked() {
     } else {
       handler.mouseClicked();
     }
+    if (handler.active === handler.nameplate && doorbell.ok === false &&
+      doorbell.name.length >= 1) {
+      doorbell.mouseClicked();
+    }
     /*if (handler.active === handler.end) {
       end.mouseClicked();
     }*/
 
 }
 window.mouseClicked = mouseClicked;
+
+function keyPressed() {
+  if (handler.active === handler.nameplate) {
+    doorbell.keyPressed();
+  }
+}
+window.keyPressed = keyPressed;
 
 function draw() {
     clear();
@@ -247,6 +262,14 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           break;
 
+          case handler.nameplate:
+          image(doorBell, 15, 15, 1000, 700);
+          if (doorbell.ok === false) {
+            doorbell.display();
+          } else {
+            handler.active = handler.martinB3;
+          }
+          break;
 
     }
     /*case handler.end:
