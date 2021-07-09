@@ -210,6 +210,14 @@ export default class Handler {
         160, 550, 705, 130,
         "Etwas unentschlossen lief ich auf die Straße und sah mich nach einer Richtung um, in die ich gehen wollte."
       );
+      this.monologueB10 = new Monologue(
+        160, 550, 705, 130,
+        "Mein Blick fiel auf eine Frau im Haus gegenüber von meinem, die in ihrem Vorgarten Blumen goß."
+      );
+      this.monologueB11 = new Monologue(
+        160, 550, 705, 130,
+        "Langsam nährte ich mich der Frau und begann leicht zu winken. Vorstellungen waren noch nie meine Stärke."
+      );
 
     this.active = this.start;
 
@@ -261,6 +269,8 @@ export default class Handler {
     this.monologueB7.changeNext(this.monologueB8, this);
     this.monologueB8.changeNext(this.playerB3, this);
     this.playerB3.changeNext(this.monologueB9, this);
+    this.monologueB9.changeNext(this.monologueB10, this);
+    this.monologueB10.changeNext(this.monologueB11, this);
   }
 
   display() {

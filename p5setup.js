@@ -4,8 +4,6 @@ let height = windowHeight;
 
 //start
 let hands;
-
-//logo
 let logo;
 
 //textbox
@@ -17,9 +15,13 @@ let textBoxPeach;
 
 //backgrounds
 let livingroom;
+let doorBell;
 let house;
 let houseDay;
 let houseNight;
+let bedDay;
+let bedNight;
+let police;
 
 //Frank
 let happyFrank;
@@ -39,19 +41,25 @@ let cryingAnnegret;
 let sternAnnegret;
 
 let Michael;
-let doorBell;
 
 function preload() {
-  textBoxBlue = loadImage("backgrounds/textbox-blue.png");
-  textBoxBabyblue = loadImage("backgrounds/textbox-babyblue.png");
-  textBoxLightpink = loadImage("backgrounds/textbox-lightpink.png");
-  textBoxPink = loadImage("backgrounds/textbox-pink.png");
-  textBoxPeach = loadImage("backgrounds/textbox-peach.png");
+  logo = loadImage("backgrounds/LogoTransparent.png");
+  hands = loadImage("backgrounds/Holding-hands.png");
+
+  textBoxBlue = loadImage("textbox/textboxBlue.png");
+  textBoxBabyblue = loadImage("textbox/textboxLight.png");
+  textBoxLightpink = loadImage("textbox/textboxMagenta.png");
+  textBoxPink = loadImage("textbox/textboxPink.png");
+  textBoxPeach = loadImage("textbox/textboxOrange.png");
 
   livingroom = loadImage("backgrounds/livingroom.png");
+  doorBell = loadImage("backgrounds/doorbell.png");
   house = loadImage("backgrounds/house.png");
   houseDay = loadImage("backgrounds/houseDay.png");
   houseNight = loadImage("backgrounds/houseNight.png");
+  bedDay = loadImage("backgrounds/bedDay.png");
+  bedNight = loadImage("backgrounds/bedDark.png");
+  police = loadImage("backgrounds/houseMP.png");
 
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
@@ -69,8 +77,7 @@ function preload() {
   sternAnnegret = loadImage("characters/Annegret-verhärtet.png");
 
   Michael = loadImage("characters/Michael.png");
-  hands = loadImage("backgrounds/Holding-hands.png");
-  logo = loadImage("backgrounds/Logo-transparent.png");
+
   doorBell = loadImage("backgrounds/doorbell.png");
 }
 window.preload = preload;
@@ -96,6 +103,7 @@ export {
   house,
   houseDay,
   houseNight,
+  bedDay,
   happyFrank,
   hurtFrank,
   confusedFrank,
