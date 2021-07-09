@@ -1,3 +1,8 @@
+html {
+  background-color: #0a3246;
+  text-align: center;
+}
+
 canvas {
   display: flex;
   justify-content: center;
@@ -11,6 +16,30 @@ canvas {
   margin: 0 auto;
 }
 
-body {
-  background-color: #00aaba;
+h1 {
+  color: #f9f7d0;
+  font-family: AmericanTypewriter;
+  font-weight: normal;
+}
+
+#link {
+  color: #f9f7d0;
+  font-family: GillSans;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#link:hover {
+  text-decoration: underline;
+}
+
+#simulation {
+  text-align: center;
+}
+
+@font-face {
+  font-family: AmericanTypewriter;
+  src: url("American Typewriter Regular.ttf");
+  font-family: GillSans;
+  src: url("Gill Sans.otf");
 }
