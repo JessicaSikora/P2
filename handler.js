@@ -5,6 +5,7 @@ import Decision from "./decision.js";
 export default class Handler {
   constructor(name) {
     this.name = name;
+    this.nameplate = new Text();
     this.start = new Text();
     this.end = new Text();
 
@@ -182,7 +183,6 @@ export default class Handler {
         "Ich",
         "Na endlich, darauf habe ich so lange gewartet!"
       );
-      this.nameplate = new Text();
       this.martinB3 = new Text(
         160, 550, 705, 130,
         "Martin",
@@ -216,17 +216,7 @@ export default class Handler {
       );
       this.monologueB11 = new Monologue(
         160, 550, 705, 130,
-        "Langsam nährte ich mich der Frau und begann leicht zu winken.\nVorstellungen waren noch nie meine Stärke."
-      );
-      this.playerB4 = new Text(
-        160, 550, 705, 130,
-        "Ich",
-        "H-hallo, mein Name ist" + this.name.name.join("") +
-        ". Ich bin gerade in das Haus gegenüber von euch eingezogen, wie man vielleicht sieht."
-      );
-      this.monologueB12 = new Monologue(
-        160, 550, 705, 130,
-        "Nervös kratzte ich mich am Kopf."
+        "Langsam nährte ich mich der Frau und begann leicht zu winken. Vorstellungen waren noch nie meine Stärke."
       );
 
     this.active = this.start;
@@ -281,14 +271,6 @@ export default class Handler {
     this.playerB3.changeNext(this.monologueB9, this);
     this.monologueB9.changeNext(this.monologueB10, this);
     this.monologueB10.changeNext(this.monologueB11, this);
-    this.monologueB11.changeNext(this.playerB4, this);
-    this.playerB4.changeNext(this.monologueB12, this);
-  }
-
-  get playerB4name() {
-    this.playerB4.text = "H-hallo, mein Name ist " + this.name.name.join("") +
-    ". Ich bin gerade in das Haus gegenüber von euch eingezogen, wie man vielleicht sieht.";
-    return this.playerB4;
   }
 
   display() {
@@ -296,10 +278,5 @@ export default class Handler {
   }
   mouseClicked() {
     this.active.mouseClicked();
-  }
-
-  getName() {
-    this.name = this.name.name.join("");
-    return this.name;
   }
 }
