@@ -1,13 +1,19 @@
 import {
+  logo,
+  hands,
   textBoxBlue,
   textBoxBabyblue,
   textBoxLightpink,
   textBoxPink,
   textBoxPeach,
   livingroom,
+  doorBell,
   house,
   houseDay,
   houseNight,
+  bedDay,
+  bedNight,
+  police,
   happyFrank,
   hurtFrank,
   confusedFrank,
@@ -20,9 +26,7 @@ import {
   pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
-  Michael,
-  hands,
-  doorBell
+  Michael
 } from "./p5setup.js";
 
 import Button from "./button.js";
@@ -67,7 +71,6 @@ window.keyPressed = keyPressed;
 function draw() {
     clear();
     //sound();
-
 
     switch (handler.active) {
       case handler.start:
@@ -249,17 +252,32 @@ function draw() {
           case handler.playerB1:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
-          image(textBoxPink, 90, 380, 800, 400);
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.martinB1:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
-          image(textBoxPink, 90, 380, 800, 400);
+          image(textBoxBabyblue, 90, 380, 800, 400);
           break;
           case handler.martinB2:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
+          image(textBoxBabyblue, 90, 380, 800, 400);
+          break;
+          case handler.monologueB3:
           image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB4:
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB5:
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB6:
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerB2:
+          image(textBoxLightpink, 90, 380, 800, 400);
           break;
 
           case handler.nameplate:
@@ -270,6 +288,45 @@ function draw() {
             handler.active = handler.martinB3;
           }
           break;
+
+          case handler.martinB3:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxBabyblue, 90, 380, 800, 400);
+          break;
+          case handler.martinB4:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxBabyblue, 90, 380, 800, 400);
+          break;
+          case handler.monologueB7:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB8:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerB3:
+          image(house, 15, 15, 1000, 700);
+          image(Michael, 350, 170, 300, 600);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB9:
+          image(house, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB10:
+          image(houseDay, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB11:
+          image(houseDay, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          
 
     }
     /*case handler.end:
@@ -292,7 +349,7 @@ function draw() {
           
     if (start.start === false) {
       start.display();
-      image(hands, 270, 50, 500, 500);
+      image(logo, 370, 100, 340, 400);
       } else {
       handler.display();
       }
