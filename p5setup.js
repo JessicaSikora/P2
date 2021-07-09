@@ -5,6 +5,9 @@ let height = windowHeight;
 //start
 let hands;
 
+//logo
+let logo;
+
 //textbox
 let textBoxBlue;
 let textBoxBabyblue;
@@ -38,7 +41,6 @@ let sternAnnegret;
 let Michael;
 let doorBell;
 
-
 function preload() {
   textBoxBlue = loadImage("backgrounds/textbox-blue.png");
   textBoxBabyblue = loadImage("backgrounds/textbox-babyblue.png");
@@ -68,44 +70,46 @@ function preload() {
 
   Michael = loadImage("characters/Michael.png");
   hands = loadImage("backgrounds/Holding-hands.png");
+  logo = loadImage("backgrounds/Logo-transparent.png");
   doorBell = loadImage("backgrounds/doorbell.png");
 }
 window.preload = preload;
 
 function setup() {
-    sketch.createCanvas(1000, 700);
-    sketch.frameRate(30);
-  }
-  window.setup = setup;
+  sketch.createCanvas(1000, 700);
+  sketch.frameRate(30);
+}
+window.setup = setup;
 
-  function windowResized() {
-    sketch.resizeCanvas(1000, 700);
-  }
-  window.addEventListener("resize", windowResized);
+function windowResized() {
+  sketch.resizeCanvas(1000, 700);
+}
+window.addEventListener("resize", windowResized);
 
-  export {
-    textBoxBlue,
-    textBoxBabyblue,
-    textBoxLightpink,
-    textBoxPink,
-    textBoxPeach,
-    livingroom,
-    house,
-    houseDay,
-    houseNight,
-    happyFrank,
-    hurtFrank,
-    confusedFrank,
-    pissedFrank,
-    flusteredFrank,
-    tiredFrank,
-    happyAnnegret,
-    smileAnnegret,
-    superangryAnnegret,
-    pissedAnnegret,
-    cryingAnnegret,
-    sternAnnegret,
-    Michael,
-    hands,
-    doorBell
-  };
+export {
+  textBoxBlue,
+  textBoxBabyblue,
+  textBoxLightpink,
+  textBoxPink,
+  textBoxPeach,
+  livingroom,
+  house,
+  houseDay,
+  houseNight,
+  happyFrank,
+  hurtFrank,
+  confusedFrank,
+  pissedFrank,
+  flusteredFrank,
+  tiredFrank,
+  happyAnnegret,
+  smileAnnegret,
+  superangryAnnegret,
+  pissedAnnegret,
+  cryingAnnegret,
+  sternAnnegret,
+  Michael,
+  hands,
+  logo,
+  doorBell,
+};
