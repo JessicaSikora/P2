@@ -324,8 +324,182 @@ function draw() {
           break;
           case handler.monologueB11:
           image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 380, 240, 300, 800);
           image(textBoxPink, 90, 380, 800, 400);
           break;
+          case handler.playerB4:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 380, 240, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB12:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 380, 240, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB13:
+          image(houseDay, 15, 15, 1000, 700);
+          image(smileAnnegret, 390, 240, 270, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretB1:
+          image(houseDay, 15, 15, 1000, 700);
+          image(smileAnnegret, 390, 240, 270, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.monologueB14:
+          image(houseDay, 15, 15, 1000, 700);
+          image(smileAnnegret, 390, 240, 270, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretB2:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 380, 240, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.frankB1:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 380, 240, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueB15:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB16:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretB3:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.monologueB17:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB18:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.frankB2:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankB3:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueB19:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB20:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretB4:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.annegretB5:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.monologueB21:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerB5:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueB22:
+          image(houseDay, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+
+          //Szene 1.2
+          case handler.frankC1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerC1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.playerC2:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueC1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretC1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(smileAnnegret, 210, 240, 270, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.decisionC1:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 120, 380, 390, 400);
+          image(textBoxPink, 480, 380, 390, 400);
+          break;
+          case handler.playerC3:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.frankC2:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueC2:
+          image(livingroom, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+
           
 
     }

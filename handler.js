@@ -5,7 +5,6 @@ import Decision from "./decision.js";
 export default class Handler {
   constructor(name) {
     this.name = name;
-    this.nameplate = new Text();
     this.start = new Text();
     this.end = new Text();
 
@@ -41,7 +40,7 @@ export default class Handler {
     );
     this.decisionA1 = new Decision(
       160, 550, 340, 130,
-      "Ja, gerne!" , "Nein, danke."
+      "Annehmen." , "Ablehnen."
     );
     this.playerA1 = new Text(
       160, 550, 705, 130,
@@ -183,6 +182,7 @@ export default class Handler {
         "Ich",
         "Na endlich, darauf habe ich so lange gewartet!"
       );
+      this.nameplate = new Text();
       this.martinB3 = new Text(
         160, 550, 705, 130,
         "Martin",
@@ -216,8 +216,147 @@ export default class Handler {
       );
       this.monologueB11 = new Monologue(
         160, 550, 705, 130,
-        "Langsam nährte ich mich der Frau und begann leicht zu winken. Vorstellungen waren noch nie meine Stärke."
+        "Langsam nährte ich mich der Frau und begann leicht zu winken.\nVorstellungen waren noch nie meine Stärke."
       );
+      this.playerB4 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "H-hallo, mein Name ist " + this.name.name.join("") +
+        ". Ich bin gerade in das Haus gegenüber von euch eingezogen, wie man vielleicht sieht."
+      );
+      this.monologueB12 = new Monologue(
+        160, 550, 705, 130,
+        "Nervös kratzte ich mich am Kopf."
+      );
+      this.monologueB13 = new Monologue(
+        160, 550, 705, 130,
+        "Freundlich lächelte mich die Frau strahlend an."
+      );
+      this.annegretB1 = new Text(
+        160, 550 ,705, 130,
+        "Annegret",
+        "Hallo! Mein Name ist Annegret, schön dich kennenzulernen."
+      );
+      this.monologueB14 = new Monologue(
+        160, 550, 705, 130,
+        "Puh, sie schien doch ganz nett zu sein. Vielleicht war meine Sorge vollkommen unberechtigt gewesen."
+      );
+      this.annegretB2 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Du scheinst noch einen langen Tag vor dir zu haben, mit all den Kisten, die du auspacken musst."
+      );
+      this.frankB1 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Schatz! Hast du die Einkaufstüte gesehen? Ich kann sie nicht finden."
+      );
+      this.monologueB15 = new Monologue(
+        160, 550, 705, 130,
+        "Aus der Haustür erschien ein großer, sportlich gebauter Mann mit einem unbeholfenen Blick."
+      );
+      this.monologueB16 = new Monologue(
+        160, 550, 705, 130, 
+        "Annegret verdreht schmunzelnd die Augen."
+      );
+      this.annegretB3 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ich habe sie in die Küche gestellt, du bist doch mit mir zusammen reingegangen."
+      );
+      this.monologueB17 = new Monologue(
+        160, 550, 705, 130,
+        "Die Augen des Mannes strahlten auf, als hätte er sich gerade noch daran erinnert."
+      );
+      this.monologueB18 = new Monologue(
+        160, 550, 705, 130,
+        "Sein Blick schweift von seiner Frau, wie ich vermutete, zu mir. Lächelnd kam er mir entgegen."
+      );
+      this.frankB2 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Hallo, nett dich kennenzulernen, mein Name ist Frank. Du bist doch der Neueinzug im Haus gegenüber?"
+      );
+      this.frankB3 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ein Glück hast du so viele helfende Hände beim Umzug, das macht die Sache ein bisschen einfacher."
+      );
+      this.monologueB19 = new Monologue(
+        160, 550, 705, 130,
+        "Annegret klatschte auf einmal mit Begeisterung in die Hände."
+      );
+      this.monologueB20 = new Monologue(
+        160, 550, 705, 130,
+        "Bis ich überhaupt registrieren konnte, was los war, schaute sie mich erwartungsvoll an."
+      );
+      this.annegretB4 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Wie wäre es, wenn wir eine kleine Einweihungsfeier halten?"
+      );
+      this.annegretB5 = new Text(
+        160, 550, 705, 130,
+        "Muss überhaupt nichts Großes sein, sondern nur wir drei. Es gibt Essen und ich backe eine Willkommenstorte."
+      );
+      this.monologueB21 = new Monologue(
+        160, 550, 705, 130,
+        "Ich war etwas überrumpelt von Annegrets zuvorkommenden Art."
+      );
+      this.playerB5 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Das klingt großartig, ich könnte für Torte sterben!"
+      );
+      this.monologueB22 = new Monologue(
+        160, 550, 705, 130,
+        "Das Paar lächelte mich freudig an und wir begannen sofort die Planung meiner kleinen Einweihungsfeier."
+      );
+
+      //Szene 1.2
+      this.frankC1 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "... und das hast du uns deutlich besiegt beim Torteessen. Ich frage mich immer noch, wie das alles in dich reingepasst hat."
+      );
+      this.playerC1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ein Zauberer verrät nie seine Tricks."
+      );
+      this.playerC2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Du hast ja noch gar nichts von der Torte gegessen. Hier, ich geb dir ein Stück auf."
+      );
+      this.monologueC1 = new Monologue(
+        160, 550, 705, 130,
+        "Ich möchte gerade das Messer in die Hand nehmen, also plötzlich Annegret hinter mir steht und es mir flink vor der Nase wegschnappt."
+      );
+      this.annegretC1 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Frank hat schon sehr viel gegessen, ich denke es reicht für heute. Schließlich muss er auf seine Linie achten."
+      );
+      this.decisionC1 = new Decision(
+        160, 550, 340, 130,
+        "Frank fragen.", "Annegrets Entscheidung akzeptieren."
+      );
+      this.playerC3 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Frank, was sagst du dazu?"
+      );
+      this.frankC2 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Oh, ich? Äh, ich schätze Annegret hat recht, das war genug für heute."
+      );
+      this.monologueC2 = new Monologue(
+        160, 550, 705, 130,
+        "Schmunzelnd sehe ich Frank an, der nur mit einem leichten Lächeln die Schultern zuckt und sich eine Traube in den Mund wirft."
+      );
+
 
     this.active = this.start;
 
@@ -271,6 +410,45 @@ export default class Handler {
     this.playerB3.changeNext(this.monologueB9, this);
     this.monologueB9.changeNext(this.monologueB10, this);
     this.monologueB10.changeNext(this.monologueB11, this);
+    this.monologueB11.changeNext(this.playerB4, this);
+    this.playerB4.changeNext(this.monologueB12, this);
+    this.monologueB12.changeNext(this.monologueB13, this);
+    this.monologueB13.changeNext(this.annegretB1, this);
+    this.annegretB1.changeNext(this.monologueB14, this);
+    this.monologueB14.changeNext(this.annegretB2, this);
+    this.annegretB2.changeNext(this.frankB1, this);
+    this.frankB1.changeNext(this.monologueB15, this);
+    this.monologueB15.changeNext(this.monologueB16, this);
+    this.monologueB16.changeNext(this.annegretB3, this);
+    this.annegretB3.changeNext(this.monologueB17, this);
+    this.monologueB17.changeNext(this.monologueB18, this);
+    this.monologueB18.changeNext(this.frankB2, this);
+    this.frankB2.changeNext(this.frankB3, this);
+    this.frankB3.changeNext(this.monologueB19, this);
+    this.monologueB19.changeNext(this.monologueB20, this);
+    this.monologueB20.changeNext(this.annegretB4, this);
+    this.annegretB4.changeNext(this.annegretB5, this);
+    this.annegretB5.changeNext(this.monologueB21, this);
+    this.monologueB21.changeNext(this.playerB5, this);
+    this.playerB5.changeNext(this.monologueB22, this);
+
+    //Szene 1.2
+    this.monologueB22.changeNext(this.frankC1, this);
+    this.frankC1.changeNext(this.playerC1, this);
+    this.playerC1.changeNext(this.playerC2, this);
+    this.playerC2.changeNext(this.monologueC1, this);
+    this.monologueC1.changeNext(this.annegretC1, this);
+    this.annegretC1.changeNext(this.decisionC1, this);
+    this.decisionC1.changeNext1(this.playerC3, this);
+    this.decisionC1.changeNext2(this.monologueC2, this);
+    this.playerC3.changeNext(this.frankC2, this);
+    this.frankC2.changeNext(this.monologueC2, this);
+  }
+
+  get playerB4name() {
+    this.playerB4.text = "H-hallo, mein Name ist " + this.name.name.join("") +
+    ". Ich bin gerade in das Haus gegenüber von euch eingezogen, wie man vielleicht sieht.";
+    return this.playerB4;
   }
 
   display() {
@@ -278,5 +456,10 @@ export default class Handler {
   }
   mouseClicked() {
     this.active.mouseClicked();
+  }
+
+  getName() {
+    this.name = this.name.name.join("");
+    return this.name;
   }
 }
