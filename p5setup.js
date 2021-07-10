@@ -42,7 +42,6 @@ let sternAnnegret;
 
 let Michael;
 
-
 function preload() {
   logo = loadImage("backgrounds/LogoTransparent.png");
   hands = loadImage("backgrounds/Holding-hands.png");
@@ -78,47 +77,49 @@ function preload() {
   sternAnnegret = loadImage("characters/Annegret-verhärtet.png");
 
   Michael = loadImage("characters/Michael.png");
+
+  doorBell = loadImage("backgrounds/doorbell.png");
 }
 window.preload = preload;
 
 function setup() {
-    sketch.createCanvas(1000, 700);
-    sketch.frameRate(30);
-  }
-  window.setup = setup;
+  sketch.createCanvas(1000, 700);
+  sketch.frameRate(30);
+}
+window.setup = setup;
 
-  function windowResized() {
-    sketch.resizeCanvas(1000, 700);
-  }
-  window.addEventListener("resize", windowResized);
+function windowResized() {
+  sketch.resizeCanvas(1000, 700);
+}
+window.addEventListener("resize", windowResized);
 
-  export {
-    logo,
-    hands,
-    textBoxBlue,
-    textBoxBabyblue,
-    textBoxLightpink,
-    textBoxPink,
-    textBoxPeach,
-    livingroom,
-    doorBell,
-    house,
-    houseDay,
-    houseNight,
-    bedDay,
-    bedNight,
-    police,
-    happyFrank,
-    hurtFrank,
-    confusedFrank,
-    pissedFrank,
-    flusteredFrank,
-    tiredFrank,
-    happyAnnegret,
-    smileAnnegret,
-    superangryAnnegret,
-    pissedAnnegret,
-    cryingAnnegret,
-    sternAnnegret,
-    Michael
-  };
+export {
+  logo,
+  hands,
+  textBoxBlue,
+  textBoxBabyblue,
+  textBoxLightpink,
+  textBoxPink,
+  textBoxPeach,
+  livingroom,
+  doorBell,
+  house,
+  houseDay,
+  houseNight,
+  bedDay,
+  bedNight,
+  police,
+  happyFrank,
+  hurtFrank,
+  confusedFrank,
+  pissedFrank,
+  flusteredFrank,
+  tiredFrank,
+  happyAnnegret,
+  smileAnnegret,
+  superangryAnnegret,
+  pissedAnnegret,
+  cryingAnnegret,
+  sternAnnegret,
+  Michael
+};

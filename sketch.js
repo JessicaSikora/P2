@@ -34,6 +34,7 @@ import Start from "./start.js";
 import End from "./end.js";
 import Handler from "./handler.js";
 import Doorbell from "./doorbell.js";
+//import gsap from "./gsap.min.js";
 
 let start = new Start(400, 550, 200, 65);
 let end = new End(400, 450, 200, 65);
@@ -43,6 +44,9 @@ let handler = new Handler(doorbell);
 function reload() {
     window.location.reload();
   }
+
+//Start Button Animation
+start.animation();
 
 function mouseClicked() {
     if (start.start === false) {
@@ -500,8 +504,6 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           break;
 
-          
-
     }
     /*case handler.end:
         textSize(100);
@@ -523,7 +525,7 @@ function draw() {
           
     if (start.start === false) {
       start.display();
-      image(logo, 370, 100, 340, 400);
+      image(logo, 370, 50, 340, 400);
       } else {
       handler.display();
       }
