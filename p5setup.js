@@ -43,16 +43,22 @@ let sternAnnegret;
 
 let Michael;
 
+//fonts
+let fontA;
+let fontG;
+
 function preload() {
   logo = loadImage("backgrounds/LogoTransparent.png");
   hands = loadImage("backgrounds/Holding-hands.png");
 
+  //textbox
   textBoxBlue = loadImage("textbox/boxBlu.png");
   textBoxBabyblue = loadImage("textbox/boxYell.png");
   textBoxLightpink = loadImage("textbox/boxMag.png");
   textBoxPink = loadImage("textbox/boxPi.png");
   textBoxPeach = loadImage("textbox/boxOr.png");
 
+  //backgrounds
   livingroom = loadImage("backgrounds/livingroom.png");
   doorBell = loadImage("backgrounds/doorbell.png");
   house = loadImage("backgrounds/house.png");
@@ -63,6 +69,7 @@ function preload() {
   police = loadImage("backgrounds/housePolice.png");
   market = loadImage("backgrounds/markt.png");
 
+  //Frank
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
@@ -70,6 +77,7 @@ function preload() {
   flusteredFrank = loadImage("characters/Frank-verlegen.png");
   tiredFrank = loadImage("characters/Frank-Eye-bags-min.png");
 
+  //Annegret
   happyAnnegret = loadImage("characters/Annegret-smiling.png");
   smileAnnegret = loadImage("characters/Annegret-bright-smile.png");
   angryAnnegret = loadImage("characters/Annegret-angry-red-Face.png");
@@ -79,14 +87,18 @@ function preload() {
   sternAnnegret = loadImage("characters/Annegret-verhärtet.png");
 
   Michael = loadImage("characters/Michael.png");
-
   doorBell = loadImage("backgrounds/doorbell.png");
+
+  //fonts
+  fontA = loadFont("font/American Typewriter Regular.ttf");
+  fontG = loadFont("font/Gill Sans.otf");
 }
 window.preload = preload;
 
 function setup() {
   sketch.createCanvas(1000, 700);
   sketch.frameRate(30);
+  textFont(fontG);
 }
 window.setup = setup;
 
@@ -124,5 +136,7 @@ export {
   pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
-  Michael
+  Michael,
+  fontA,
+  fontG
 };

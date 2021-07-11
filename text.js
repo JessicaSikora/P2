@@ -1,5 +1,5 @@
 import Button from "./button.js";
-
+import {fontA, fontG} from "./p5setup.js";
 export default class Text extends Button {
   constructor(x, y, width, height, person, text) {
     super(x, y, width, height);
@@ -14,15 +14,17 @@ export default class Text extends Button {
     strokeWeight(1);
     textSize(18);
     textAlign(LEFT);
+    textFont(fontA);
     fill(210, 235, 244);
     text(this.person, this.x + 15, this.y + 30);
     noStroke();
     textSize(18);
+    textFont(fontG);
     text(
       this.text,
       this.x + 15,
       this.y + 40,
-      this.width - 18,
+      this.width - 20,
       this.height - 15
     );
     textSize(14);

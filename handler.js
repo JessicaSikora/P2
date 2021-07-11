@@ -217,7 +217,7 @@ export default class Handler {
       );
       this.monologueB11 = new Monologue(
         160, 550, 705, 130,
-        "Langsam nährte ich mich der Frau und begann leicht zu winken.\nVorstellungen waren noch nie meine Stärke."
+        "Langsam nährte ich mich der Frau und begann leicht zu winken.                              Vorstellungen waren noch nie meine Stärke."
       );
       this.playerB4 = new Text(
         160, 550, 705, 130,
