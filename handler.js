@@ -358,6 +358,107 @@ export default class Handler {
         "Schmunzelnd sehe ich Frank an, der nur mit einem leichten Lächeln die Schultern zuckt und sich eine Traube in den Mund wirft."
       );
 
+      //Szene 2.1
+      this.monologueD1 = new Monologue(
+        160, 550, 705, 130,
+        "Es war wirklich schön, mal wieder Zeit mit den beiden verbracht zu haben."
+      );
+      this.monologueD2 = new Monologue(
+        160, 550, 705, 130,
+        "Frank und Annegret scheinen immer viel um die Ihren zu haben, deshalb ist es schwer geworden, Zeit für ein Treffen zu finden."
+      );
+      this.monologueD3 = new Monologue(
+        160, 550, 705, 130,
+        "Vielleicht kann ich Frank ja mal fragen, ob er Lust hat, sich am Wochenende gemeinsam das Fußballspiel anzusehen. Am besten schreibe ich ihm jetzt direkt mal."
+      );
+      this.monologueD4 = new Monologue(
+        160, 550, 705, 130,
+        "..."
+      );
+      this.playerD1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Oh! Er antwortet schon."
+      );
+      this.frankD1 = new Text(
+        160, 550, 705, 130,
+        "Franks Nachricht",
+        "Tut mir Leid. Wir sind dieses Wochenende schon verplant."
+      );
+      this.playerD2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Hm, das ist schade. Na ja, einen Versuch war es wert"
+      );
+      this.monologueD5 = new Monologue(
+        160, 550, 705, 130,
+        "Ich denke noch eine Weile nach, bis ich mich schließlich in meinen Träumen verliere."
+      );
+
+      //Szene 2.2
+      this.playerE1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Gut, was brauche ich denn nochmal? Tomaten, Milch, Br-"
+      );
+      this.monologueE1 = new Monologue(
+        160, 550, 705, 130,
+        "Erschroken schaue ich von meinem Einkaufszettel auf, als ich versehentlich einen anderen Einkaufswagen ramme."
+      );
+      this.frankE1 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Was zum-! Oh, hallo! Tut mir Leid, ich war völlig in Gedanken verloren."
+      );
+      this.playerE2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Kein Problem, ich habe ja auch nicht aufgepasst."
+      );
+      this.playerE3 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Und, konntet ihr nach gestern noch ausschlafen?"
+      );
+      this.frankE2 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Oh ja, nachdem du weg warst, bin ich direkt ins Bett gefallen."
+      );
+      this.playerE4 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ich habe mich auch direkt hingelegt, aber ich war noch eine Weile wach."
+      );
+      this.playerE5 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Du ja auch, du hast mir schließlich noch auf meine Nachricht geantwortet."
+      );
+      this.frankE3 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Deine Nachricht…?"
+      );
+      this.playerE6 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ja, wegen dem Fußballspiel am Samstag. Schade, dass du nicht kannst, hoffentlich können wir es dafür bald nachholen."
+      );
+      this.frankE4 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Achso, ja, natürlich! Die Nachricht."
+      );
+      this.frankE5 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ja ich war doch noch eine Weile wach, weil wir noch aufgeräumt haben, und dann wollte Annegret etwas vorbereiten für heute, für so ein Treffen, zu dem sie geht, und da hat sie meine Hilfe gebraucht, und dann war es so spät, dass ich wohl bei der Müdigkeit die Nachricht vergessen habe, aber jetzt weiß ich es wieder!"
+      );
+      this.monologueE2 = new Monologue(
+        160, 550, 705, 130,
+        "Frank lacht verlegen und kratzt sich am Hinterkopf."
+      );
 
     this.active = this.start;
 
@@ -445,6 +546,30 @@ export default class Handler {
     this.decisionC1.changeNext2(this.monologueC2, this);
     this.playerC3.changeNext(this.frankC2, this);
     this.frankC2.changeNext(this.monologueC2, this);
+
+    //Szene 2.1
+    this.monologueC2.changeNext(this.monologueD1, this);
+    this.monologueD1.changeNext(this.monologueD3, this);
+    this.monologueD3.changeNext(this.monologueD4, this);
+    this.monologueD4.changeNext(this.playerD1, this);
+    this.playerD1.changeNext(this.frankD1, this);
+    this.frankD1.changeNext(this.playerD2, this);
+    this.playerD2.changeNext(this.monologueD5, this);
+
+    //Szene 2.2
+    this.monologueD5.changeNext(this.playerE1, this);
+    this.playerE1.changeNext(this.monologueE1, this);
+    this.monologueE1.changeNext(this.frankE1, this);
+    this.frankE1.changeNext(this.playerE2, this);
+    this.playerE2.changeNext(this.playerE3, this);
+    this.playerE3.changeNext(this.frankE2, this);
+    this.frankE2.changeNext(this.playerE4, this);
+    this.playerE4.changeNext(this.playerE5, this);
+    this.playerE5.changeNext(this.frankE3, this);
+    this.frankE3.changeNext(this.playerE6, this);
+    this.playerE6.changeNext(this.frankE4, this);
+    this.frankE4.changeNext(this.frankE5, this);
+    this.frankE5.changeNext(this.monologueE2, this);
   }
 
   get playerB4name() {
