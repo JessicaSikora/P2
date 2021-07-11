@@ -59,7 +59,7 @@ function preload() {
   houseNight = loadImage("backgrounds/houseNight.png");
   bedDay = loadImage("backgrounds/bedDay.png");
   bedNight = loadImage("backgrounds/bedDark.png");
-  police = loadImage("backgrounds/houseMP.png");
+  police = loadImage("backgrounds/housePolice.png");
 
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
