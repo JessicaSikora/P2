@@ -26,7 +26,8 @@ import {
   pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
-  Michael
+  Michael,
+  market
 } from "./p5setup.js";
 
 import Button from "./button.js";
@@ -44,6 +45,7 @@ let handler = new Handler(doorbell);
 let trigger = new Warning(400, 450, 200, 65);
 let decision1 = new Button(160, 550, 340, 130);
 let decision2 = new Button(520, 550, 340, 130);
+let arm = new Button(340, 375, 30, 30);
 
 let redFlags = 0; 
 
@@ -71,6 +73,9 @@ function mouseClicked() {
     if (handler.active === handler.decisionA1 || handler.active === handler.decisionC1) {
       decision1.mouseClicked();
       decision2.mouseClicked();
+    }
+    if (handler.active === handler.monologueE2) {
+      arm.mouseClicked();
     }
     /*if (handler.active === handler.end) {
       end.mouseClicked();
@@ -527,6 +532,178 @@ function draw() {
           image(happyAnnegret, 200, 240, 300, 800);
           image(happyFrank, 500, 170, 300, 800);
           image(textBoxPink, 90, 380, 800, 400);
+          break;
+
+          //Szene 2.1
+          case handler.monologueD1:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueD2:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueD3:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueD4:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerD1:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.frankD1:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerD2:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueD5:
+          image(bedNight, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+
+          //Szene 2.2
+          case handler.playerE1:
+          image(market, 15, 15, 1000, 700);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueE1:
+          image(market, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.frankE1:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE2:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE3:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankE2:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE4:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE5:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankE3:
+          image(market, 15, 15, 1000, 700);
+          image(confusedFrank, 350, 170, 300, 680);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE6:
+          image(market, 15, 15, 1000, 700);
+          image(confusedFrank, 350, 170, 300, 680);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankE4:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankE5:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.frankE6:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueE2:
+          image(market, 15, 15, 1000, 700);
+          image(hurtFrank, 300, 170, 350, 680);
+          image(textBoxBlue, 90, 380, 800, 400);
+          if (arm.triggered === false) {
+            if (arm.hitTest(mouseX, mouseY)) {
+              textSize(16);
+              stroke("#0a3246");
+              strokeWeight(2);
+              textAlign(CENTER);
+              text("Verletzung", 350, 420);
+            }
+           } else {
+            redFlags += 1;
+            handler.active = handler.playerE7;
+            arm.triggered = false;
+          }
+          break;
+          case handler.playerE7:
+          image(market, 15, 15, 1000, 700);
+          image(hurtFrank, 300, 170, 350, 680);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueE3:
+          image(market, 15, 15, 1000, 700);
+          image(hurtFrank, 300, 170, 350, 680);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.monologueE4:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.frankE7:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.playerE8:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.frankE8:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueE5:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerE9:
+          image(market, 15, 15, 1000, 700);
+          image(pissedFrank, 350, 170, 300, 680);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.monologueE6:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.frankE9:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.annegretE1:
+          image(market, 15, 15, 1000, 700);
+          image(happyFrank, 350, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
           break;
 
     }
