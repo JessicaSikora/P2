@@ -7,6 +7,7 @@ export default class Handler {
     this.name = name;
     this.start = new Text();
     this.end = new Text();
+    this.warning = new Text();
 
     //Szene 1
     this.monologueA1 = new Monologue(
@@ -361,6 +362,7 @@ export default class Handler {
     this.active = this.start;
 
     //Szene 1
+    this.warning.changeNext(this.monologueA1, this);
     this.monologueA1.changeNext(this.monologueA2, this);
     this.monologueA2.changeNext(this.monologueA3, this);
     this.monologueA3.changeNext(this.monologueA4, this);
