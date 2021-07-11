@@ -516,6 +516,48 @@ export default class Handler {
         "Annegret",
         "Frank?"
       );
+      this.monologueE7 = new Monologue(
+        160, 550, 705, 130,
+        "Annegret erscheint hinter ihrem Mann. Ihr Blick ist gereizt, doch er sänftigt sich wieder, als sie mich erblickt."
+      );
+      this.annegretE2 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ach, deswegen dauert es so lange. Ich dachte mir schon, dass selbst jemand wie Frank nicht so lange brauchen kann, um die Eier zu finden."
+      );
+      this.monologueE8 = new Monologue(
+        160, 550, 705, 130,
+        "Annegret lacht auf, Frank scheint allerdings nicht sonderlich von ihrem Witz amüsiert zu sein."
+      );
+      this.annegretE3 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Freut mich, dich zu sehen. Ich würde gerne noch etwas quatschen, aber wir haben leider heute einiges vor."
+      );
+      this.playerE10 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Kein Problem, ich möchte euch auch gar nicht weiter aufhalten. Habt noch einen schönen Tag!"
+      );
+      this.annegretE4 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Dankeschön, wünschen wir dir auch."
+      );
+      this.frankE10 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ja, wir sehen uns."
+      );
+      this.monologueE9 = new Monologue(
+        160, 550, 705, 130,
+        "Und damit trennen sich unsere Wege."
+      );
+      this.playerE11 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Was brauche ich jetzt nochmal? Tomaten, Milch, Brot…"
+      );
 
     this.active = this.start;
 
@@ -639,6 +681,15 @@ export default class Handler {
     this.playerE9.changeNext(this.monologueE6, this);
     this.monologueE6.changeNext(this.frankE9, this);
     this.frankE9.changeNext(this.annegretE1, this);
+    this.annegretE1.changeNext(this.monologueE7, this);
+    this.monologueE7.changeNext(this.annegretE2, this);
+    this.annegretE2.changeNext(this.monologueE8, this);
+    this.monologueE8.changeNext(this.annegretE3, this);
+    this.annegretE3.changeNext(this.playerE10, this);
+    this.playerE10.changeNext(this.annegretE4, this);
+    this.annegretE4.changeNext(this.frankE10, this);
+    this.frankE10.changeNext(this.monologueE9, this);
+    this.monologueE9.changeNext(this.playerE11, this);
   }
 
   get playerB4name() {

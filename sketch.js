@@ -705,7 +705,56 @@ function draw() {
           image(happyFrank, 350, 170, 300, 800);
           image(textBoxPeach, 90, 380, 800, 400);
           break;
-
+          case handler.monologueE7:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretE2:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.monologueE8:
+          image(market, 15, 15, 1000, 700);
+          image(smileAnnegret, 210, 240, 270, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.annegretE3:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.playerE10:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
+          case handler.annegretE4:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxPeach, 90, 380, 800, 400);
+          break;
+          case handler.frankE10:
+          image(market, 15, 15, 1000, 700);
+          image(happyAnnegret, 200, 240, 300, 800);
+          image(happyFrank, 500, 170, 300, 800);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueE9:
+          image(market, 15, 15, 1000, 700);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.playerE11:
+          image(market, 15, 15, 1000, 700);
+          image(textBoxLightpink, 90, 380, 800, 400);
+          break;
     }
     /*case handler.end:
         textSize(100);
