@@ -42,6 +42,10 @@ let end = new End(400, 450, 200, 65);
 let doorbell = new Doorbell();
 let handler = new Handler(doorbell);
 let trigger = new Warning(400, 450, 200, 65);
+let decision1 = new Button(160, 550, 340, 130);
+let decision2 = new Button(520, 550, 340, 130);
+
+let redFlags = 0; 
 
 function reload() {
     window.location.reload();
@@ -62,6 +66,11 @@ function mouseClicked() {
     if (handler.active === handler.nameplate && doorbell.ok === false &&
       doorbell.name.length >= 1) {
       doorbell.mouseClicked();
+    }
+
+    if (handler.active === handler.decisionA1 || handler.active === handler.decisionC1) {
+      decision1.mouseClicked();
+      decision2.mouseClicked();
     }
     /*if (handler.active === handler.end) {
       end.mouseClicked();
@@ -496,6 +505,10 @@ function draw() {
           image(happyFrank, 500, 170, 300, 800);
           image(textBoxPink, 120, 380, 390, 400);
           image(textBoxPink, 480, 380, 390, 400);
+          if (decision1.triggered === true) {
+            redFlags += 1;
+            decision1.triggered = false;
+          }
           break;
           case handler.playerC3:
           image(livingroom, 15, 15, 1000, 700);
