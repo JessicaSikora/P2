@@ -11,29 +11,28 @@ export default class Decision {
     }
   
     display() {
-      textSize(18);
       textAlign(LEFT);
       fill(210, 235, 244);
       noStroke();
-      textSize(18);
+      textSize(19);
       text(
         this.text1,
-        this.x + 15,
+        this.x + 20,
         this.y + 30,
-        this.width - 15,
-        this.height - 15
+        this.width - 40,
+        this.height - 40
       );
       text(
         this.text2,
-        this.x + 375,
+        this.x + 380,
         this.y + 30,
-        this.width - 15,
-        this.height - 15
+        this.width - 40,
+        this.height - 40
       );
       textSize(14);
       textAlign(RIGHT);
-      text("weiter", this.x, this.y + 95, this.width - 5, this.height + 15);
-      text("weiter", this.x + 360, this.y + 95, this.width - 5, this.height + 15);
+      text("weiter", this.x, this.y + 110, this.width - 5, this.height + 15);
+      text("weiter", this.x + 360, this.y + 110, this.width - 5, this.height + 15);
     }
     hitTest1(x, y) {
       if (

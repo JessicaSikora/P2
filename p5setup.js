@@ -26,6 +26,7 @@ let market;
 
 //Frank
 let happyFrank;
+let happyFrank2;
 let hurtFrank;
 let confusedFrank;
 let pissedFrank;
@@ -71,6 +72,7 @@ function preload() {
 
   //Frank
   happyFrank = loadImage("characters/Happy-Frank.png");
+  happyFrank2 = loadImage("characters/Happy-Frank-Color.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
   pissedFrank = loadImage("characters/Frank-genervt.png");
@@ -125,6 +127,7 @@ export {
   police,
   market,
   happyFrank,
+  happyFrank2,
   hurtFrank,
   confusedFrank,
   pissedFrank,

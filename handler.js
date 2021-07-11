@@ -559,6 +559,327 @@ export default class Handler {
         "Was brauche ich jetzt nochmal? Tomaten, Milch, Brot…"
       );
 
+      //Szene 3
+      this.monologueF1 = new Monologue(
+        160, 550, 705, 130,
+        "Am nächsten Tag klingelt es an der Tür."
+      );
+      this.monologueF2 = new Monologue(
+        160, 550, 705, 130,
+        "Als ich die Tür öffne, stürmt Annegret aufgebracht an mir vorbei. Tränen und verschmierte Wimperntusche laufen ihre Wangen hinunter."
+      );
+      this.playerF1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Hallo Annegret, was ist denn pa-"
+      );
+      this.monologueF3 = new Monologue(
+        160, 550, 705, 130,
+        "Energisch dreht sie sich zu mir um. Ihr Blick ist streng, ihre Hände sind zu Fäusten geballt."
+      );
+      this.annegretF1 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ich kann nicht mehr, ich kann einfach nicht mehr! Frank treibt mich in den Wahnsinn!"
+      );
+      this.monologueF4 = new Monologue(
+        160, 550, 705, 130,
+        "Sie seufzt tief aus, doch ihre Haltung ist weiterhin angespannt."
+      );
+      this.annegretF2 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Du weißt ja, ich liebe Frank, er ist mein Ein und Alles. Aber genau aus diesem Grund gebe ich ihm so viel, ich gebe immer so viel ich kann und ich glaube das ist mein Problem."
+      );
+      this.annegretF3 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Und Frank scheint überhaupt nicht zu verstehen, was ich alles für ihn tue."
+      );
+      this.playerF2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Wie meinst du das?"
+      );
+      this.annegretF4 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ich arbeite jeden Tag, schmeiße den Haushalt quasi alleine, kümmere mich um all die Verpflichtungen von Frank und mir, und das alles mit meinem kaputten Knie."
+      );
+      this.annegretF5 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ich bin normalerweise die letzte Person, die sich beschwert. Ich bin daran gewöhnt immer alles selbst zu erledigen, aber ich wünschte mir, er wäre nicht immer so… passiv."
+      );
+      this.monologueF5 = new Monologue(
+        160, 550, 705, 130,
+        "Ich weiß nicht so ganz, was ich darauf erwidern soll. Frank schien mir immer ein hilfsbereiter und aufmerksamer Mensch zu sein."
+      );
+      this.monologueF6 = new Monologue(
+        160, 550, 705, 130,
+        "Habe ich die Dynamik zwischen den beiden eventuell falsch eingeschätzt?"
+      );
+      this.playerF3 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Möchtest du mir vielleicht erzählen, was eben vorgefallen ist?"
+      );
+      this.monologueF7 = new Monologue(
+        160, 550, 705, 130,
+        "Annegret schaut kurz zur Seite und scheint ihre Gedanken zu sammeln."
+      );
+      this.annegretF6 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Frank wollte sich verabreden, obwohl er genau weiß, dass ich ihn da brauche, also habe ich ihm davon abgeraten. Dann wurde er sauer auf mich, dabei weiß er schon seit Wochen, dass ich ihn da brauche."
+      );
+      this.annegretF7 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Ich schreibe ihm ja wirklich ungern etwas vor, aber manchmal denkt der Mann einfach nicht nach! Ist es nicht verständlich, dass ich da auf Dauer frustriert bin?"
+      );
+      this.playerF4 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ja, ich verstehe absolut, was du meinst… Aber wenn es schon angesprochen war, wieso ist Frank denn dann wütend geworden?"
+      );
+      this.annegretF8 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Es ist nun mal so, dass Frank sich gerne in die Opferrolle stellt und das nimmt er selbst gar nicht richtig wahr. Frank und ich sind jetzt schon seit über 15 Jahren zusammen, niemand kennt ihn besser als ich, und es ergibt Sinn, dass er so ist."
+      );
+      this.annegretF9 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Er war ein Einzelkind und seine Eltern gaben ihm nicht viel Aufmerksamkeit. Er braucht es, dass andere ihn bemitleiden. Aber er muss es nun mal lernen zu verstehen, wenn er einen Fehler macht. Ich will ja nur das Beste für ihn…"
+      );
+      this.decisionF1 = new Decision(
+        160, 550, 340, 130,
+        "Mit Annegret sympathisieren.", "Mit Frank sympathisieren."
+      );
+      this.playerF5 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Das muss wirklich anstrengend für dich sein. Tut mir leid, dass es bei dir und Frank momentan nicht so gut läuft."
+      );
+      this.annegretF10 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Tja, es ist, wie es ist. Auch, wenn es nicht einfach für mich ist, ist unsere Ehe das Wichtigste für mich. Ich werde uns niemals aufgeben."
+      );
+      this.monologueF8 = new Monologue(
+        160, 550, 705, 130,
+        "Ich muss lächeln."
+      );
+      this.playerF6 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Das freut mich sehr zu hören. Ihr beide sind ein wirklich schönes Paar, es würde mir das Herz brechen, wenn das Verhältnis zwischen euch bricht."
+      );
+      this.annegretF11 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Dankeschön. Es tut gut, verstanden zu werden."
+      );
+      this.playerF7 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Vielleicht hat sich Frank ja auch etwas beruhigt und ihr könnt das klären."
+      );
+      this.annegretF12 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Nee. Tut mir leid, aber heute habe ich keinen Nerv mehr für ihn. Ich gehe vermutlich einfach direkt schlafen. Gute Nacht und danke für deine Zeit."
+      );
+      this.playerF8 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Keine Ursache. Gute Nacht!"
+      );
+      this.monologueF9 = new Monologue(
+        160, 550, 705, 130,
+        "Damit läuft sie an mir vorbei und verlässt das Haus."
+      );
+
+      this.playerF9 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ich kenne Franks Perspektive nicht, aber er wird sicherlich Gründe für seine Reaktion haben. Vielleicht könnt ihr einen Kompromiss für euer Problem finden."
+      );
+      this.monologueF10 = new Monologue(
+        160, 550, 705, 130,
+        "Annegrets Gesichtsauszüge verhärten sich als sie den Blick abwendet."
+      );
+      this.annegretF13 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Es tut mir leid, ich hätte gar nicht erst herkommen sollen."
+      );
+      this.playerF10 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Was? Nein, ich meinte nur, dass-"
+      );
+      this.annegretF14 = new Text(
+        160, 550, 705, 130,
+        "Annegret",
+        "Schon gut. Es war klar, dass mich niemand verstehen würde. Ich weiß gar nicht, was ich mir erhofft habe."
+      );
+      this.playerF11 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Warte, Annegret, ich wollte doch nicht-"
+      );
+      this.monologueF11 = new Monologue(
+        160, 550, 705, 130,
+        "Bevor ich meinen Satz beenden konnte, hat Annegret das Haus bereits verlassen. Das war ein ziemliches Fettnäppchen."
+      );
+      this.monologueF12 = new Monologue(
+        160, 550, 705, 130,
+        "Grübelnd über das Gespräch laufe ich zurück ins Wohnzimmer, als ich Frank vom Fenster aus im Garten sitzen sehe."
+      );
+      this.decisionF2 = new Decision(
+        160, 550, 340, 130,
+        "Frank ansprechen.", "Annegret und Frank Freiraum geben."
+      );
+      this.playerF12 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Hallo, Frank."
+      );
+      this.monologueF13 = new Monologue(
+        160, 550, 705, 130,
+        "Erschrocken schießt Frank in die Höhe. Er hatte mich wohl nicht kommen gehört."
+      );
+      this.frankF1 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Oh, du bist es. Hallo."
+      );
+      this.playerF13 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Wie geht es dir?"
+      );
+      this.frankF2 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Hat Annegret mit dir gesprochen?"
+      );
+      this.playerF14 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ja, sie war eben kurz bei mir."
+      );
+      this.frankF3 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ah, dann weißt du sicherlich schon über unsere Auseinandersetzung Bescheid."
+      );
+      this.monologueF14 = new Monologue(
+        160, 550, 705, 130,
+        "Ich nicke."
+      );
+      this.playerF15 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ist bei euch denn alles in Ordnung? Ich habe eure Ehe immer als sehr stabil angesehen."
+      );
+      this.frankF4 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Konflikte gehören zu jeder gesunden Beziehung dazu, das ist nichts Unübliches. Letztendlich weiß ich ja, dass Annegret recht hat. Ich habe überreagiert."
+      );
+      this.decisionF3 = new Decision(
+        160, 550, 340, 130,
+        "Optimistisch sein.", "Validierend sein."
+      );
+      this.playerF16 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ich bin sicher, ihr könnt das klären. Ihr seid schon so lange zusammen, das bekommt ihr hin."
+      );
+      this.frankF5 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Du hast recht, ich könnte sie auf keinen Fall einfach so verlassen. Nicht nach all der Zeit…"
+      );
+      this.playerF17 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Genau, du solltest nicht aufgeben."
+      );
+      this.monologueF15 = new Monologue(
+        160, 550, 705, 130,
+        "Frank atmet tief durch und lässt seine Schultern sacken."
+      );
+      this.frankF6 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Danke. Ich gehe mal versuchen, es wieder gut zu machen. Wir sehen uns."
+      );
+      this.playerF18 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Viel Erfolg!"
+      );
+      this.monologueF16 = new Monologue(
+        160, 550, 705, 130,
+        "Ich schlendere wieder zurück nach Hause. Hoffentlich versöhnen sich die beiden wieder."
+      );
+
+      this.playerF19 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ich denke nicht, dass du überreagiert hast. Viel eher denke ich, dass Annegret deine Sicht nicht so gut versteht. Vielleicht hilft es euch, an eurer Kommunikation zu arbeiten."
+      );
+      this.frankF7 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ich habe versucht, ihr meine Perspektive zu erklären. Sie war nur so aufgebracht und dann ist es etwas aus dem Ruder gelaufen."
+      );
+      this.monologueF17 = new Monologue(
+        160, 550, 705, 130,
+        "Ich bin etwas verstutzt. Annegret hat eher Frank als die emotionale Person in der Situation dargestellt."
+      );
+      this.playerF20 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Habt ihr denn öfter solche Auseinandersetzungen?"
+      );
+      this.monologueF18 = new Monologue(
+        160, 550, 705, 130,
+        "Frank starrt in die Ferne und überlegt kurz, bevor er mir eine Antwort gibt."
+      );
+      this.frankF8 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Naja, ab und zu halt. Wäre ja auch komisch, wenn nicht, oder?"
+      );
+      this.monologueF19 = new Monologue(
+        160, 550, 705, 130,
+        "Ist es das? Franks Aussage gibt nicht wirklich preis, wie häufig nun Streitigkeiten aufkommen."
+      );
+      this.frankF9 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Naja, ich sollte mal wieder reingehen und versuchen, das mit Annegret zu klären. Danke für deine Unterstützung."
+      );
+      this.playerF21 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Kein Problem. Melde dich ruhig, wenn was ist."
+      )
+      this.monologueF20 = new Monologue(
+        160, 550, 705, 130,
+        "Er lächelt kurz und begibt sich dann ins Haus. Ich seufze und laufe ebenfalls nach Hause."
+      );
+
+      this.monologueF21 = new Monologue(
+        160, 550, 705, 130,
+        "Ich sollte die beiden in Ruhe lassen, vielleicht können sie ihren Konflikt ja doch noch heute klären."
+      );
+
     this.active = this.start;
 
     //Szene 1
@@ -690,6 +1011,77 @@ export default class Handler {
     this.annegretE4.changeNext(this.frankE10, this);
     this.frankE10.changeNext(this.monologueE9, this);
     this.monologueE9.changeNext(this.playerE11, this);
+
+    //Szene 3
+    this.playerE11.changeNext(this.monologueF1, this);
+    this.monologueF1.changeNext(this.monologueF2, this);
+    this.monologueF2.changeNext(this.playerF1, this);
+    this.playerF1.changeNext(this.monologueF3, this);
+    this.monologueF3.changeNext(this.annegretF1, this);
+    this.annegretF1.changeNext(this.monologueF4, this);
+    this.monologueF4.changeNext(this.annegretF2, this);
+    this.annegretF2.changeNext(this.annegretF3, this);
+    this.annegretF3.changeNext(this.playerF2, this);
+    this.playerF2.changeNext(this.annegretF4, this);
+    this.annegretF4.changeNext(this.annegretF5, this);
+    this.annegretF5.changeNext(this.monologueF5, this);
+    this.monologueF5.changeNext(this.monologueF6, this);
+    this.monologueF6.changeNext(this.playerF3, this);
+    this.playerF3.changeNext(this.monologueF7, this);
+    this.monologueF7.changeNext(this.annegretF6, this);
+    this.annegretF6.changeNext(this.annegretF7, this);
+    this.annegretF7.changeNext(this.playerF4, this);
+    this.playerF4.changeNext(this.annegretF8, this);
+    this.annegretF8.changeNext(this.annegretF9, this);
+    this.annegretF9.changeNext(this.decisionF1, this);
+    this.decisionF1.changeNext1(this.playerF5, this);
+    this.decisionF1.changeNext2(this.playerF9, this);
+    this.playerF5.changeNext(this.annegretF10, this);
+    this.annegretF10.changeNext(this.monologueF8, this);
+    this.monologueF8.changeNext(this.playerF6, this);
+    this.playerF6.changeNext(this.annegretF11, this);
+    this.annegretF11.changeNext(this.playerF7, this);
+    this.playerF7.changeNext(this.annegretF12, this);
+    this.annegretF12.changeNext(this.playerF8, this);
+    this.playerF8.changeNext(this.monologueF9, this);
+    this.monologueF9.changeNext(this.monologueF12, this);
+    this.playerF9.changeNext(this.monologueF10, this);
+    this.monologueF10.changeNext(this.annegretF13, this);
+    this.annegretF13.changeNext(this.playerF10, this);
+    this.playerF10.changeNext(this.annegretF14, this);
+    this.annegretF14.changeNext(this.playerF11, this);
+    this.playerF11.changeNext(this.monologueF11, this);
+    this.monologueF11.changeNext(this.monologueF12, this);
+    this.monologueF12.changeNext(this.decisionF2, this);
+    this.decisionF2.changeNext1(this.playerF12, this);
+    this.decisionF2.changeNext2(this.monologueF21, this);
+    this.playerF12.changeNext(this.monologueF13, this);
+    this.monologueF13.changeNext(this.frankF1, this);
+    this.frankF1.changeNext(this.playerF13, this);
+    this.playerF13.changeNext(this.frankF2, this);
+    this.frankF2.changeNext(this.playerF14, this);
+    this.playerF14.changeNext(this.frankF3, this);
+    this.frankF3.changeNext(this.monologueF14, this);
+    this.monologueF14.changeNext(this.playerF15, this);
+    this.playerF15.changeNext(this.frankF4, this);
+    this.frankF4.changeNext(this.decisionF3, this);
+    this.decisionF3.changeNext1(this.playerF16, this);
+    this.decisionF3.changeNext2(this.playerF19, this);
+    this.playerF16.changeNext(this.frankF5, this);
+    this.frankF5.changeNext(this.playerF17, this);
+    this.playerF17.changeNext(this.monologueF15, this);
+    this.monologueF15.changeNext(this.frankF6, this);
+    this.frankF6.changeNext(this.playerF18, this);
+    this.playerF18.changeNext(this.monologueF16, this);
+    this.playerF19.changeNext(this.frankF7, this);
+    this.frankF7.changeNext(this.monologueF17, this);
+    this.monologueF17.changeNext(this.playerF20, this);
+    this.playerF20.changeNext(this.monologueF18, this);
+    this.monologueF18.changeNext(this.frankF8, this);
+    this.frankF8.changeNext(this.monologueF19, this);
+    this.monologueF19.changeNext(this.frankF9, this);
+    this.frankF9.changeNext(this.playerF21, this);
+    this.playerF21.changeNext(this.monologueF20, this);
   }
 
   get playerB4name() {
