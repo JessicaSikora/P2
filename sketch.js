@@ -31,6 +31,7 @@ import {
 
 import Button from "./button.js";
 import Start from "./start.js";
+import Warning from "./warning.js";
 import End from "./end.js";
 import Handler from "./handler.js";
 import Doorbell from "./doorbell.js";
@@ -40,6 +41,7 @@ let start = new Start(400, 550, 200, 65);
 let end = new End(400, 450, 200, 65);
 let doorbell = new Doorbell();
 let handler = new Handler(doorbell);
+let trigger = new Warning(400, 450, 200, 65);
 
 function reload() {
     window.location.reload();
@@ -53,6 +55,9 @@ function mouseClicked() {
       start.mouseClicked();
     } else {
       handler.mouseClicked();
+    }
+    if (handler.active === handler.warning && trigger.warning === false) {
+      trigger.mouseClicked();
     }
     if (handler.active === handler.nameplate && doorbell.ok === false &&
       doorbell.name.length >= 1) {
@@ -79,9 +84,16 @@ function draw() {
     switch (handler.active) {
       case handler.start:
         if (start.start === true) {
-          handler.active = handler.monologueA1;
+          handler.active = handler.warning;
         }
         break;
+        case handler.warning:
+          if (trigger.warning === false) {
+          trigger.display();
+          } else {
+            handler.active = handler.monologueA1;
+          }
+          break
 
         //Szene 1
         case handler.monologueA1:
