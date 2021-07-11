@@ -22,6 +22,7 @@ let houseNight;
 let bedDay;
 let bedNight;
 let police;
+let market;
 
 //Frank
 let happyFrank;
@@ -46,11 +47,11 @@ function preload() {
   logo = loadImage("backgrounds/LogoTransparent.png");
   hands = loadImage("backgrounds/Holding-hands.png");
 
-  textBoxBlue = loadImage("textbox/textboxBlue.png");
-  textBoxBabyblue = loadImage("textbox/textboxLight.png");
-  textBoxLightpink = loadImage("textbox/textboxMagenta.png");
-  textBoxPink = loadImage("textbox/textboxPink.png");
-  textBoxPeach = loadImage("textbox/textboxOrange.png");
+  textBoxBlue = loadImage("textbox/boxBlu.png");
+  textBoxBabyblue = loadImage("textbox/boxYell.png");
+  textBoxLightpink = loadImage("textbox/boxMag.png");
+  textBoxPink = loadImage("textbox/boxPi.png");
+  textBoxPeach = loadImage("textbox/boxOr.png");
 
   livingroom = loadImage("backgrounds/livingroom.png");
   doorBell = loadImage("backgrounds/doorbell.png");
@@ -60,6 +61,7 @@ function preload() {
   bedDay = loadImage("backgrounds/bedDay.png");
   bedNight = loadImage("backgrounds/bedDark.png");
   police = loadImage("backgrounds/housePolice.png");
+  market = loadImage("backgrounds/markt.png");
 
   happyFrank = loadImage("characters/Happy-Frank.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
@@ -109,6 +111,7 @@ export {
   bedDay,
   bedNight,
   police,
+  market,
   happyFrank,
   hurtFrank,
   confusedFrank,
