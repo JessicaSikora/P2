@@ -23,9 +23,9 @@ export default class Text extends Button {
     text(
       this.text,
       this.x + 20,
-      this.y + 40,
+      this.y + 43,
       this.width - 40,
-      this.height - 50
+      this.height - 53
     );
     textSize(14);
     textAlign(RIGHT);
