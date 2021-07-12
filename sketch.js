@@ -21,6 +21,7 @@ import {
   pissedFrank,
   flusteredFrank,
   tiredFrank,
+  phoneFrank,
   happyAnnegret,
   smileAnnegret,
   superangryAnnegret,
@@ -47,6 +48,7 @@ let trigger = new Warning(400, 450, 200, 65);
 let decision1 = new Button(160, 550, 340, 130);
 let decision2 = new Button(520, 550, 340, 130);
 let arm = new Button(340, 375, 30, 30);
+let phone = new Button(580, 450, 60, 50);
 
 let redFlags = 0; 
 
@@ -70,13 +72,15 @@ function mouseClicked() {
       doorbell.name.length >= 1) {
       doorbell.mouseClicked();
     }
-
     if (handler.active === handler.decisionA1 || handler.active === handler.decisionC1) {
       decision1.mouseClicked();
       decision2.mouseClicked();
     }
     if (handler.active === handler.monologueE2) {
       arm.mouseClicked();
+    }
+    if (handler.active === handler.monologueH8) {
+      phone.mouseClicked();
     }
     /*if (handler.active === handler.end) {
       end.mouseClicked();
@@ -1201,37 +1205,54 @@ function draw() {
           break;
           case handler.monologueH8:
           image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
+          image(phoneFrank, 350, 170, 300, 770);
+          image(textBoxPink, 90, 380, 800, 400);
+          if (phone.triggered === false) {
+            if (phone.hitTest(mouseX, mouseY)) {
+              textSize(16);
+              stroke("#0a3246");
+              strokeWeight(2);
+              textAlign(CENTER);
+              text("auf den Bildschirm schauen", 540, 520, 150);
+            }
+           } else {
+            redFlags += 1;
+            handler.active = handler.monologueH9;
+            phone.triggered = false;
+          }
+          break;
+          case handler.monologueH9:
+          image(houseDay, 15, 15, 1000, 700);
+          image(phoneFrank, 350, 170, 300, 770);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.frankH7:
           image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
+          image(phoneFrank, 350, 170, 300, 770);
           image(textBoxBlue, 90, 380, 800, 400);
           break;
           case handler.playerH8:
           image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
+          image(phoneFrank, 350, 170, 300, 770);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.frankH8:
           image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
-          image(textBoxBlue, 90, 380, 800, 400);
-          break;
-          case handler.monologueH9:
-          image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
-          image(textBoxPink, 90, 380, 800, 400);
-          break;
-          case handler.frankH9:
-          image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
+          image(phoneFrank, 350, 170, 300, 770);
           image(textBoxBlue, 90, 380, 800, 400);
           break;
           case handler.monologueH10:
           image(houseDay, 15, 15, 1000, 700);
-          image(tiredFrank, 350, 170, 300, 620);
+          image(phoneFrank, 350, 170, 300, 770);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
+          case handler.frankH9:
+          image(houseDay, 15, 15, 1000, 700);
+          image(phoneFrank, 350, 170, 300, 770);
+          image(textBoxBlue, 90, 380, 800, 400);
+          break;
+          case handler.monologueH11:
+          image(houseDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
 

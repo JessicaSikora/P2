@@ -32,6 +32,7 @@ let confusedFrank;
 let pissedFrank;
 let flusteredFrank;
 let tiredFrank;
+let phoneFrank;
 
 //Annegret
 let happyAnnegret;
@@ -78,6 +79,7 @@ function preload() {
   pissedFrank = loadImage("characters/Frank-genervt.png");
   flusteredFrank = loadImage("characters/Frank-verlegen.png");
   tiredFrank = loadImage("characters/Frank-Eye-bags-min.png");
+  phoneFrank = loadImage("characters/Frank-Phone.png");
 
   //Annegret
   happyAnnegret = loadImage("characters/Annegret-smiling.png");
@@ -133,6 +135,7 @@ export {
   pissedFrank,
   flusteredFrank,
   tiredFrank,
+  phoneFrank,
   happyAnnegret,
   smileAnnegret,
   superangryAnnegret,
