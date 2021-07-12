@@ -9,21 +9,20 @@ export default class Monologue extends Button {
   }
 
   display() {
-    textSize(16);
     textAlign(LEFT);
     fill(210, 235, 244);
     noStroke();
-    textSize(18);
+    textSize(19);
     text(
       this.text,
-      this.x + 15,
+      this.x + 20,
       this.y + 30,
-      this.width - 18,
-      this.height - 15
+      this.width - 40,
+      this.height - 40
     );
     textSize(14);
     textAlign(RIGHT);
-    text("weiter", this.x, this.y + 95, this.width - 5, this.height + 15);
+    text("weiter", this.x, this.y + 110, this.width - 5, this.height + 5);
   }
   clicked() {
     if (this.handler != null) {

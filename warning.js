@@ -1,4 +1,5 @@
 import Button from "./button.js";
+import {fontA, fontG} from "./p5setup.js";
 
 export default class Warning extends Button {
     constructor(x, y, width, height) {
@@ -9,10 +10,12 @@ export default class Warning extends Button {
 
     display() {
         stroke(0, 88, 106);
-        textSize(30);
+        textSize(40);
         textAlign(CENTER);
+        textFont(fontA);
         text("Trigger Warnung!", 500, 100);
         textSize(24);
+        textFont(fontG);
         text("[Insert Trigger Warning]", 500, 200);
 
         fill(10, 50, 70, 180);
