@@ -72,7 +72,7 @@ function preload() {
 
   //Frank
   happyFrank = loadImage("characters/Happy-Frank.png");
-  happyFrank2 = loadImage("characters/Happy-Frank-Color.png");
+  happyFrank2 = loadImage("characters/Frank-happy-shorts.png");
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
   pissedFrank = loadImage("characters/Frank-genervt.png");

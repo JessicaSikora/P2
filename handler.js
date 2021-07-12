@@ -880,6 +880,39 @@ export default class Handler {
         "Ich sollte die beiden in Ruhe lassen, vielleicht können sie ihren Konflikt ja doch noch heute klären."
       );
 
+      //Szene 4.1
+      this.playerG1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Verdammt, ist es warm hier drin."
+      );
+      this.monologueG1 = new Monologue(
+        160, 550, 705, 130,
+        "Ich öffne das Fenster, werfe mich aufs Bett und seufze."
+      );
+      this.playerG2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Bin ich richtig mit der Situation umgegangen? Ich frage mich, ob bei Frank und Annegret alles in Ordnung ist."
+      );
+      this.monologueG2 = new Monologue(
+        160, 550, 705, 130, 
+        "Ich schrecke auf, als von der anderen Straßenseite ein lautes Krachen ertönt. Kam das aus Franks und Annegrets Haus?"
+      );
+      this.monologueG3 = new Monologue(
+        160, 550, 705, 130,
+        "Aus Neugier lunse ich aus dem Fenster, um die Quelle ausfindig zu machen. Im Haus gegenüber sind noch Lichter an, aber mehr als das sehe ich nicht und ich möchte meine Freunde ungern weiter beobachten."
+      );
+      this.playerG3 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Ob das tatsächlich von Frank und Annegret kam? Hoffentlich ist nichts Wichtiges kaputt gegangen."
+      );
+      this.monologueG4 = new Monologue(
+        160, 550, 705, 130,
+        "Erschöpft werfe ich mich zurück aufs Bett und schlafe wenige Sekunden später ein."
+      );
+
     this.active = this.start;
 
     //Szene 1
@@ -1082,6 +1115,16 @@ export default class Handler {
     this.monologueF19.changeNext(this.frankF9, this);
     this.frankF9.changeNext(this.playerF21, this);
     this.playerF21.changeNext(this.monologueF20, this);
+
+    //Szene 4.1
+    this.monologueF20.changeNext(this.playerG1, this);
+    this.monologueF21.changeNext(this.playerG1, this);
+    this.playerG1.changeNext(this.monologueG1, this);
+    this.monologueG1.changeNext(this.playerG2, this);
+    this.playerG2.changeNext(this.monologueG2, this);
+    this.monologueG2.changeNext(this.monologueG3, this);
+    this.monologueG3.changeNext(this.playerG3, this);
+    this.playerG3.changeNext(this.monologueG4, this);
   }
 
   get playerB4name() {
