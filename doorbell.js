@@ -42,7 +42,7 @@ export default class Doorbell {
         }
       }
       
-    display(){
+    display() {
     noStroke();
     fill(0, 0, 0);
     textSize(30);

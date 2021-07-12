@@ -285,12 +285,12 @@ function draw() {
           image(Michael, 350, 170, 300, 600);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
-          case handler.martinB1:
+          case handler.michaelB1:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
-          case handler.martinB2:
+          case handler.michaelB2:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
           image(textBoxBabyblue, 90, 380, 800, 400);
@@ -320,12 +320,12 @@ function draw() {
           }
           break;
 
-          case handler.martinB3:
+          case handler.michaelB3name:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
-          case handler.martinB4:
+          case handler.michaelB4:
           image(house, 15, 15, 1000, 700);
           image(Michael, 350, 170, 300, 600);
           image(textBoxBabyblue, 90, 380, 800, 400);
@@ -358,7 +358,7 @@ function draw() {
           image(happyAnnegret, 380, 240, 300, 800);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.playerB4:
+          case handler.playerB4name:
           image(houseDay, 15, 15, 1000, 700);
           image(happyAnnegret, 380, 240, 300, 800);
           image(textBoxLightpink, 90, 380, 800, 400);
@@ -556,7 +556,7 @@ function draw() {
           image(bedNight, 15, 15, 1000, 700);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
-          case handler.frankD1:
+          case handler.frankD1name:
           image(bedNight, 15, 15, 1000, 700);
           image(textBoxBlue, 90, 380, 800, 400);
           break;
@@ -578,7 +578,7 @@ function draw() {
           image(market, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.frankE1:
+          case handler.frankE1name:
           image(market, 15, 15, 1000, 700);
           image(happyFrank2, 350, 170, 320, 680);
           image(textBoxBlue, 90, 380, 800, 400);
@@ -724,7 +724,7 @@ function draw() {
           image(pissedFrank, 500, 170, 320, 680);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.annegretE3:
+          case handler.annegretE3name:
           image(market, 15, 15, 1000, 700);
           image(happyAnnegret, 200, 240, 300, 800);
           image(pissedFrank, 500, 170, 320, 680);
@@ -855,7 +855,7 @@ function draw() {
           case handler.playerF6:
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
-          case handler.annegretF11:
+          case handler.annegretF11name:
           image(textBoxPeach, 90, 380, 800, 400);
           break;
           case handler.playerF7:
@@ -984,7 +984,7 @@ function draw() {
           image(tiredFrank, 350, 170, 300, 620);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.frankF6:
+          case handler.frankF6name:
           image(houseNight, 15, 15, 1000, 700);
           image(tiredFrank, 350, 170, 300, 620);
           image(textBoxBlue, 90, 380, 800, 400);
@@ -1034,7 +1034,7 @@ function draw() {
           image(tiredFrank, 350, 170, 300, 620);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          case handler.frankF9:
+          case handler.frankF9name:
           image(houseNight, 15, 15, 1000, 700);
           image(tiredFrank, 350, 170, 300, 620);
           image(textBoxBlue, 90, 380, 800, 400);

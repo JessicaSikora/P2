@@ -150,16 +150,16 @@ export default class Handler {
       this.playerB1 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Hi, Martin! Danke nochmal für deine Hilfe. Ohne dich hätte ich das niemals geschafft."
+        "Hi, Michael! Danke nochmal für deine Hilfe. Ohne dich hätte ich das niemals geschafft."
       );
-      this.martinB1 = new Text(
+      this.michaelB1 = new Text(
         160, 550, 705, 130,
-        "Martin",
+        "Michael",
         "Guten Morgen! Kein Problem, bei sowas helfe ich immer gerne."
       );
-      this.martinB2 = new Text(
+      this.michaelB2 = new Text(
         160, 550, 705, 130,
-        "Martin",
+        "Michael",
         "Wir halten uns an deine Liste. Du kannst ja mal nachschauen, ob alles im richtigen Raum steht."
       );
       this.monologueB3 = new Monologue(
@@ -184,19 +184,19 @@ export default class Handler {
         "Na endlich, darauf habe ich so lange gewartet!"
       );
       this.nameplate = new Text();
-      this.martinB3 = new Text(
+      this.michaelB3 = new Text(
         160, 550, 705, 130,
-        "Martin",
-        "Wir brauchen hier noch so ca. eine Stunde. Wenn du magst, kannst du dich ja mal in der Nachbarschaft umschauen und dich eventuell schon vorstellen?"
+        "Michael",
+        this.name.name.join("") + ", wir brauchen hier noch so ca. eine Stunde. Wenn du magst, kannst du dich ja mal in der Nachbarschaft umschauen und dich eventuell schon vorstellen?"
       );
-      this.martinB4 = new Text(
+      this.michaelB4 = new Text(
         160, 550, 705, 130,
-        "Martin",
+        "Michael",
         "Ich weiß nicht, wie es in diesen gehobenen Vierteln so abläuft."
       );
       this.monologueB7 = new Monologue(
         160, 550, 705, 130,
-        "Ich verdrehte die Augen. Das war ein durchgehender Scherz seit Martin gehört hatte, wo ich hinziehe."
+        "Ich verdrehte die Augen. Das war ein durchgehender Scherz seit Michael gehört hatte, wo ich hinziehe."
       );
       this.monologueB8 = new Monologue(
         160, 550, 705, 130,
@@ -319,7 +319,7 @@ export default class Handler {
       this.frankC1 = new Text(
         160, 550, 705, 130,
         "Frank",
-        "... und das hast du uns deutlich besiegt beim Torteessen. Ich frage mich immer noch, wie das alles in dich reingepasst hat."
+        "... und dann hast du uns deutlich besiegt beim Torteessen. Ich frage mich immer noch, wie das alles in dich reingepasst hat."
       );
       this.playerC1 = new Text(
         160, 550, 705, 130,
@@ -384,7 +384,7 @@ export default class Handler {
       this.frankD1 = new Text(
         160, 550, 705, 130,
         "Franks Nachricht",
-        "Tut mir Leid. Wir sind dieses Wochenende schon verplant."
+        "Tut mir Leid, " + this.name.name.join("") + ". Wir sind dieses Wochenende schon verplant."
       );
       this.playerD2 = new Text(
         160, 550, 705, 130,
@@ -409,7 +409,7 @@ export default class Handler {
       this.frankE1 = new Text(
         160, 550, 705, 130,
         "Frank",
-        "Was zum-! Oh, hallo! Tut mir Leid, ich war völlig in Gedanken verloren."
+        "Was zum-! Oh, hallo " + this.name.name.join("") + "! Tut mir Leid, ich war völlig in Gedanken verloren."
       );
       this.playerE2 = new Text(
         160, 550, 705, 130,
@@ -532,7 +532,7 @@ export default class Handler {
       this.annegretE3 = new Text(
         160, 550, 705, 130,
         "Annegret",
-        "Freut mich, dich zu sehen. Ich würde gerne noch etwas quatschen, aber wir haben leider heute einiges vor."
+        "Freut mich, dich zu sehen, " + this.name.name.join("") + ". Ich würde gerne noch etwas quatschen, aber wir haben leider heute einiges vor."
       );
       this.playerE10 = new Text(
         160, 550, 705, 130,
@@ -679,7 +679,7 @@ export default class Handler {
       this.annegretF11 = new Text(
         160, 550, 705, 130,
         "Annegret",
-        "Dankeschön. Es tut gut, verstanden zu werden."
+        "Dankeschön, " + this.name.name.join("") + ". Es tut gut, verstanden zu werden."
       );
       this.playerF7 = new Text(
         160, 550, 705, 130,
@@ -816,7 +816,7 @@ export default class Handler {
       this.frankF6 = new Text(
         160, 550, 705, 130,
         "Frank",
-        "Danke. Ich gehe mal versuchen, es wieder gut zu machen. Wir sehen uns."
+        "Danke, " + this.name.name.join("") + ". Ich gehe mal versuchen, es wieder gut zu machen. Wir sehen uns."
       );
       this.playerF18 = new Text(
         160, 550, 705, 130,
@@ -863,7 +863,7 @@ export default class Handler {
       this.frankF9 = new Text(
         160, 550, 705, 130,
         "Frank",
-        "Naja, ich sollte mal wieder reingehen und versuchen, das mit Annegret zu klären. Danke für deine Unterstützung."
+        "Naja, ich sollte mal wieder reingehen und versuchen, das mit Annegret zu klären. Danke für deine Unterstützung, " + this.name.name.join("") + "."
       );
       this.playerF21 = new Text(
         160, 550, 705, 130,
@@ -1091,17 +1091,17 @@ export default class Handler {
     this.monologueA12.changeNext(this.monologueB1, this);
     this.monologueB1.changeNext(this.monologueB2, this);
     this.monologueB2.changeNext(this.playerB1, this);
-    this.playerB1.changeNext(this.martinB1, this);
-    this.martinB1.changeNext(this.martinB2, this);
-    this.martinB2.changeNext(this.monologueB3, this);
+    this.playerB1.changeNext(this.michaelB1, this);
+    this.michaelB1.changeNext(this.michaelB2, this);
+    this.michaelB2.changeNext(this.monologueB3, this);
     this.monologueB3.changeNext(this.monologueB4, this);
     this.monologueB4.changeNext(this.monologueB5, this);
     this.monologueB5.changeNext(this.monologueB6, this);
     this.monologueB6.changeNext(this.playerB2, this);
     this.playerB2.changeNext(this.nameplate, this);
-    this.nameplate.changeNext(this.martinB3, this);
-    this.martinB3.changeNext(this.martinB4, this);
-    this.martinB4.changeNext(this.monologueB7, this);
+    this.nameplate.changeNext(this.michaelB3, this);
+    this.michaelB3.changeNext(this.michaelB4, this);
+    this.michaelB4.changeNext(this.monologueB7, this);
     this.monologueB7.changeNext(this.monologueB8, this);
     this.monologueB8.changeNext(this.playerB3, this);
     this.playerB3.changeNext(this.monologueB9, this);
@@ -1305,9 +1305,52 @@ export default class Handler {
   }
 
   get playerB4name() {
-    this.playerB4.text = "H-hallo, mein Name ist " + this.name.name.join("") +
+    this.playerB4.text =
+    "H-hallo, mein Name ist " + this.name.name.join("") +
     ". Ich bin gerade in das Haus gegenüber von euch eingezogen, wie man vielleicht sieht.";
     return this.playerB4;
+  }
+
+  get michaelB3name() {
+    this.michaelB3.text =
+    this.name.name.join("") + ", wir brauchen hier noch so ca. eine Stunde. Wenn du magst, kannst du dich ja mal in der Nachbarschaft umschauen und dich eventuell schon vorstellen?";
+    return this.michaelB3;
+  }
+
+  get frankD1name() {
+    this.frankD1.text =
+    "Tut mir Leid, " + this.name.name.join("") + ". Wir sind dieses Wochenende schon verplant."
+    return this.frankD1;
+  }
+
+  get frankE1name() {
+    this.frankE1.text=
+    "Was zum-! Oh, hallo " + this.name.name.join("") + "! Tut mir Leid, ich war völlig in Gedanken verloren.";
+    return this.frankE1;
+  }
+
+  get annegretE3name() {
+    this.annegretE3.text =
+    "Freut mich, dich zu sehen, " + this.name.name.join("") + ". Ich würde gerne noch etwas quatschen, aber wir haben leider heute einiges vor."
+    return this.annegretE3;
+  }
+
+  get annegretF11name() {
+    this.annegretF11.text =
+    "Dankeschön, " + this.name.name.join("") + ". Es tut gut, verstanden zu werden."
+    return this.annegretF11;
+  }
+
+  get frankF6name() {
+    this.frankF6.text =
+    "Danke, " + this.name.name.join("") + ". Ich gehe mal versuchen, es wieder gut zu machen. Wir sehen uns.";
+    return this.frankF6;
+  }
+
+  get frankF9name() {
+    this.frankF9.text =
+    "Naja, ich sollte mal wieder reingehen und versuchen, das mit Annegret zu klären. Danke für deine Unterstützung, " + this.name.name.join("") + ".";
+    return this.frankF9;
   }
 
   display() {
