@@ -44,6 +44,7 @@ let superangryAnnegret;
 let pissedAnnegret;
 let cryingAnnegret;
 let sternAnnegret;
+let calmAnnegret;
 
 let Michael;
 
@@ -93,6 +94,7 @@ function preload() {
   pissedAnnegret = loadImage("characters/Annegret-pissed-taller.png");
   cryingAnnegret = loadImage("characters/Annegret-crying.png");
   sternAnnegret = loadImage("characters/Annegret-verhärtet.png");
+  calmAnnegret = loadImage("characters/Annegret-calmed_-down.png");
 
   Michael = loadImage("characters/Michael.png");
   doorBell = loadImage("backgrounds/doorbell.png");
@@ -148,6 +150,7 @@ export {
   pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
+  calmAnnegret,
   Michael,
   fontA,
   fontG
