@@ -340,6 +340,10 @@ export default class Handler {
         "Annegret",
         "Frank hat schon sehr viel gegessen, ich denke es reicht für heute. Schließlich muss er auf seine Linie achten."
       );
+      this.monologueC2 = new Monologue(
+        160, 550, 705, 130,
+        "Ich verstehe nicht, wieso Annegret diese Entscheidung für Frank trifft. Und schon gar nicht, wieso sie seine Figur kommentiert. Das ist ganz schön unangenehm."
+      );
       this.decisionC1 = new Decision(
         160, 550, 340, 130,
         "Frank fragen.", "Annegrets Entscheidung akzeptieren."
@@ -354,7 +358,7 @@ export default class Handler {
         "Frank",
         "Oh, ich? Äh, ich schätze Annegret hat recht, das war genug für heute."
       );
-      this.monologueC2 = new Monologue(
+      this.monologueC3 = new Monologue(
         160, 550, 705, 130,
         "Schmunzelnd sehe ich Frank an, der nur mit einem leichten Lächeln die Schultern zuckt und sich eine Traube in den Mund wirft."
       );
@@ -389,7 +393,7 @@ export default class Handler {
       this.playerD2 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Hm, das ist schade. Na ja, einen Versuch war es wert"
+        "Hm, das ist schade. Na ja, einen Versuch war es wert."
       );
       this.monologueD5 = new Monologue(
         160, 550, 705, 130,
@@ -463,6 +467,10 @@ export default class Handler {
       )
       this.monologueE2 = new Monologue(
         160, 550, 705, 130,
+        "Lügt Frank mich etwa gerade an? Es scheint nicht so, als wüsste er, welche Nachricht ich meine. Aber wenn er nicht geantwortet hat, dann kann es ja nur Annegret gewesen sein..."
+      );
+      this.monologueE3 = new Monologue(
+        160, 550, 705, 130,
         "Frank lacht verlegen und kratzt sich am Hinterkopf."
       );
       this.playerE7 = new Text(
@@ -470,11 +478,11 @@ export default class Handler {
         "Ich",
         "Oh, was ist denn da passiert?"
       );
-      this.monologueE3 = new Monologue(
+      this.monologueE4 = new Monologue(
         160, 550, 705, 130,
         "Ich deute auf seinen Arm, an dem Kratzer hinter seinem hochgerutschten Ärmel erscheint sind."
       );
-      this.monologueE4 = new Monologue(
+      this.monologueE5 = new Monologue(
         160, 550, 705, 130,
         "Ruckartig nimmt er seinen Arm runter."
       );
@@ -493,7 +501,7 @@ export default class Handler {
         "Frank",
         "Es ist echt nichts Großes, ich bin nur blöd gestolpert."
       );
-      this.monologueE5 = new Monologue(
+      this.monologueE6 = new Monologue(
         160, 550, 705, 130,
         "Ich muss lachen. Es ist typisch für ihn, durch Tollpatschigkeit in schwierige Situationen zu geraten."
       );
@@ -502,7 +510,7 @@ export default class Handler {
         "Ich",
         "Oh Mann, du musst echt aufpassen, das sieht nicht harmlos aus."
       );
-      this.monologueE6 = new Monologue(
+      this.monologueE7 = new Monologue(
         160, 550, 705, 130,
         "Seine Mundwinkel ziehen sich leicht nach oben."
       );
@@ -516,7 +524,7 @@ export default class Handler {
         "Annegret",
         "Frank?"
       );
-      this.monologueE7 = new Monologue(
+      this.monologueE8 = new Monologue(
         160, 550, 705, 130,
         "Annegret erscheint hinter ihrem Mann. Ihr Blick ist gereizt, doch er sänftigt sich wieder, als sie mich erblickt."
       );
@@ -525,7 +533,7 @@ export default class Handler {
         "Annegret",
         "Ach, deswegen dauert es so lange. Ich dachte mir schon, dass selbst jemand wie Frank nicht so lange brauchen kann, um die Eier zu finden."
       );
-      this.monologueE8 = new Monologue(
+      this.monologueE9 = new Monologue(
         160, 550, 705, 130,
         "Annegret lacht auf, Frank scheint allerdings nicht sonderlich von ihrem Witz amüsiert zu sein."
       );
@@ -549,7 +557,7 @@ export default class Handler {
         "Frank",
         "Ja, wir sehen uns."
       );
-      this.monologueE9 = new Monologue(
+      this.monologueE10 = new Monologue(
         160, 550, 705, 130,
         "Und damit trennen sich unsere Wege."
       );
@@ -647,6 +655,10 @@ export default class Handler {
         160, 550, 705, 130,
         "Annegret",
         "Es ist nun mal so, dass Frank sich gerne in die Opferrolle stellt und das nimmt er selbst gar nicht richtig wahr. Frank und ich sind jetzt schon seit über 15 Jahren zusammen, niemand kennt ihn besser als ich, und es ergibt Sinn, dass er so ist."
+      );
+      this.monologueF = new Monologue(
+        160, 550, 705, 130,
+        "Ich habe nie mitbekommen, dass Frank sich unberechtigterweise als das Opfer dargestellt hat. Wieso würde sie sowas über ihn sagen?"
       );
       this.annegretF9 = new Text(
         160, 550, 705, 130,
@@ -906,7 +918,7 @@ export default class Handler {
       this.playerG3 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Ob das tatsächlich von Frank und Annegret kam? Hoffentlich ist nichts Wichtiges kaputt gegangen."
+        "Ob das tatsächlich von Frank und Annegret kam? Das klang nämlich gar nicht gut. Hoffentlich ist alles in Ordnung."
       );
       this.monologueG4 = new Monologue(
         160, 550, 705, 130,
@@ -1085,15 +1097,15 @@ export default class Handler {
       );
       this.monologueI7 = new Monologue(
         160, 550, 705, 130,
-        "Oh Mann. Jetzt, wo ich so darüber nachdenke, haben Frank und ich uns seit Monaten nicht mehr zu zweit getroffen. Als er das Treffen zum Fußballschauen abgesagt hat und ich ihn im Supermarkt darauf angesprochen habe, hatte er keine Ahnung wovon ich gesprochen habe und dann seine Geschichte verändert, um Ausreden zu suchen. Ich bin mir ziemlich sicher, dass er mich da angelogen hat."
+        "Ich wollte Frank ein Stück Kuchen geben, doch dann hat Annegret es Frank verboten. Ich meine, ich verstehe ihre Fürsorge... Aber es war ziemlich unangenehm, vor allem, dass sie seinen Körper kommentiert hat."
       );
       this.monologueI8 = new Monologue(
         160, 550, 705, 130,
-        "Ach ja, die Verletzung an Franks Arm... Er hat auf meine Frage hin defensiv reagiert. Es scheint ziemlich unglaubwürdig, dass die Wunden auf der Arbeit entstanden sind. Könnte es tatsächlich sein, dass Annegret..."
+        "Oh Mann. Jetzt, wo ich so darüber nachdenke, haben Frank und ich uns seit Monaten nicht mehr zu zweit getroffen. Als er das Treffen zum Fußballschauen abgesagt hat und ich ihn im Supermarkt darauf angesprochen habe, hatte er keine Ahnung wovon ich gesprochen habe und dann seine Geschichte verändert, um Ausreden zu suchen. Beantwortet Annegret etwa Nachrichten von Frank hinter seinem Rücken?"
       );
       this.monologueI9 = new Monologue(
         160, 550, 705, 130,
-        "Ich wollte Frank ein Stück Kuchen geben, doch dann hat Annegret es Frank verboten. Ich meine, ich verstehe ihre Fürsorge... Aber es war ziemlich unangenehm, vor allem, dass sie seinen Körper kommentiert hat."
+        "Ach ja, die Verletzung an Franks Arm... Er hat auf meine Frage hin defensiv reagiert. Es scheint ziemlich unglaubwürdig, dass die Wunden auf der Arbeit entstanden sind. Könnte es tatsächlich sein, dass Annegret..."
       );
       this.monologueI10 = new Monologue(
         160, 550, 705, 130,
@@ -1101,13 +1113,9 @@ export default class Handler {
       );
       this.monologueI11 = new Monologue(
         160, 550, 705, 130,
-        "Frank sah nach dem Streit mit Annegret unheimlich niedergeschlagen aus. Keine Ahnung, was ich hier noch schreiben soll"
-      );
-      this.monologueI12 = new Monologue(
-        160, 550, 705, 130,
         "Das Krachen im Haus! Mag ja sein, dass tatsächlich eine Lampe zerbrochen ist, aber nach all dem, was sonst noch passiert ist, kommt mir das ziemlich suspekt vor. "
       );
-      this.monologueI13 = new Monologue(
+      this.monologueI12 = new Monologue(
         160, 550, 705, 130,
         "Nach dem Streit hat Annegret Frank 13 Mal angerufen und 19 Nachrichten verschickt. Vielleicht wollte sie es dringend wieder gut machen. Was mich eher zum Nachdenken bringt, ist, wie beunruhigt Frank darauf reagiert hat. Fast, als hätte er Angst."
       );
@@ -1381,7 +1389,7 @@ export default class Handler {
       //good ending
       
 
-    this.active = this.monologueI1;
+    this.active = this.start;
 
     //Szene 1
     this.warning.changeNext(this.monologueA1, this);
@@ -1462,14 +1470,14 @@ export default class Handler {
     this.playerC1.changeNext(this.playerC2, this);
     this.playerC2.changeNext(this.monologueC1, this);
     this.monologueC1.changeNext(this.annegretC1, this);
-    this.annegretC1.changeNext(this.decisionC1, this);
+    this.monologueC2.changeNext(this.decisionC1, this);
     this.decisionC1.changeNext1(this.playerC3, this);
     this.decisionC1.changeNext2(this.monologueC2, this);
     this.playerC3.changeNext(this.frankC2, this);
-    this.frankC2.changeNext(this.monologueC2, this);
+    this.frankC2.changeNext(this.monologueC3, this);
 
     //Szene 2.1
-    this.monologueC2.changeNext(this.monologueD1, this);
+    this.monologueC3.changeNext(this.monologueD1, this);
     this.monologueD1.changeNext(this.monologueD3, this);
     this.monologueD3.changeNext(this.monologueD4, this);
     this.monologueD4.changeNext(this.playerD1, this);
@@ -1491,27 +1499,27 @@ export default class Handler {
     this.playerE6.changeNext(this.frankE4, this);
     this.frankE4.changeNext(this.frankE5, this);
     this.frankE5.changeNext(this.frankE6, this);
-    this.frankE6.changeNext(this.monologueE2, this);
-    this.monologueE2.changeNext(this.annegretE1, this);
-    this.playerE7.changeNext(this.monologueE3, this);
-    this.monologueE3.changeNext(this.monologueE4, this);
-    this.monologueE4.changeNext(this.frankE7, this);
+    this.monologueE2.changeNext(this.monologueE3, this);
+    this.monologueE3.changeNext(this.annegretE1, this);
+    this.playerE7.changeNext(this.monologueE4, this);
+    this.monologueE4.changeNext(this.monologueE5, this);
+    this.monologueE5.changeNext(this.frankE7, this);
     this.frankE7.changeNext(this.playerE8, this);
     this.playerE8.changeNext(this.frankE8, this);
-    this.frankE8.changeNext(this.monologueE5, this);
-    this.monologueE5.changeNext(this.playerE9, this);
-    this.playerE9.changeNext(this.monologueE6, this);
-    this.monologueE6.changeNext(this.frankE9, this);
+    this.frankE8.changeNext(this.monologueE6, this);
+    this.monologueE6.changeNext(this.playerE9, this);
+    this.playerE9.changeNext(this.monologueE7, this);
+    this.monologueE7.changeNext(this.frankE9, this);
     this.frankE9.changeNext(this.annegretE1, this);
-    this.annegretE1.changeNext(this.monologueE7, this);
-    this.monologueE7.changeNext(this.annegretE2, this);
-    this.annegretE2.changeNext(this.monologueE8, this);
-    this.monologueE8.changeNext(this.annegretE3, this);
+    this.annegretE1.changeNext(this.monologueE8, this);
+    this.monologueE8.changeNext(this.annegretE2, this);
+    this.annegretE2.changeNext(this.monologueE9, this);
+    this.monologueE9.changeNext(this.annegretE3, this);
     this.annegretE3.changeNext(this.playerE10, this);
     this.playerE10.changeNext(this.annegretE4, this);
     this.annegretE4.changeNext(this.frankE10, this);
-    this.frankE10.changeNext(this.monologueE9, this);
-    this.monologueE9.changeNext(this.playerE11, this);
+    this.frankE10.changeNext(this.monologueE10, this);
+    this.monologueE10.changeNext(this.playerE11, this);
 
     //Szene 3
     this.playerE11.changeNext(this.monologueF1, this);
@@ -1533,7 +1541,7 @@ export default class Handler {
     this.annegretF6.changeNext(this.annegretF7, this);
     this.annegretF7.changeNext(this.playerF4, this);
     this.playerF4.changeNext(this.annegretF8, this);
-    this.annegretF8.changeNext(this.annegretF9, this);
+    this.monologueF.changeNext(this.annegretF9, this);
     this.annegretF9.changeNext(this.decisionF1, this);
     this.decisionF1.changeNext1(this.playerF5, this);
     this.decisionF1.changeNext2(this.playerF9, this);
@@ -1590,7 +1598,7 @@ export default class Handler {
     this.playerG1.changeNext(this.monologueG1, this);
     this.monologueG1.changeNext(this.playerG2, this);
     this.playerG2.changeNext(this.monologueG2, this);
-    this.monologueG2.changeNext(this.monologueG3, this);
+    this.monologueG2.changeNext(this.monologueG4, this);
     this.monologueG3.changeNext(this.playerG3, this);
     this.playerG3.changeNext(this.monologueG4, this);
 
@@ -1637,7 +1645,7 @@ export default class Handler {
     this.monologueI3.changeNext(this.monologueI4, this);
     this.monologueI4.changeNext(this.monologueI5, this);
     this.monologueI5.changeNext(this.monologueI6, this);
-    this.monologueI13.changeNext(this.monologueI14, this);
+    this.monologueI12.changeNext(this.monologueI14, this);
     this.monologueI14.changeNext(this.monologueI15, this);
     this.monologueI15.changeNext(this.monologueI16, this);
     this.monologueI16.changeNext(this.decisionI1, this);

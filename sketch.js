@@ -49,15 +49,15 @@ let handler = new Handler(doorbell);
 let trigger = new Warning(400, 450, 200, 65);
 let decision1 = new Button(160, 550, 340, 130);
 let decision2 = new Button(520, 550, 340, 130);
+let control = new Button(175, 588, 495, 25);
+let lie = new Button(255, 613, 460, 25);
 let arm = new Button(340, 375, 30, 30);
+let victim = new Button(350, 588, 298, 25);
+let noise = new Button(20, 20, 200, 300);
 let phone = new Button(580, 450, 60, 50);
 
 let redFlags = 0;
 let confidence = 0;
-
-let armFlag = false;
-let annegretFlag = false;
-let fatphobiaamk = false;
 
 function reload() {
     window.location.reload();
@@ -83,12 +83,25 @@ function mouseClicked() {
       decision1.mouseClicked();
       decision2.mouseClicked();
     }
+    if (handler.active === handler.annegretC1) {
+      control.mouseClicked();
+    }
+    if (handler.active === handler.frankE6) {
+      lie.mouseClicked();
+    }
     if (handler.active === handler.monologueE2) {
       arm.mouseClicked();
+    }
+    if (handler.active === handler.annegretF8) {
+      victim.mouseClicked();
+    }
+    if (handler.active === handler.monologueG2) {
+      noise.mouseClicked();
     }
     if (handler.active === handler.monologueH8) {
       phone.mouseClicked();
     }
+    
     /*if (handler.active === handler.end) {
       end.mouseClicked();
     }*/
@@ -515,6 +528,24 @@ function draw() {
           image(smileAnnegret, 210, 240, 270, 800);
           image(happyFrank, 500, 170, 320, 840);
           image(textBoxPeach, 90, 380, 800, 400);
+          if (control.triggered === false) {
+            if (control.hitTest(mouseX, mouseY)) {
+            stroke("#eb5873");
+            strokeWeight(2);
+            fill(0, 0, 0, 0);
+            rect(175, 588, 495, 25);
+            noStroke();
+            fill("#eb5873");
+            textSize(14);
+            text("kontrollierendes Verhalten", 500, 580);
+            }
+          } else {
+            redFlags += 1;
+            handler.active = handler.monologueC2;
+          }
+          if (handler.annegretC1.triggered === true && control.hitTest(mouseX, mouseY) === false) {
+            handler.active = handler.decisionC1;
+          }
           break;
           case handler.decisionC1:
           image(livingroom, 15, 15, 1000, 700);
@@ -646,6 +677,24 @@ function draw() {
           image(market, 15, 15, 1000, 700);
           image(happyFrank2, 350, 170, 320, 680);
           image(textBoxBlue, 90, 380, 800, 400);
+          if (lie.triggered === false) {
+            if (lie.hitTest(mouseX, mouseY)) {
+            stroke("#eb5873");
+            strokeWeight(2);
+            fill(0, 0, 0, 0);
+            rect(255, 613, 460, 25);
+            noStroke();
+            fill("#eb5873");
+            textSize(14);
+            text("Lüge", 500, 650);
+            }
+          } else {
+            redFlags += 1;
+            handler.active = handler.monologueE2;
+          }
+          if (handler.frankE6.triggered === true && lie.hitTest(mouseX, mouseY) === false) {
+            handler.active = handler.monologueE3;
+          }
           break;
           case handler.monologueE2:
           image(market, 15, 15, 1000, 700);
@@ -653,17 +702,19 @@ function draw() {
           image(textBoxBlue, 90, 380, 800, 400);
           if (arm.triggered === false) {
             if (arm.hitTest(mouseX, mouseY)) {
-              textSize(16);
-              stroke("#0a3246");
+              stroke("#eb5873");
               strokeWeight(2);
+              fill(0, 0, 0, 0);
+              rect(340, 375, 30, 30);
+              noStroke();
+              fill("#eb5873");
+              textSize(14);
               textAlign(CENTER);
               text("Verletzung", 350, 420);
             }
            } else {
             redFlags += 1;
-            armFlag = true;
             handler.active = handler.playerE7;
-            arm.triggered = false;
           }
           break;
           case handler.playerE7:
@@ -847,6 +898,24 @@ function draw() {
           case handler.annegretF8:
           image(cryingAnnegret, 380, 240, 250, 650);
           image(textBoxPeach, 90, 380, 800, 400);
+          if (victim.triggered === false) {
+            if (victim.hitTest(mouseX, mouseY)) {
+            stroke("#eb5873");
+            strokeWeight(2);
+            fill(0, 0, 0, 0);
+            rect(350, 588, 298, 25);
+            noStroke();
+            fill("#eb5873");
+            textSize(14);
+            text("Invalidierung", 540, 580);
+            }
+          } else {
+            redFlags += 1;
+            handler.active = handler.monologueF;
+          }
+          if (handler.annegretF8.triggered === true && victim.hitTest(mouseX, mouseY) === false) {
+            handler.active = handler.annegretF9;
+          }
           break;
           case handler.annegretF9:
           image(cryingAnnegret, 380, 240, 250, 650);
@@ -1100,6 +1169,20 @@ function draw() {
           case handler.monologueG2:
           image(bedNight, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if (noise.triggered === false) {
+            if (noise.hitTest(mouseX, mouseY)) {
+            stroke("#f9f7d0");
+            strokeWeight(5);
+            fill(0, 0, 0, 0);
+            rect(20, 20, 160, 350);
+            noStroke();
+            fill("#f9f7d0");
+            textSize(14);
+            text("lautes Krachen", 140, 400);
+            }
+          } else {
+            handler.active = handler.monologueG3;
+          }
           break;
           case handler.monologueG3:
           image(bedNight, 15, 15, 1000, 700);
@@ -1246,16 +1329,19 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           if (phone.triggered === false) {
             if (phone.hitTest(mouseX, mouseY)) {
-              textSize(16);
-              stroke("#0a3246");
+              stroke("#eb5873");
               strokeWeight(2);
+              fill(0, 0, 0, 0);
+              rect(350, 588, 298, 25);
+              noStroke();
+              fill("#eb5873");
+              textSize(14);
               textAlign(CENTER);
-              text("auf den Bildschirm schauen", 540, 520, 150);
+              text("Bildschirm", 580, 450, 60, 50);
             }
            } else {
             redFlags += 1;
             handler.active = handler.monologueH9;
-            phone.triggered = false;
           }
           break;
           case handler.monologueH9:
@@ -1318,8 +1404,18 @@ function draw() {
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
             if(handler.monologueI6.triggered === true) {
-            if (armFlag === true) {
+            if (control.triggered === true) {
+              handler.active = handler.monologueI7;
+            } else if (lie.triggered === true) {
               handler.active = handler.monologueI8;
+            } else if (arm.triggered === true) {
+              handler.active = handler.monologueI9;
+            } else if (victim.triggered === true) {
+              handler.active = handler.monologueI10;
+            } else if (noise.triggered === true) {
+              handler.active = handler.monologueI11;
+            } else if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
             } else {
               handler.active = handler.monologueI14;
             }
@@ -1328,28 +1424,79 @@ function draw() {
           case handler.monologueI7:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if(handler.monologueI7.triggered === true) {
+            if (lie.triggered === true) {
+              handler.active = handler.monologueI8;
+            } else if (arm.triggered === true) {
+              handler.active = handler.monologueI9;
+            } else if (victim.triggered === true) {
+              handler.active = handler.monologueI10;
+            } else if (noise.triggered === true) {
+              handler.active = handler.monologueI11;
+            } else if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
+            } else {
+              handler.active = handler.monologueI14;
+            }
+          }
           break;
           case handler.monologueI8:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if(handler.monologueI8.triggered === true) {
+            if (arm.triggered === true) {
+              handler.active = handler.monologueI9;
+            } else if (victim.triggered === true) {
+              handler.active = handler.monologueI10;
+            } else if (noise.triggered === true) {
+              handler.active = handler.monologueI11;
+            } else if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
+            } else {
+              handler.active = handler.monologueI14;
+            }
+          }
           break;
           case handler.monologueI9:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if(handler.monologueI9.triggered === true) {
+            if (victim.triggered === true) {
+              handler.active = handler.monologueI10;
+            } else if (noise.triggered === true) {
+              handler.active = handler.monologueI11;
+            } else if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
+            } else {
+              handler.active = handler.monologueI14;
+            }
+          }
           break;
           case handler.monologueI10:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if(handler.monologueI10.triggered === true) {
+            if (noise.triggered === true) {
+              handler.active = handler.monologueI11;
+            } else if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
+            } else {
+              handler.active = handler.monologueI14;
+            }
+          }
           break;
           case handler.monologueI11:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
+          if(handler.monologueI11.triggered === true) {
+            if (phone.triggered === true) {
+              handler.active = handler.monologueI12;
+            } else {
+              handler.active = handler.monologueI14;
+            }
+          }
           break;
           case handler.monologueI12:
-          image(bedDay, 15, 15, 1000, 700);
-          image(textBoxPink, 90, 380, 800, 400);
-          break;
-          case handler.monologueI13:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
