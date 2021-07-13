@@ -172,7 +172,7 @@ export default class Handler {
       );
       this.monologueB5 = new Monologue(
         160, 550, 705, 130,
-        "Ich grub in meiner Tasche und hielt triumphierend den Fund vor meine Nase, also ich das Namensschildchen ertastet hatte."
+        "Ich grub in meiner Tasche und hielt triumphierend den Fund vor meine Nase, als ich das Namensschildchen ertastet hatte."
       );
       this.monologueB6 = new Monologue(
         160, 550, 705, 130,
@@ -258,7 +258,7 @@ export default class Handler {
       );
       this.monologueB16 = new Monologue(
         160, 550, 705, 130, 
-        "Annegret verdreht schmunzelnd die Augen."
+        "Annegret verdrehte schmunzelnd die Augen."
       );
       this.annegretB3 = new Text(
         160, 550, 705, 130,
@@ -271,7 +271,7 @@ export default class Handler {
       );
       this.monologueB18 = new Monologue(
         160, 550, 705, 130,
-        "Sein Blick schweift von seiner Frau, wie ich vermutete, zu mir. Lächelnd kam er mir entgegen."
+        "Sein Blick schweifte von seiner Frau, wie ich vermutete, zu mir. Lächelnd kam er mir entgegen."
       );
       this.frankB2 = new Text(
         160, 550, 705, 130,
