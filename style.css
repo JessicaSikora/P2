@@ -40,6 +40,28 @@ h1 {
   text-decoration: underline;
 }
 
+#nav_element {
+  color: #f9f7d0;
+  font-family: GillSans;
+  font-weight: normal;
+  text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#nav_element:hover {
+  text-decoration: underline;
+}
+
+#nav{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#nav_game{
+  padding-top: 20px;
+}
+
 #simulation {
   text-align: center;
 }
