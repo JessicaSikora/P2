@@ -1,4 +1,10 @@
 import {
+  crash,
+  groceryStore,
+  notification,
+  police,
+  ringOne,
+  ringTwo,
   logo,
   hands,
   textBoxBlue,

@@ -99,6 +99,14 @@ function preload() {
   Michael = loadImage("characters/Michael.png");
   doorBell = loadImage("backgrounds/doorbell.png");
 
+  // sounds
+  crash = loadSound("sounds/crash.mp3");
+  groceryStore = loadSound("sounds/grocery_store.mp3");
+  notification = loadSound("sounds/notification.mp3");
+  police = loadSound("sounds/police.mp3");
+  ringOne = loadSound("sounds/ringing1.mp3");
+  ringTwo = loadSound("sounds/ringing2.mp3");
+
   //fonts
   fontA = loadFont("font/American Typewriter Regular.ttf");
   fontG = loadFont("font/Gill Sans.otf");
@@ -118,6 +126,12 @@ function windowResized() {
 window.addEventListener("resize", windowResized);
 
 export {
+  crash,
+  groceryStore,
+  notification,
+  police,
+  ringOne,
+  ringTwo,
   logo,
   hands,
   textBoxBlue,
