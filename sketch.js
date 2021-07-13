@@ -43,7 +43,7 @@ import Handler from "./handler.js";
 import Doorbell from "./doorbell.js";
 
 let start = new Start(410, 520, 180, 90);
-let end = new End(400, 450, 200, 65);
+let end = new End(410, 520, 180, 90);
 let doorbell = new Doorbell();
 let handler = new Handler(doorbell);
 let trigger = new Warning(400, 450, 200, 65);
@@ -123,9 +123,19 @@ function keyPressed() {
 }
 window.keyPressed = keyPressed;
 
+function sound() {
+  if (handler.active === handler.monologueA1) {
+
+  }
+  if (handler.active === handler.monologueB1) {
+
+  }
+
+}
+
 function draw() {
   clear();
-  //sound();
+  sound();
 
       switch (handler.active) {
         case handler.start:
@@ -2027,7 +2037,6 @@ function draw() {
           image(police, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-
           case handler.end:
             textSize(100);
             textAlign(CENTER);
@@ -2036,14 +2045,9 @@ function draw() {
             if (end.end === true) {
                 reload();
               }
-              fill(30, 30, 30);
-              rect(10, 615, 1310, 130);
-              fill(60, 60, 60);
-              rect(10, 745, 1310, 1000);
-              rect(10, 0, 1310, 10);
               end.display();
           break;
-    }
+        }
         
 
   if (start.start === false) {

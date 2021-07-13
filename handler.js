@@ -1484,6 +1484,7 @@ export default class Handler {
       );
       this.playerL1 = new Text(
         160, 550, 705, 130, 
+        "Ich",
         "Was ist hier los? Ist etwas Schlimmes passiert?"
       );
       this.personL1 = new Text(
