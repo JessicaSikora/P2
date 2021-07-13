@@ -326,18 +326,23 @@ function draw() {
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
           case handler.monologueB3:
+          image(hallwayDoor, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueB4:
+          image(hallwayDoor, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueB5:
+          image(hallwayDoor, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueB6:
+          image(hallwayDoor, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.playerB2:
+          image(hallwayDoor, 15, 15, 1000, 700);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
 
@@ -953,6 +958,11 @@ function draw() {
             handler.active = handler.annegretF9;
           }
           break;
+          case handler.monologueF:
+          image(hallway, 15, 15, 1000, 700);
+          image(cryingAnnegret, 380, 240, 250, 650);
+          image(textBoxPink, 90, 380, 800, 400);
+          break;
           case handler.annegretF9:
           image(hallway, 15, 15, 1000, 700);
           image(cryingAnnegret, 380, 240, 250, 650);
@@ -979,42 +989,42 @@ function draw() {
           break;
           case handler.annegretF10:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxPeach, 90, 380, 800, 400);
           break;
           case handler.monologueF8:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.playerF6:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.annegretF11name:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxPeach, 90, 380, 800, 400);
           break;
           case handler.playerF7:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.annegretF12:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxPeach, 90, 380, 800, 400);
           break;
           case handler.playerF8:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.monologueF9:
           image(hallway, 15, 15, 1000, 700);
-          image(calmAnnegret, 380, 240, 260, 800);
+          image(calmAnnegret, 380, 240, 270, 800);
           image(textBoxPink, 90, 380, 800, 400);
           break;
 
@@ -1769,7 +1779,7 @@ function draw() {
           image(hallway, 15, 15, 1000, 700);
           image(confusedFrank, 360, 170, 290, 650);
           image(textBoxLightpink, 90, 380, 800, 400);
-          if(handler.playerJ8.triggered === true) {
+          if(handler.playerJ9.triggered === true) {
             if (phone.triggered === true) {
               handler.active = handler.playerJ10;
             } else {
