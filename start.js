@@ -7,8 +7,8 @@ export default class Start extends Button {
     this.start = false;
 
     this.buttonAnimated = {
-      x: this.x + 100,
-      y: this.y + 20,
+      x: this.x + 90,
+      y: this.y + 60,
       width: 180,
       height: 60,
       textFont: "American Typewriter Semibold",
@@ -23,24 +23,7 @@ export default class Start extends Button {
 
   display() {
     push();
-    //fill(0, 88, 106);
     fill("#0a3246");
-    // rect(10, 10, 1000, 700);
-    // fill(10, 50, 70, 180);
-    // stroke(242, 145, 121);
-    // strokeWeight(3);
-    // rect(this.x, this.y, this.width, this.height, 15);
-
-    // noStroke();
-    // fill(210, 235, 244);
-    // textSize(24);
-    // text(
-    //   "Spiel starten",
-    //   this.x + 35,
-    //   this.y + 20,
-    //   this.width - 20,
-    //   this.height - 20
-    // );
     this.displayButtonAnimated();
     pop();
   }
@@ -51,7 +34,6 @@ export default class Start extends Button {
     textSize(this.buttonAnimated.size);
     textFont(this.buttonAnimated.textFont);
 
-    //Fill(messageButton.color);
     stroke(this.buttonAnimated.strokeColor);
     strokeWeight(this.buttonAnimated.strokeWeight);
     noFill();
@@ -75,11 +57,11 @@ export default class Start extends Button {
   //Animations
   animation() {
     gsap.to(this.buttonAnimated, {
-      duration: 3,
+      duration: 2.7,
       delay: 0.5,
       ease: "easeIn",
-      x: this.x + 100,
-      y: this.y - 15,
+      x: this.x + 90,
+      y: this.y + 30,
       textFont: "American Typewriter Semibold",
       color: color("#0098c7"), //blue #0098c7
       strokeColor: color("#f9f7d0"), //yellow #f9f7d0

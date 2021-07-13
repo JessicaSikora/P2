@@ -41,9 +41,8 @@ import Warning from "./warning.js";
 import End from "./end.js";
 import Handler from "./handler.js";
 import Doorbell from "./doorbell.js";
-//import gsap from "./gsap.min.js";
 
-let start = new Start(400, 550, 200, 65);
+let start = new Start(410, 520, 180, 90);
 let end = new End(400, 450, 200, 65);
 let doorbell = new Doorbell();
 let handler = new Handler(doorbell);
@@ -61,52 +60,59 @@ let redFlags = 0;
 let confidence = 0;
 
 function reload() {
-    window.location.reload();
-  }
+  window.location.reload();
+}
 
 //Start Button Animation
 start.animation();
 
 function mouseClicked() {
-    if (start.start === false) {
-      start.mouseClicked();
-    } else {
-      handler.mouseClicked();
-    }
-    if (handler.active === handler.warning && trigger.warning === false) {
-      trigger.mouseClicked();
-    }
-    if (handler.active === handler.nameplate && doorbell.ok === false &&
-      doorbell.name.length >= 1) {
-      doorbell.mouseClicked();
-    }
-    if (handler.active === handler.decisionA1 || handler.active === handler.decisionC1) {
-      decision1.mouseClicked();
-      decision2.mouseClicked();
-    }
-    if (handler.active === handler.annegretC1) {
-      control.mouseClicked();
-    }
-    if (handler.active === handler.frankE6) {
-      lie.mouseClicked();
-    }
-    if (handler.active === handler.monologueE2) {
-      arm.mouseClicked();
-    }
-    if (handler.active === handler.annegretF8) {
-      victim.mouseClicked();
-    }
-    if (handler.active === handler.monologueG2) {
-      noise.mouseClicked();
-    }
-    if (handler.active === handler.monologueH8) {
-      phone.mouseClicked();
-    }
-    
-    /*if (handler.active === handler.end) {
-      end.mouseClicked();
-    }*/
+  if (start.start === false) {
+    start.mouseClicked();
+  } else {
+    handler.mouseClicked();
+  }
+  if (handler.active === handler.warning && trigger.warning === false) {
+    trigger.mouseClicked();
+  }
+  if (
+    handler.active === handler.nameplate &&
+    doorbell.ok === false &&
+    doorbell.name.length >= 1
+  ) {
+    doorbell.mouseClicked();
+  }
+  if (
+    handler.active === handler.decisionC1 ||
+    handler.active === handler.decisionH3 ||
+    handler.active === handler.decisionF1 ||
+    handler.active === handler.decisionF3
+  ) {
+    decision1.mouseClicked();
+    decision2.mouseClicked();
+  }
+  if (handler.active === handler.annegretC1) {
+    control.mouseClicked();
+  }
+  if (handler.active === handler.frankE6) {
+    lie.mouseClicked();
+  }
+  if (handler.active === handler.monologueE2) {
+    arm.mouseClicked();
+  }
+  if (handler.active === handler.annegretF8) {
+    victim.mouseClicked();
+  }
+  if (handler.active === handler.monologueG2) {
+    noise.mouseClicked();
+  }
+  if (handler.active === handler.monologueH8) {
+    phone.mouseClicked();
+  }
 
+  if (handler.active === handler.end) {
+      end.mouseClicked();
+    }
 }
 window.mouseClicked = mouseClicked;
 
@@ -118,11 +124,11 @@ function keyPressed() {
 window.keyPressed = keyPressed;
 
 function draw() {
-    clear();
-    //sound();
+  clear();
+  //sound();
 
-    switch (handler.active) {
-      case handler.start:
+      switch (handler.active) {
+        case handler.start:
         if (start.start === true) {
           handler.active = handler.warning;
         }
@@ -134,7 +140,6 @@ function draw() {
             handler.active = handler.monologueA1;
           }
           break
-
         //Szene 1
         case handler.monologueA1:
           image(livingroom, 15, 15, 1000, 700);
@@ -586,7 +591,6 @@ function draw() {
           image(happyFrank, 500, 170, 320, 840);
           image(textBoxPink, 90, 380, 800, 400);
           break;
-          
 
           //Szene 2.1
           case handler.monologueD1:
@@ -1211,7 +1215,7 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           break;
 
-          //Szene 4.1
+         //Szene 4.1
           case handler.playerG1:
           image(bedNight, 15, 15, 1000, 700);
           image(textBoxLightpink, 90, 380, 800, 400);
@@ -1236,10 +1240,10 @@ function draw() {
             noStroke();
             fill("#f9f7d0");
             textSize(14);
-            text("lautes Krachen", 140, 400);
-            }
+           text("lautes Krachen", 140, 400);
+           }
           } else {
-            handler.active = handler.monologueG3;
+           handler.active = handler.monologueG3;
           }
           break;
           case handler.monologueG3:
@@ -1468,7 +1472,7 @@ function draw() {
           case handler.monologueI6:
           image(bedDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
-            if(handler.monologueI6.triggered === true) {
+          if(handler.monologueI6.triggered === true) {
             if (control.triggered === true) {
               handler.active = handler.monologueI7;
             } else if (lie.triggered === true) {
@@ -1493,7 +1497,7 @@ function draw() {
             if (lie.triggered === true) {
               handler.active = handler.monologueI8;
             } else if (arm.triggered === true) {
-              handler.active = handler.monologueI9;
+             handler.active = handler.monologueI9;
             } else if (victim.triggered === true) {
               handler.active = handler.monologueI10;
             } else if (noise.triggered === true) {
@@ -1546,7 +1550,7 @@ function draw() {
             } else if (phone.triggered === true) {
               handler.active = handler.monologueI12;
             } else {
-              handler.active = handler.monologueI14;
+             handler.active = handler.monologueI14;
             }
           }
           break;
@@ -1961,7 +1965,6 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           break;
 
-
           case handler.monologueL1:
           image(houseDay, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
@@ -2033,12 +2036,11 @@ function draw() {
     }
         
 
-          
-    if (start.start === false) {
-      start.display();
-      image(logo, 370, 50, 340, 400);
-      } else {
-      handler.display();
-      }
+  if (start.start === false) {
+    start.display();
+    image(logo, 370, 50, 340, 400);
+  } else {
+    handler.display();
+  }
 }
 window.draw = draw;
