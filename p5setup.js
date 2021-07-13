@@ -23,6 +23,8 @@ let bedDay;
 let bedNight;
 let police;
 let market;
+let hallway;
+let hallwayDoor;
 
 //Frank
 let happyFrank;
@@ -70,6 +72,8 @@ function preload() {
   bedNight = loadImage("backgrounds/bedDark.png");
   police = loadImage("backgrounds/housePolice.png");
   market = loadImage("backgrounds/markt.png");
+  hallway = loadImage("backgrounds/Hallway0814.png");
+  hallwayDoor = loadImage("backgrounds/Hallway0811.png");
 
   //Frank
   happyFrank = loadImage("characters/Happy-Frank.png");
@@ -128,6 +132,8 @@ export {
   bedNight,
   police,
   market,
+  hallway,
+  hallwayDoor,
   happyFrank,
   happyFrank2,
   hurtFrank,
