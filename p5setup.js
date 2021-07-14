@@ -3,7 +3,6 @@ let width = windowWidth;
 let height = windowHeight;
 
 //start
-let hands;
 let logo;
 
 //textbox
@@ -21,7 +20,7 @@ let houseDay;
 let houseNight;
 let bedDay;
 let bedNight;
-let police;
+let housePopo;
 let market;
 let hallway;
 let hallwayDoor;
@@ -32,21 +31,31 @@ let happyFrank2;
 let hurtFrank;
 let confusedFrank;
 let pissedFrank;
-let flusteredFrank;
 let tiredFrank;
 let phoneFrank;
 
 //Annegret
 let happyAnnegret;
 let smileAnnegret;
-let angryAnnegret;
-let superangryAnnegret;
-let pissedAnnegret;
 let cryingAnnegret;
 let sternAnnegret;
 let calmAnnegret;
 
 let Michael;
+
+//sounds
+let crash;
+let groceryStore;
+let notification;
+let police;
+let ringOne;
+let ringTwo;
+
+//music
+let oblivion;
+let nostalgia;
+let indie;
+let skyward;
 
 //fonts
 let fontA;
@@ -54,7 +63,6 @@ let fontG;
 
 function preload() {
   logo = loadImage("backgrounds/LogoTransparent.png");
-  hands = loadImage("backgrounds/Holding-hands.png");
 
   //textbox
   textBoxBlue = loadImage("textbox/boxBlu.png");
@@ -71,7 +79,7 @@ function preload() {
   houseNight = loadImage("backgrounds/houseNight.png");
   bedDay = loadImage("backgrounds/bedDay.png");
   bedNight = loadImage("backgrounds/bedDark.png");
-  police = loadImage("backgrounds/housePolice.png");
+  housePopo = loadImage("backgrounds/housePolice.png");
   market = loadImage("backgrounds/markt.png");
   hallway = loadImage("backgrounds/Hallway0814.png");
   hallwayDoor = loadImage("backgrounds/Hallway0811.png");
@@ -82,16 +90,12 @@ function preload() {
   hurtFrank = loadImage("characters/Blauer-Fleck-Kratzer.png");
   confusedFrank = loadImage("characters/Frank-confused.png");
   pissedFrank = loadImage("characters/Frank-genervt.png");
-  flusteredFrank = loadImage("characters/Frank-verlegen.png");
   tiredFrank = loadImage("characters/Frank-Eye-bags-min.png");
   phoneFrank = loadImage("characters/Frank-Phone.png");
 
   //Annegret
   happyAnnegret = loadImage("characters/Annegret-smiling.png");
   smileAnnegret = loadImage("characters/Annegret-bright-smile.png");
-  angryAnnegret = loadImage("characters/Annegret-angry-red-Face.png");
-  superangryAnnegret = loadImage("characters/Annegret-red_face.png");
-  pissedAnnegret = loadImage("characters/Annegret-pissed-taller.png");
   cryingAnnegret = loadImage("characters/Annegret-crying.png");
   sternAnnegret = loadImage("characters/Annegret-verhärtet.png");
   calmAnnegret = loadImage("characters/Annegret-calmed_-down.png");
@@ -99,13 +103,19 @@ function preload() {
   Michael = loadImage("characters/Michael.png");
   doorBell = loadImage("backgrounds/doorbell.png");
 
-  // sounds
+  //sounds
   crash = loadSound("sounds/crash.mp3");
   groceryStore = loadSound("sounds/grocery_store.mp3");
   notification = loadSound("sounds/notification.mp3");
   police = loadSound("sounds/police.mp3");
   ringOne = loadSound("sounds/ringing1.mp3");
   ringTwo = loadSound("sounds/ringing2.mp3");
+
+  //music
+  oblivion = loadSound("music/sb_beautifuloblivion.mp3");
+  nostalgia = loadSound("music/Nostalgic Music.mp3");
+  indie = loadSound("music/Fresh Air Master2.wav");
+  skyward = loadSound("music/sb_skyward.mp3");
 
   //fonts
   fontA = loadFont("font/American Typewriter Regular.ttf");
@@ -132,8 +142,11 @@ export {
   police,
   ringOne,
   ringTwo,
+  oblivion,
+  nostalgia,
+  indie,
+  skyward,
   logo,
-  hands,
   textBoxBlue,
   textBoxBabyblue,
   textBoxLightpink,
@@ -146,7 +159,7 @@ export {
   houseNight,
   bedDay,
   bedNight,
-  police,
+  housePopo,
   market,
   hallway,
   hallwayDoor,
@@ -155,13 +168,10 @@ export {
   hurtFrank,
   confusedFrank,
   pissedFrank,
-  flusteredFrank,
   tiredFrank,
   phoneFrank,
   happyAnnegret,
   smileAnnegret,
-  superangryAnnegret,
-  pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
   calmAnnegret,

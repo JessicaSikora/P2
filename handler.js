@@ -1602,7 +1602,7 @@ export default class Handler {
     this.monologueC1.changeNext(this.annegretC1, this);
     this.monologueC2.changeNext(this.decisionC1, this);
     this.decisionC1.changeNext1(this.playerC3, this);
-    this.decisionC1.changeNext2(this.monologueC2, this);
+    this.decisionC1.changeNext2(this.monologueC3, this);
     this.playerC3.changeNext(this.frankC2, this);
     this.frankC2.changeNext(this.monologueC3, this);
 
@@ -1723,6 +1723,7 @@ export default class Handler {
     this.playerF21.changeNext(this.monologueF20, this);
 
     //Szene 4.1
+    this.monologueF16.changeNext(this.playerG1, this);
     this.monologueF20.changeNext(this.playerG1, this);
     this.monologueF21.changeNext(this.playerG1, this);
     this.playerG1.changeNext(this.monologueG1, this);
@@ -1861,6 +1862,7 @@ export default class Handler {
     this.monologueL7.changeNext(this.personL2, this);
     this.personL2.changeNext(this.monologueL8, this);
     this.monologueL8.changeNext(this.personL3, this);
+    this.personL2.changeNext(this.monologueL9, this);
     this.monologueL9.changeNext(this.end, this); 
   }
 

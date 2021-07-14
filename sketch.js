@@ -5,8 +5,11 @@ import {
   police,
   ringOne,
   ringTwo,
+  oblivion,
+  nostalgia,
+  indie,
+  skyward,
   logo,
-  hands,
   textBoxBlue,
   textBoxBabyblue,
   textBoxLightpink,
@@ -19,7 +22,7 @@ import {
   houseNight,
   bedDay,
   bedNight,
-  police,
+  housePopo,
   market,
   hallway,
   hallwayDoor,
@@ -28,13 +31,10 @@ import {
   hurtFrank,
   confusedFrank,
   pissedFrank,
-  flusteredFrank,
   tiredFrank,
   phoneFrank,
   happyAnnegret,
   smileAnnegret,
-  superangryAnnegret,
-  pissedAnnegret,
   cryingAnnegret,
   sternAnnegret,
   calmAnnegret,
@@ -64,6 +64,10 @@ let phone = new Button(580, 450, 60, 50);
 
 let redFlags = 0;
 let confidence = 0;
+
+let soundT = 0;
+let musicA = 0;
+let musicB = 0;
 
 function reload() {
   window.location.reload();
@@ -130,14 +134,123 @@ function keyPressed() {
 window.keyPressed = keyPressed;
 
 function sound() {
+  //music
   if (handler.active === handler.monologueA1) {
-
+    musicA++
+    if (musicA === 1) {
+      indie.play();
+      indie.setVolume(0.2);
+      indie.loop();
+    }
   }
   if (handler.active === handler.monologueB1) {
+    indie.stop();
+    musicA = 0;
+    musicB++;
+    if (musicB === 1) {
+      nostalgia.play();
+      nostalgia.setVolume(0.2);
+      nostalgia.loop();
+    }
+  }
+  if (handler.active === handler.frankC1) {
+    nostalgia.stop();
+    musicB = 0;
+    musicA++;
+    if (musicA === 1) {
+      indie.play();
+      indie.setVolume(0.2);
+      indie.loop();
+    }
+  }
+  if (handler.active === handler.monologueJ1) {
+    musicB++;
+    if (musicB === 1) {
+      skyward.play();
+      skyward.setVolume(0.3);
+      skyward.loop();
+    }
+  if (handler.active === handler.monologueL5) {
+    musicA++;
+    if (musicB === 1) {
+      skyward.stop();
+      oblivion.play();
+      oblivion.setVolume(0.3);
+      oblivion.loop();
+    }
+  }
+  if (handler.active === handler.start) {
+    oblivion.stop();
+    musicA = 0;
+    musicB = 0;
+
+  }
+  
 
   }
 
+  //SFX
+  if (handler.active === handler.frankD1) {
+    soundT++;
+    if (soundT === 1) {
+    notification.setVolume(0.5);
+    notification.play();
+    }
+  if (handler.active === handler.playerD2) {
+    soundT = 0;
+  }
+  }
+  if (handler.active === handler.playerE1) {
+    soundT++;
+    indie.stop();
+    musicA = 0;
+    if (soundT === 1) {
+    groceryStore.play();
+    groceryStore.setVolume(0.2);
+    groceryStore.loop();
+    }
+  }
+  if (handler.active === handler.monologueF1) {
+    groceryStore.stop();
+    soundT = 0;
+  }
+  if (handler.active === handler.monologueG2) {
+    soundT++;
+    if (soundT === 1) {
+    crash.play();
+    crash.setVolume(0.5);
+    }
+  }
+  if (handler.active === handler.monologueG4) {
+    soundT = 0;
+  }
+  if (handler.active === handler.monologueI19) {
+    soundT++;
+    if (soundT === 1) {
+    ringOne.play();
+    ringOne.setVolume(0.5);
+    ringOne.loop();
+    }
+  } 
+  if (handler.active === handler.frankI1) {
+    ringOne.stop();
+    soundT = 0;
+  }
+  if (handler.active === handler.monologueL4) {
+    soundT++;
+    if (soundT === 1) {
+    skyward.stop();
+    police.play();
+    police.setVolume(0.1);
+    police.loop();
+    }
+  }
+  if (handler.active === handler.monologueL5) {
+    police.stop();
+    soundT = 0;
+  }
 }
+
 
 function draw() {
   clear();
@@ -740,12 +853,12 @@ function draw() {
           image(textBoxBlue, 90, 380, 800, 400);
           if (arm.triggered === false) {
             if (arm.hitTest(mouseX, mouseY)) {
-              stroke("#eb5873");
+              stroke("#f9f7d0");
               strokeWeight(2);
               fill(0, 0, 0, 0);
               rect(340, 375, 30, 30);
               noStroke();
-              fill("#eb5873");
+              fill("#f9f7d0");
               textSize(14);
               textAlign(CENTER);
               text("Verletzung", 350, 420);
@@ -2004,43 +2117,43 @@ function draw() {
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueL4:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueL5:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.playerL1:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxLightpink, 90, 380, 800, 400);
           break;
           case handler.personL1:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
           case handler.monologueL6:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.monologueL7:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.personL2:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
           case handler.monologueL8:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.personL3:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxBabyblue, 90, 380, 800, 400);
           break;
           case handler.monologueL9:
-          image(police, 15, 15, 1000, 700);
+          image(housePopo, 15, 15, 1000, 700);
           image(textBoxPink, 90, 380, 800, 400);
           break;
           case handler.end:
@@ -2049,7 +2162,7 @@ function draw() {
             fill(220, 220, 220);
             text("ENDE", 650, 300);
             if (end.end === true) {
-                reload();
+                handler.active = handler.start;
               }
               end.display();
           break;
