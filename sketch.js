@@ -70,10 +70,6 @@ let soundT = 0;
 let musicA = 0;
 let musicB = 0;
 
-function reload() {
-  window.location.reload();
-}
-
 //Start Button Animation
 start.animation();
 
