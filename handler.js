@@ -1788,6 +1788,7 @@ export default class Handler {
     this.playerI1.changeNext(this.frankI2, this);
     this.frankI2.changeNext(this.playerI2, this);
     this.playerI2.changeNext(this.frankI3, this);
+    this.monologueI20.changeNext(this.monologueL4, this);
 
     //Szene 5.2
     this.frankI3.changeNext(this.monologueJ1, this);

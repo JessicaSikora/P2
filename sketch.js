@@ -1533,12 +1533,12 @@ function draw() {
               stroke("#eb5873");
               strokeWeight(2);
               fill(0, 0, 0, 0);
-              rect(350, 588, 298, 25);
+              rect(580, 450, 60, 50);
               noStroke();
               fill("#eb5873");
               textSize(14);
               textAlign(CENTER);
-              text("Bildschirm", 580, 450, 60, 50);
+              text("Bildschirm", 650, 470, 60, 50);
             }
            } else {
             redFlags += 1;
