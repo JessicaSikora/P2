@@ -1256,27 +1256,27 @@ export default class Handler {
       this.playerJ6 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Annegret und die Torte"
+        "Weißt du noch als Annegret das mit der Torte gesagt hat? Dass du nichts mehr Essen solltest, weil du auf deine Linie achten solltest. Obwohl du aus so gut wie nur Muskeln bestehst?"
       );
       this.playerJ7 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Fußballnachricht"
+        "Diese Geschichte mit der Nachricht war auch nicht wirklich ehrlich, oder? In Wahrheit hat Annegret für dich geantwortet, das war in deiner Reaktion relativ gut herauszufinden."
       );
       this.playerJ8 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Arm"
+        "Deine Kratzer und blauen Flecken auf deinem Oberarm sind in Wirklichkeit auch nicht einfach so passier, oder? Die Position der Verletzungen stimmt nicht ganz mit deinem gesagten überein und die Kratzer sehen sehr nach tiefen Kratzspuren aus."
       );
       this.playerJ9 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Krachen"
+        "In der Nacht als ich dieses Krachen gehört habe, das hat sich nicht sehr nach Ausversehen angehört. Wir wissen beide, dass das etwas geschmissenes war. Für alles andere war das zu stark und zu schnell."
       );
       this.playerJ10 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "verpasste Anrufe"
+        "Als du die Nachrichten bekommen hast von Annegret, die du verpasst hast. Bist du vollkommen panisch und entgeistert weggerannt. Wärst du nicht mit so einer schockierten Miene davongerannt, hätte ich fast gedacht, dass nichts daran wäre."
       );
       this.monologueJ7 = new Monologue(
         160, 550, 705, 130,
