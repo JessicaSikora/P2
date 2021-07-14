@@ -172,7 +172,7 @@ export default class Handler {
       );
       this.monologueB5 = new Monologue(
         160, 550, 705, 130,
-        "Ich grub in meiner Tasche und hielt triumphierend den Fund vor meine Nase, also ich das Namensschildchen ertastet hatte."
+        "Ich grub in meiner Tasche und hielt triumphierend den Fund vor meine Nase, als ich das Namensschildchen ertastet hatte."
       );
       this.monologueB6 = new Monologue(
         160, 550, 705, 130,
@@ -258,7 +258,7 @@ export default class Handler {
       );
       this.monologueB16 = new Monologue(
         160, 550, 705, 130, 
-        "Annegret verdreht schmunzelnd die Augen."
+        "Annegret verdrehte schmunzelnd die Augen."
       );
       this.annegretB3 = new Text(
         160, 550, 705, 130,
@@ -271,7 +271,7 @@ export default class Handler {
       );
       this.monologueB18 = new Monologue(
         160, 550, 705, 130,
-        "Sein Blick schweift von seiner Frau, wie ich vermutete, zu mir. Lächelnd kam er mir entgegen."
+        "Sein Blick schweifte von seiner Frau, wie ich vermutete, zu mir. Lächelnd kam er mir entgegen."
       );
       this.frankB2 = new Text(
         160, 550, 705, 130,
@@ -1256,27 +1256,27 @@ export default class Handler {
       this.playerJ6 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Annegret und die Torte"
+        "Weißt du noch als Annegret das mit der Torte gesagt hat? Dass du nichts mehr Essen solltest, weil du auf deine Linie achten solltest. Obwohl du aus so gut wie nur Muskeln bestehst?"
       );
       this.playerJ7 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Fußballnachricht"
+        "Diese Geschichte mit der Nachricht war auch nicht wirklich ehrlich, oder? In Wahrheit hat Annegret für dich geantwortet, das war in deiner Reaktion relativ gut herauszufinden."
       );
       this.playerJ8 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Arm"
+        "Deine Kratzer und blauen Flecken auf deinem Oberarm sind in Wirklichkeit auch nicht einfach so passier, oder? Die Position der Verletzungen stimmt nicht ganz mit deinem gesagten überein und die Kratzer sehen sehr nach tiefen Kratzspuren aus."
       );
       this.playerJ9 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "Krachen"
+        "In der Nacht als ich dieses Krachen gehört habe, das hat sich nicht sehr nach Ausversehen angehört. Wir wissen beide, dass das etwas geschmissenes war. Für alles andere war das zu stark und zu schnell."
       );
       this.playerJ10 = new Text(
         160, 550, 705, 130,
         "Ich",
-        "verpasste Anrufe"
+        "Als du die Nachrichten bekommen hast von Annegret, die du verpasst hast. Bist du vollkommen panisch und entgeistert weggerannt. Wärst du nicht mit so einer schockierten Miene davongerannt, hätte ich fast gedacht, dass nichts daran wäre."
       );
       this.monologueJ7 = new Monologue(
         160, 550, 705, 130,
@@ -1387,7 +1387,137 @@ export default class Handler {
       );
 
       //good ending
-      
+      this.monologueK1 = new Monologue(
+        160, 550, 705, 130,
+        "In den darauf folgenden Tagen schreibe ich immer mal wieder mit Frank, um zu schauen, wie es ihm geht. Es tut mir leid, dass er so eine schwere Zeit durchmachen muss."
+      );
+      this.monologueK2 = new Monologue(
+        160, 550, 705, 130,
+        "Er erzählte mir, dass er für eine kleine Zeit bei seiner Mutter wohnen wird, bis er eine andere Wohnung gefunden hat. Er hatte auch ein kurzes Telefonat mit Annegret, in welchem er den Schlussstrich gezogen hat."
+      );
+      this.monologueK3 = new Monologue(
+        160, 550, 705, 130,
+        "Es freut mich zwar zu sehen, dass er sich endlich darum kümmert, was er braucht, nur kann ich mir gut vorstellen, dass das immense Kraft von ihm verlangt."
+      );
+      this.monologueK4 = new Monologue(
+        160, 550, 705, 130,
+        "Auch heute klingelt mein Handy, während ich etwas auf der Couch esse. Schnell nehme ich ab, denn ich weiß schon genau, wer anruft."
+      );
+      this.playerK1 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Hey, na? Wie geht es dir?"
+      );
+      this.frankK1 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Man lebt und atmet. Hör mal, ich komme gleich vorbei, um ein paar meiner Sachen zu holen. Kannst du mir dabei bitte helfen? Ich bin mir nicht sicher, ob ich dort alleine hin kann."
+      );
+      this.playerK2 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Klar, kein Problem. Schreib mir einfach, wenn du da bist und ich komme raus."
+      );
+      this.frankK2 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Super, danke! Übrigens, erinnerst du dich noch an das Therapiezentrum in der Nähe des Einkaufszentrums, wo ich arbeite? Ich hab mich doch da auf einen Platz beworben."
+      );
+      this.playerK3 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Natürlich erinnere ich mich. Haben sie sich etwa schon bei dir gemeldet?"
+      );
+      this.frankK3 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Ja, ich habe einen Termin in zwei Wochen für das Erstgespräch ausgemacht! Es wird dann ausgemacht, ob ich dort einen Therapieplatz bekomme, mal sehen."
+      );
+      this.monologueK5 = new Monologue(
+        160, 550, 705, 130,
+        "Glücklich springe ich auf und werfe dabei fast das Glas Wasser um, das auf dem Tisch steht."
+      );
+      this.playerK4 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Das ist super! Ich freu mich so für dich und ich bin zuversichtlich, dass das was wird."
+      );
+      this.frankK4 = new Text(
+        160, 550, 705, 130,
+        "Frank",
+        "Hehe, danke. Wir sehen uns später, ja? Ich muss noch ein bisschen was erledigen."
+      );
+      this.playerK5 = new Text(
+        160, 550, 705, 130,
+        "Ich",
+        "Alles klar, bis später!"
+      );
+      this.monologueK6 = new Monologue(
+        160, 550, 705, 130,
+        "Zufrieden lege ich mein Handy neben mich. Natürlich ist die Situation keineswegs angenehm und ich weiß immer noch nicht, wie ich mit Annegret umgehen soll, wenn ich sie auf der Straße treffe, aber es ist eine, in welcher es ihm gut geht und er anfängt, weiterzugehen."
+      );
+      this.monologueK7 = new Monologue(
+        160, 550, 705, 130,
+        "Das wird zwar eine ganze Weile brauchen, bis er sich erholt hat und die vollständige Normalität eintrifft, aber jeder kleinste Schritt zählt."
+      );
+
+      //bad ending
+      this.monologueL1 = new Monologue(
+        160, 550, 705, 130,
+        "Am nächsten Tag treffe ich auf Annegret, die vor ihrem Haus die Post holt. Höflich lächle ich sie an und winke ihr zur Begrüßung zu, dabei ernte ich nur einen eisigen Blick von ihr. "
+      );
+      this.monologueL2 = new Monologue(
+        160, 550, 705, 130,
+        "Trauer und Frustration breitet sich wieder wie ein Feuer in mir aus. Natürlich hat Frank ihr davon erzählt, was denn sonst. Verletzt setze ich meinen Tag wie gewohnt fort."
+      );
+      this.monologueL3 = new Monologue(
+        160, 550, 705, 130,
+        "Das läuft einige Wochen lang so. Frank ignoriert mich vollkommen und Annegret verhält sich weiterhin wie die gekrönte Eiskönigin."
+      );
+      this.monologueL4 = new Monologue(
+        160, 550, 705, 130,
+        "Als ich eines Abends von einem weiteren, anstrengenden Arbeitstag nach Hause komme, bin ich mehr als überrascht, als ich mehrere Polizeiwagen vor dem Haus von Annegret und Frank stehen sehe."
+      );
+      this.monologueL5 = new Monologue(
+        160, 550, 705, 130,
+        "Dutzende Szenarien darüber, was passiert sein könnte, spielen sich in meinem Kopf ab, als ich mich besorgt zu den neugierigen Nachbarn und Passanten stelle."
+      );
+      this.playerL1 = new Text(
+        160, 550, 705, 130, 
+        "Ich",
+        "Was ist hier los? Ist etwas Schlimmes passiert?"
+      );
+      this.personL1 = new Text(
+        160, 550, 705, 130,
+        "Nachbarin",
+        "Es ist eine tragische Geschichte. Die Frau in dem Haus soll ihren Mann mehrmals mit einem Messer angegriffen haben. Ich hätte das selbst nicht geglaubt, hätte ich den Armen nicht blutend auf einer Trage gesehen."
+      );
+      this.monologueL6 = new Monologue(
+        160, 550, 705, 130,
+        "Mein Herz sackt in meine Hose und mir ist schlagartig kotzübel. Alles beginnt sich zu drehen und ich stütze mich mit meiner letzten Kraft an dem Hydranten neben mir ab."
+      );
+      this.monologueL7 = new Monologue(
+        160, 550, 705, 130,
+        "Das ist meine Schuld. Ich hätte damals etwas machen müssen, irgendwas. Ich hätte versuchen müssen, ihn zum Verstehen zu bringen, dass er nicht bei Annegret bleiben soll, dann wäre das alles nicht passiert. Wie konnte ich nur so naiv sein?"
+      );
+      this.personL2 = new Text(
+        160, 550, 705, 130,
+        "Nachbarin",
+        "Es ist nicht deine Schuld."
+      );
+      this.monologueL8 = new Monologue(
+        160, 550, 705, 130,
+        "Überrascht blicke ich auf. Habe ich das etwa laut gesagt?"
+      );
+      this.personL3 = new Text(
+        160, 550, 705, 130,
+        "Nachbarin",
+        "Woher solltest du denn ahnen können, dass es so weit kommen würde? Das, was passiert ist, ist furchtbar, aber du trägst dabei keine Schuld."
+      );
+      this.monologueL9 = new Monologue(
+        160, 550, 705, 130,
+        "Mit Tränen in den Augen blicke ich sie an und versinke in ihren Armen, als sie sie mir entgegen streckt. Zu einem gewissen Grad ist mir bewusst, dass es nicht meine Schuld ist, was Frank widerfahren ist, doch ich weiß genau, dass ich mehr hätte tun können."
+      )
 
     this.active = this.start;
 
@@ -1472,7 +1602,7 @@ export default class Handler {
     this.monologueC1.changeNext(this.annegretC1, this);
     this.monologueC2.changeNext(this.decisionC1, this);
     this.decisionC1.changeNext1(this.playerC3, this);
-    this.decisionC1.changeNext2(this.monologueC2, this);
+    this.decisionC1.changeNext2(this.monologueC3, this);
     this.playerC3.changeNext(this.frankC2, this);
     this.frankC2.changeNext(this.monologueC3, this);
 
@@ -1593,6 +1723,7 @@ export default class Handler {
     this.playerF21.changeNext(this.monologueF20, this);
 
     //Szene 4.1
+    this.monologueF16.changeNext(this.playerG1, this);
     this.monologueF20.changeNext(this.playerG1, this);
     this.monologueF21.changeNext(this.playerG1, this);
     this.playerG1.changeNext(this.monologueG1, this);
@@ -1639,7 +1770,6 @@ export default class Handler {
     this.frankH9.changeNext(this.monologueH11, this);
 
     //Szene 5.1
-    this.monologueH11.changeNext(this.monologueI1, this);
     this.monologueI1.changeNext(this.monologueI2, this);
     this.monologueI2.changeNext(this.monologueI3, this);
     this.monologueI3.changeNext(this.monologueI4, this);
@@ -1700,42 +1830,40 @@ export default class Handler {
     this.frankJ12.changeNext(this.monologueJ14, this);
     this.monologueJ14.changeNext(this.frankJ13, this);
     this.frankJ13.changeNext(this.monologueJ15, this);
-
-   /* this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    this..changeNext(this., this);
-    */
     
+    //good ending
+    this.monologueJ15.changeNext(this.monologueK1, this);
+    this.monologueK1.changeNext(this.monologueK2, this);
+    this.monologueK2.changeNext(this.monologueK3, this);
+    this.monologueK3.changeNext(this.monologueK4, this);
+    this.monologueK4.changeNext(this.playerK1, this);
+    this.playerK1.changeNext(this.frankK1, this);
+    this.frankK1.changeNext(this.playerK2, this);
+    this.playerK2.changeNext(this.frankK2, this);
+    this.frankK2.changeNext(this.playerK3, this);
+    this.playerK3.changeNext(this.frankK3, this);
+    this.frankK3.changeNext(this.monologueK5, this);
+    this.monologueK5.changeNext(this.playerK4, this);
+    this.playerK4.changeNext(this.frankK4, this);
+    this.frankK4.changeNext(this.playerK5, this);
+    this.playerK5.changeNext(this.monologueK6, this);
+    this.monologueK6.changeNext(this.monologueK7, this);
+    this.monologueK7.changeNext(this.end, this);
+
+    this.monologueJ15.changeNext(this.monologueL1, this);
+    this.monologueL1.changeNext(this.monologueL2, this);
+    this.monologueL2.changeNext(this.monologueL3, this);
+    this.monologueL3.changeNext(this.monologueL4, this);
+    this.monologueL4.changeNext(this.monologueL5, this);
+    this.monologueL5.changeNext(this.playerL1, this);
+    this.playerL1.changeNext(this.personL1, this);
+    this.personL1.changeNext(this.monologueL6, this);
+    this.monologueL6.changeNext(this.monologueL7, this);
+    this.monologueL7.changeNext(this.personL2, this);
+    this.personL2.changeNext(this.monologueL8, this);
+    this.monologueL8.changeNext(this.personL3, this);
+    this.personL2.changeNext(this.monologueL9, this);
+    this.monologueL9.changeNext(this.end, this); 
   }
 
   //name insertion
