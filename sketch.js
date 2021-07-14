@@ -164,6 +164,26 @@ function sound() {
       indie.loop();
     }
   }
+  if (handler.active === handler.playerE1) {
+    indie.stop();
+    musicA = 0;
+    musicB++;
+    if (soundT === 1) {
+      groceryStore.play();
+      groceryStore.setVolume(0.3);
+      groceryStore.loop();
+    }
+  }
+  if (handler.active === handler.monologueF1) {
+    indie.stop();
+    musicA = 0;
+    musicB++;
+    if (musicB === 1) {
+    oblivion.play();
+    oblivion.setVolume(0.3);
+    oblivion.loop();
+  }
+  }
   if (handler.active === handler.monologueJ1) {
     musicB++;
     if (musicB === 1) {
@@ -198,19 +218,14 @@ function sound() {
       soundT = 0;
     }
   }
-  if (handler.active === handler.playerE1) {
-    soundT++;
-    indie.stop();
-    musicA = 0;
-    if (soundT === 1) {
-      groceryStore.play();
-      groceryStore.setVolume(0.2);
-      groceryStore.loop();
-    }
-  }
+
   if (handler.active === handler.monologueF1) {
-    groceryStore.stop();
+    soundT++;
+    notification.stop();
     soundT = 0;
+  }
+  if (soundT === 1) {
+    doorbellS.play();
   }
   if (handler.active === handler.monologueG2) {
     soundT++;
