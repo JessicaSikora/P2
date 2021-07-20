@@ -1881,7 +1881,7 @@ export default class Handler {
   }
   get frankD1name() {
     this.frankD1.text =
-    "Tut mir Leid, " + this.name.name.join("") + ". Wir sind dieses Wochenende schon verplant."
+    "Tut mir Leid, " + this.name.name.join("") + ". Wir sind dieses Wochenende schon verplant.";
     return this.frankD1;
   }
   get frankE1name() {
