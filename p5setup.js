@@ -50,6 +50,7 @@ let notification;
 let police;
 let ringOne;
 let ringTwo;
+let doorbellS;
 
 //music
 let oblivion;
@@ -110,6 +111,7 @@ function preload() {
   police = loadSound("sounds/police.mp3");
   ringOne = loadSound("sounds/ringing1.mp3");
   ringTwo = loadSound("sounds/ringing2.mp3");
+  doorbellS = loadSound("sounds/doorbell.mp3");
 
   //music
   oblivion = loadSound("music/sb_beautifuloblivion.mp3");
@@ -142,6 +144,7 @@ export {
   police,
   ringOne,
   ringTwo,
+  doorbellS,
   oblivion,
   nostalgia,
   indie,
