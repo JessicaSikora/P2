@@ -28,6 +28,7 @@ export default class Start extends Button {
     pop();
   }
   //display for animations
+  // so button animation works
   displayButtonAnimated() {
     //Button
     rectMode(CENTER);

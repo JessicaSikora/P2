@@ -1,11 +1,15 @@
 export default class Doorbell {
-    constructor() {
+  /**
+   * this.ok -> set given name
+   * this.line -> line when typing
+   */
+   constructor() {
         this.name = [];
         this.ok = false;
         this.t = 0;
         this.line = "|";
     }
-
+// so you can type name (only letters)
     keyPressed() {
         if (keyCode === 8) {
           this.name.pop();
@@ -34,7 +38,7 @@ export default class Doorbell {
           this.ok = true;
         }
       }
-
+// drawLine = typing line
       drawLine() {
         this.t++;
         if (this.t >= 30) {
@@ -48,6 +52,7 @@ export default class Doorbell {
     textSize(30);
     textAlign(LEFT);
     this.drawLine();
+    // basically so that line while typing appears and disappears 
     if (this.t <= 15) {
       text(this.name.join("") + this.line, 290, 360);
     } else {

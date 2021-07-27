@@ -2,6 +2,13 @@ import Text from "./text.js";
 import Monologue from "./monologue.js";
 import Decision from "./decision.js";
 
+
+/**
+ * class combines all textlines in simulation
+ * name = what textline is and from what
+ * letter = what exact scene
+ * number = numbering inside of "name"- so there is no chaos
+ */
 export default class Handler {
   constructor(name) {
     this.name = name;
@@ -1518,9 +1525,12 @@ export default class Handler {
         160, 550, 705, 130,
         "Mit Tränen in den Augen blicke ich sie an und versinke in ihren Armen, als sie sie mir entgegen streckt. Zu einem gewissen Grad ist mir bewusst, dass es nicht meine Schuld ist, was Frank widerfahren ist, doch ich weiß genau, dass ich mehr hätte tun können."
       )
-
+/**
+ * this used so next textline can appear
+ */
     this.active = this.start;
 
+    // "this" accesses handler voicelines out of the class
     //Szene 1
     this.warning.changeNext(this.monologueA1, this);
     this.monologueA1.changeNext(this.monologueA2, this);

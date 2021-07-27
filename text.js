@@ -1,5 +1,9 @@
 import Button from "./button.js";
 import {fontA, fontG} from "./p5setup.js";
+/**
+ * almost identical to monolog.js
+ * only difference = name is in there
+ */
 export default class Text extends Button {
   constructor(x, y, width, height, person, text) {
     super(x, y, width, height);

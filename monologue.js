@@ -1,5 +1,6 @@
 import Button from "./button.js";
 
+// extention of button, can do everything that button can and even more, amazing
 export default class Monologue extends Button {
   constructor(x, y, width, height, text) {
     super(x, y, width, height);

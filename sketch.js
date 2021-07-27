@@ -1,3 +1,6 @@
+/** 
+ * far too long list of variables imported from other documents / classes
+ */
 import {
   crash,
   groceryStore,
@@ -50,6 +53,7 @@ import Handler from "./handler.js";
 import Doorbell from "./doorbell.js";
 import { fontA, fontG } from "./p5setup.js";
 
+// visual construction of different variables (which basically make the screens) etc
 let start = new Start(410, 520, 180, 90);
 let end = new End(410, 520, 180, 90);
 let doorbell = new Doorbell();
@@ -68,12 +72,16 @@ let redFlags = 0;
 let confidence = 0;
 
 let soundT = 0;
+// so music can properly end, same story in sfx
 let musicA = 0;
 let musicB = 0;
 
 //Start Button Animation
 start.animation();
 
+/**
+ * defines when which button is active
+ */
 function mouseClicked() {
   if (start.start === false) {
     start.mouseClicked();
@@ -99,6 +107,7 @@ function mouseClicked() {
     decision1.mouseClicked();
     decision2.mouseClicked();
   }
+  // red flags buttons
   if (handler.active === handler.annegretC1) {
     control.mouseClicked();
   }
@@ -124,6 +133,7 @@ function mouseClicked() {
 }
 window.mouseClicked = mouseClicked;
 
+// so user can acutally type the name
 function keyPressed() {
   if (handler.active === handler.nameplate) {
     doorbell.keyPressed();
@@ -203,7 +213,9 @@ function sound() {
       musicB = 0;
     }
   }
-
+/**
+ * can only use one version of soundT because sfx dont appear back to back / number needs to be 1 so it triggers
+ */
   //SFX
   if (handler.active === handler.frankD1) {
     soundT++;
@@ -264,7 +276,10 @@ function sound() {
 function draw() {
   clear();
   sound();
-
+/**
+ * switch / case (is each voiceline) / break (end of case) = almost same thing as if, at least in here
+ * with red flags: button over button
+ */
   switch (handler.active) {
     case handler.start:
       if (start.start === true) {
@@ -1100,6 +1115,7 @@ function draw() {
       }
       if (
         handler.annegretF8.triggered === true &&
+        // victim only textbox for red flag
         victim.hitTest(mouseX, mouseY) === false
       ) {
         handler.active = handler.annegretF9;
@@ -1387,6 +1403,7 @@ function draw() {
     case handler.monologueG2:
       image(bedNight, 15, 15, 1000, 700);
       image(textBoxPink, 90, 380, 800, 400);
+      // hitbox here visulized when hovering
       if (noise.triggered === false) {
         if (noise.hitTest(mouseX, mouseY)) {
           stroke("#f9f7d0");
@@ -1398,7 +1415,9 @@ function draw() {
           textSize(14);
           text("lautes Krachen", 140, 400);
         }
+// when red flag hitted
       } else {
+        redFlags += 1;
         handler.active = handler.monologueG3;
       }
       break;
@@ -1498,6 +1517,11 @@ function draw() {
       image(tiredFrank, 350, 170, 300, 620);
       image(textBoxPink, 120, 380, 390, 400);
       image(textBoxPink, 480, 380, 390, 400);
+       /**
+        * decision1 = nothing happens
+        * decision2 = confindence boost
+        * nothing more nothing less
+        */
       if (decision1.triggered === true) {
         decision1.triggered = false;
       }
@@ -2179,6 +2203,14 @@ function draw() {
       fill(220, 220, 220);
       text("ENDE", 650, 300);
       if (end.end === true) {
+        redFlags = 0;
+        confidence = 0;
+        control.triggered = false;
+        lie.triggered = false;
+        arm.triggered = false;
+        noise.triggered = false;
+        phone.triggered = false;
+        victim.triggered = false;
         handler.active = handler.start;
       }
       end.display();

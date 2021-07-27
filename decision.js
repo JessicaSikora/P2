@@ -29,11 +29,13 @@ export default class Decision {
         this.width - 40,
         this.height - 40
       );
+      // insinuates continuation
       textSize(14);
       textAlign(RIGHT);
       text("weiter", this.x, this.y + 110, this.width - 5, this.height + 15);
       text("weiter", this.x + 360, this.y + 110, this.width - 5, this.height + 15);
     }
+    // two hitTests: for two different buttons because two different thing
     hitTest1(x, y) {
       if (
         x > this.x &&
@@ -71,6 +73,7 @@ export default class Decision {
         }
       }
     }
+  //  initiates one of the two story paths
     changeNext1(next1, handler1) {
       this.next1 = next1;
       this.handler1 = handler1;

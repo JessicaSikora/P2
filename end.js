@@ -2,6 +2,9 @@ import Button from "./button.js";
 
 export default class End extends Button {
   constructor(x, y, width, height) {
+    /**
+     * super used as extension for constructor out of button 
+     */
     super(x, y, width, height);
     this.end = false;
   }

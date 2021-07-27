@@ -1,3 +1,7 @@
+/**
+ * basically everything combined in one document, so there is less confusion then there already is
+ * also function preload, so everything loads beforehand and the simulation can just run, who would´ve guessed
+ */
 let sketch = new p5();
 let width = windowWidth;
 let height = windowHeight;
