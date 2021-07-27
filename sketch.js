@@ -114,7 +114,7 @@ function mouseClicked() {
   if (handler.active === handler.frankE6) {
     lie.mouseClicked();
   }
-  if (handler.active === handler.monologueE2) {
+  if (handler.active === handler.monologueE3) {
     arm.mouseClicked();
   }
   if (handler.active === handler.annegretF8) {
